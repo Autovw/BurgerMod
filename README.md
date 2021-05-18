@@ -16,4 +16,5 @@ A mod that adds in a Burger along with scrambled eggs.
 
 ### Important Note
 The 1.16 version of the mod is compatible with Minecraft 1.16.3 / 1.16.4 / 1.16.5.
+
 More burgers/food are planned to be added later on.
