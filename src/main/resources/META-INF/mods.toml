@@ -1,5 +1,5 @@
 modLoader="javafml"
-loaderVersion="[34,)"
+loaderVersion="[30,)"
 license="GPLv3"
 issueTrackerURL="https://github.com/Autovw/BurgerMod/issues"
 
@@ -21,12 +21,12 @@ configBackground="minecraft:textures/block/bricks.png"
 [[dependencies.burgermod]]
     modId="forge"
     mandatory=true
-    versionRange="[34,)"
+    versionRange="[30,)"
     ordering="NONE"
     side="BOTH"
 [[dependencies.burgermod]]
     modId="minecraft"
     mandatory=true
-    versionRange="[1.16.3,1.17]"
+    versionRange="[1.15.1,1.16]"
     ordering="NONE"
     side="BOTH"
