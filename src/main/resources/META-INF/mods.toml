@@ -1,0 +1,30 @@
+modLoader="javafml"
+loaderVersion="[34,)"
+license="GPLv3"
+#issueTrackerURL="http://my.issue.tracker/"
+
+[[mods]] #mandatory
+modId="burgermod"
+version="1.0.0"
+displayName="Burger Mod"
+#updateJSONURL="http://myurl.me/"
+#displayURL="http://example.com/"
+logoFile="burgermod.png"
+#credits="Thanks for this example mod goes to Java"
+authors="Autovw"
+description='''
+A mod that adds in a Burger along with scrambled eggs.
+'''
+
+[[dependencies.burgermod]]
+    modId="forge"
+    mandatory=true
+    versionRange="[34,)"
+    ordering="NONE"
+    side="BOTH"
+[[dependencies.burgermod]]
+    modId="minecraft"
+    mandatory=true
+    versionRange="[1.16.3,1.17]"
+    ordering="NONE"
+    side="BOTH"
