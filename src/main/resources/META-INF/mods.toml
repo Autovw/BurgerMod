@@ -5,7 +5,7 @@ issueTrackerURL="https://github.com/Autovw/BurgerMod/issues"
 
 [[mods]] #mandatory
 modId="burgermod"
-version="1.0.0"
+version="1.1.0"
 displayName="Burger Mod"
 #updateJSONURL="http://myurl.me/"
 displayURL="https://github.com/Autovw/BurgerMod"
@@ -15,6 +15,8 @@ authors="Autovw"
 description='''
 A mod that adds in a Burger along with scrambled eggs.
 '''
+itemIcon="burgermod:burger"
+configBackground="minecraft:textures/block/bricks.png"
 
 [[dependencies.burgermod]]
     modId="forge"
