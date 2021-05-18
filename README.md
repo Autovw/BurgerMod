@@ -1,4 +1,4 @@
-![Banner] (main/resources/assets/burgermod/burgermod.png)
+![Banner](https://i.postimg.cc/hGTLW7Hh/background-burgermod.png)
 
 # Burger Mod
 
@@ -10,9 +10,9 @@ A mod that adds in a Burger along with scrambled eggs.
 * Fried Scrambled Egg which restores 1 hunger bar.
 
 ### Recipes
-![Recipe Burger] (main/resources/assets/burgermod/recipe_burger.png)
-![Recipe Scrambled Egg] (main/resources/assets/burgermod/recipe_scrambled_egg.png)
-![Recipe Fried Scrambled Egg] (main/resources/assets/burgermod/recipe_fried_scrambled_egg.png)
+![Recipe Burger](https://i.postimg.cc/ydKFV8Hj/recipe-burger.png)
+![Recipe Scrambled Egg](https://i.postimg.cc/FRx01XF4/recipe-scrambled-egg.png)
+![Recipe Fried Scrambled Egg](https://i.postimg.cc/1X5wq74N/recipe-fried-scrambled-egg.png)
 
 ### Important Note
 The 1.16 version of the mod is compatible with Minecraft 1.16.3 / 1.16.4 / 1.16.5.
