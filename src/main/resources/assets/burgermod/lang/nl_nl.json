@@ -1,5 +1,8 @@
 {
-  "item.burgermod.burger": "Burger",
+  "item.burgermod.burger": "§dBurger",
+  "item.burgermod.beef_burger": "Burger met rundvlees",
+  "item.burgermod.pork_burger": "Burger met varkensvlees",
   "item.burgermod.scrambled_egg": "Rauw Roerei",
-  "item.burgermod.fried_scrambled_egg": "Gebakken Roerei"
+  "item.burgermod.fried_scrambled_egg": "Gebakken Roerei",
+  "item.burgermod.cooked_chicken_nugget": "Gebakken Kip Nugget"
 }
