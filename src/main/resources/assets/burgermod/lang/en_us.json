@@ -1,5 +1,8 @@
 {
-  "item.burgermod.burger": "Burger",
+  "item.burgermod.burger": "§dBurger",
+  "item.burgermod.beef_burger": "Beef Burger",
+  "item.burgermod.pork_burger": "Pork Burger",
   "item.burgermod.scrambled_egg": "Raw Scrambled Egg",
-  "item.burgermod.fried_scrambled_egg": "Fried Scrambled Egg"
+  "item.burgermod.fried_scrambled_egg": "Fried Scrambled Egg",
+  "item.burgermod.cooked_chicken_nugget": "Cooked Chicken Nugget"
 }
