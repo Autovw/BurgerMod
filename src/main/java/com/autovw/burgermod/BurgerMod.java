@@ -1,6 +1,7 @@
 package com.autovw.burgermod;
 
 import com.autovw.burgermod.proxy.IProxy;
+import com.autovw.burgermod.util.handlers.RecipeHandler;
 import net.minecraft.init.Blocks;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.common.Mod.EventHandler;
@@ -28,9 +29,9 @@ public class BurgerMod
     public static IProxy proxy;
 
     @EventHandler
-    public void preInit(FMLPreInitializationEvent event)
-    {
+    public void preInit(FMLPreInitializationEvent event) {
         logger = event.getModLog();
+        RecipeHandler.init();
     }
 
     @EventHandler
