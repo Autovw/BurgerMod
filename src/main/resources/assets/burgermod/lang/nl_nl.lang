@@ -1,10 +1,12 @@
 item.beef_burger.name=Burger met rundvlees
 item.pork_burger.name=Burger met varkensvlees
 item.mutton_burger.name=Burger met schapenvlees
+item.chicken_burger.name=Burger met kippenvlees
 
 item.beef_cheese_burger.name=Kaasburger met rundvlees
 item.pork_cheese_burger.name=Kaasburger met varkensvlees
 item.mutton_cheese_burger.name=Kaasburger met schapenvlees
+item.chicken_cheese_burger.name=Kaasburger met kippenvlees
 
 item.scrambled_egg.name=Rauw roerei
 item.fried_scrambled_egg.name=Gebakken roerei
