@@ -5,7 +5,7 @@ issueTrackerURL="https://github.com/Autovw/BurgerMod/issues"
 
 [[mods]] #mandatory
 modId="burgermod"
-version="1.4.0"
+version="1.4.1"
 displayName="Burger Mod"
 #updateJSONURL="http://myurl.me/"
 displayURL="https://github.com/Autovw/BurgerMod/wiki"
