@@ -23,6 +23,14 @@ public class ItemInit {
     public static final Item MUTTON_CHEESE_BURGER = new ItemBase("mutton_cheese_burger", 8, 1.0f, true);
     public static final Item CHICKEN_CHEESE_BURGER = new ItemBase("chicken_cheese_burger", 8, 0.8f, true);
 
+    // Egg Fish Burgers
+    public static final Item SALMON_BURGER = new ItemBase("salmon_burger", 8, 1.0f, false);
+    public static final Item COD_BURGER = new ItemBase("cod_burger", 7, 0.8f, false);
+
+    // Cheese Fish Burgers
+    public static final Item SALMON_CHEESE_BURGER = new ItemBase("salmon_cheese_burger", 8, 1.0f, false);
+    public static final Item COD_CHEESE_BURGER = new ItemBase("cod_cheese_burger", 7, 0.8f, false);
+
     // Eggs
     public static final Item SCRAMBLED_EGG = new ItemRaw("scrambled_egg", 1, 0.1f, false).addPoisonEffect();
     public static final Item FRIED_SCRAMBLED_EGG = new ItemBase("fried_scrambled_egg", 2, 0.6f, true);
