@@ -51,6 +51,24 @@ public class ItemInit {
             () -> new Item(new Item.Properties().group(ItemGroup.FOOD)
                     .food(new Food.Builder().hunger(8).meat().saturation(0.8f).build())));
 
+    // Fish + Egg Burgers
+    public static final RegistryObject<Item> SALMON_BURGER = ITEMS.register("salmon_burger",
+            () -> new Item(new Item.Properties().group(ItemGroup.FOOD)
+                    .food(new Food.Builder().hunger(8).saturation(1.0f).build())));
+
+    public static final RegistryObject<Item> COD_BURGER = ITEMS.register("cod_burger",
+            () -> new Item(new Item.Properties().group(ItemGroup.FOOD)
+                    .food(new Food.Builder().hunger(7).saturation(0.8f).build())));
+
+    // Fish + Cheese Burgers
+    public static final RegistryObject<Item> SALMON_CHEESE_BURGER = ITEMS.register("salmon_cheese_burger",
+            () -> new Item(new Item.Properties().group(ItemGroup.FOOD)
+                    .food(new Food.Builder().hunger(8).saturation(1.0f).build())));
+
+    public static final RegistryObject<Item> COD_CHEESE_BURGER = ITEMS.register("cod_cheese_burger",
+            () -> new Item(new Item.Properties().group(ItemGroup.FOOD)
+                    .food(new Food.Builder().hunger(7).saturation(0.8f).build())));
+
     // Eggs
     public static final RegistryObject<Item> SCRAMBLED_EGG = ITEMS.register("scrambled_egg",
             () -> new Item(new Item.Properties().group(ItemGroup.FOOD)
