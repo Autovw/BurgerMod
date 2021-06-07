@@ -13,7 +13,7 @@ apply plugin: 'net.minecraftforge.gradle'
 apply plugin: 'eclipse'
 apply plugin: 'maven-publish'
 
-version = '1.6.0-1.16.4'
+version = '2.0.0-1.16.5'
 group = 'com.autovw.burgermod' // http://maven.apache.org/guides/mini/guide-naming-conventions.html
 archivesBaseName = 'burgermod'
 
@@ -21,7 +21,7 @@ sourceCompatibility = targetCompatibility = compileJava.sourceCompatibility = co
 
 println('Java: ' + System.getProperty('java.version') + ' JVM: ' + System.getProperty('java.vm.version') + '(' + System.getProperty('java.vendor') + ') Arch: ' + System.getProperty('os.arch'))
 minecraft {
-    mappings channel: 'snapshot', version: '20201028-1.16.3'
+    mappings channel: 'official', version: '1.16.5'
     // makeObfSourceJar = false // an Srg named sources jar is made by default. uncomment this to disable.
     
     accessTransformer = file('src/main/resources/META-INF/accesstransformer.cfg')
@@ -87,7 +87,7 @@ repositories {
 }
 
 dependencies {
-    minecraft 'net.minecraftforge:forge:1.16.4-35.1.4'
+    minecraft 'net.minecraftforge:forge:1.16.5-36.1.24'
     compile fg.deobf('curse.maven:catalogue-459701:3334740')
 }
 
