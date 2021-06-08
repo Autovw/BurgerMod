@@ -5,7 +5,7 @@ issueTrackerURL="https://github.com/Autovw/BurgerMod/issues"
 
 [[mods]] #mandatory
 modId="burgermod"
-version="1.6.0"
+version="2.0.0"
 displayName="Burger Mod"
 updateJSONURL="https://raw.githubusercontent.com/Autovw/ModUpdates/master/burgermod/update.json"
 displayURL="https://github.com/Autovw/BurgerMod/wiki"
@@ -13,7 +13,7 @@ logoFile="burgermod.png"
 #credits=""
 authors="Autovw"
 description='''
-A mod that adds in burgers along with scrambled eggs.
+A mod that adds in burgers and other types of food that extend the vanilla game!
 
 Visit the Burger Mod Wiki on GitHub, where you can find everything you need to know about the Burger Mod!
 '''
@@ -31,8 +31,7 @@ Visit the Burger Mod Wiki on GitHub, where you can find everything you need to k
     ordering="NONE"
     side="BOTH"
 
-#new way of adding support for Catalogue and Configured
 [modproperties.burgermod]
     configBackground="minecraft:textures/block/bricks.png" #Optional support for Configured mod.
     #As of version 1.2.0 Catalogue also supports images. Use "catalogueImageIcon" instead.
-    catalogueItemIcon="burgermod:burger" #Optional support for Cataloque mod.
+    catalogueItemIcon="burgermod:beef_burger" #Optional support for Cataloque mod.
