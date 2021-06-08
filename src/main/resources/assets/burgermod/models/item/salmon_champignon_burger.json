@@ -1,0 +1,6 @@
+{
+  "parent": "item/generated",
+  "textures": {
+    "layer0": "burgermod:items/salmon_champignon_burger"
+  }
+}
