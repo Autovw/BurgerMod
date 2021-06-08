@@ -1,11 +1,10 @@
 {
-  "item.burgermod.burger": "§dBurger",
-  "item.burgermod.beef_burger": "Burger met rundvlees",
-  "item.burgermod.pork_burger": "Burger met varkensvlees",
-  "item.burgermod.mutton_burger": "Burger met schapenvlees",
-  "item.burgermod.chicken_burger": "Burger met kippenvlees",
-  "item.burgermod.salmon_burger": "Burger met zalm",
-  "item.burgermod.cod_burger": "Burger met kabeljauw",
+  "item.burgermod.beef_burger": "Eiburger met rundvlees",
+  "item.burgermod.pork_burger": "Eiburger met varkensvlees",
+  "item.burgermod.mutton_burger": "Eiburger met schapenvlees",
+  "item.burgermod.chicken_burger": "Eiburger met kippenvlees",
+  "item.burgermod.salmon_burger": "Eiburger met zalm",
+  "item.burgermod.cod_burger": "Eiburger met kabeljauw",
 
   "item.burgermod.beef_cheese_burger": "Kaasburger met rundvlees",
   "item.burgermod.pork_cheese_burger": "Kaasburger met varkensvlees",
@@ -14,9 +13,22 @@
   "item.burgermod.salmon_cheese_burger": "Kaasburger met zalm",
   "item.burgermod.cod_cheese_burger": "Kaasburger met kabeljauw",
 
+  "item.burgermod.beef_champignon_burger": "Champignonburger met rundvlees",
+  "item.burgermod.pork_champignon_burger": "Champignonburger met varkensvlees",
+  "item.burgermod.mutton_champignon_burger": "Champignonburger met schapenvlees",
+  "item.burgermod.chicken_champignon_burger": "Champignonburger met kippenvlees",
+  "item.burgermod.salmon_champignon_burger": "Champignonburger met zalm",
+  "item.burgermod.cod_champignon_burger": "Champignonburger met kabeljauw",
+
   "item.burgermod.scrambled_egg": "Rauw Roerei",
   "item.burgermod.fried_scrambled_egg": "Gebakken Roerei",
 
+  "item.burgermod.raw_champignons": "Rauwe Champignons",
+  "item.burgermod.cooked_champignons": "Gebakken Champignons",
+
+  "item.burgermod.cheese": "Kaas",
   "item.burgermod.cooked_chicken_nugget": "Gebakken Kip Nugget",
-  "item.burgermod.cheese": "Kaas"
+  "item.burgermod.fries": "Patat",
+
+  "itemGroup.burgermod_group": "Burger Mod"
 }
