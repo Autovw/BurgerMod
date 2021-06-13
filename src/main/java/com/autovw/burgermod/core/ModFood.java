@@ -7,7 +7,6 @@ import net.minecraft.potion.Effects;
 /**
  * Author: Autovw
  */
-
 public class ModFood {
     // I moved this to make the ModItems class look cleaner.
     // nutrition = hunger, meat = isWolfFood, saturationMod = saturation

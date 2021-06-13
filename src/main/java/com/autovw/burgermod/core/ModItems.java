@@ -10,7 +10,6 @@ import net.minecraftforge.registries.ForgeRegistries;
 /**
  * Author: Autovw
  */
-
 public class ModItems {
 
     public static final DeferredRegister<Item> ITEMS = DeferredRegister.create(ForgeRegistries.ITEMS, BurgerMod.MOD_ID);
