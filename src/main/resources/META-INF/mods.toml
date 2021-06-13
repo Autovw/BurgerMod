@@ -3,9 +3,9 @@ loaderVersion="[34,)"
 license="GPLv3"
 issueTrackerURL="https://github.com/Autovw/BurgerMod/issues"
 
-[[mods]] #mandatory
+[[mods]]
 modId="burgermod"
-version="2.0.0"
+version="2.1.0"
 displayName="Burger Mod"
 updateJSONURL="https://raw.githubusercontent.com/Autovw/ModUpdates/master/burgermod/update.json"
 displayURL="https://github.com/Autovw/BurgerMod/wiki"
