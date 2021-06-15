@@ -13,7 +13,7 @@
       "item": "minecraft:cooked_chicken"
     },
     "E": {
-      "item": "burgermod:cheese"
+      "tag": "forge:cheese"
     }
   },
   "result": {
