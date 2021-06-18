@@ -18,8 +18,8 @@ Check the [Burger Mod Wiki](https://github.com/Autovw/BurgerMod/wiki/Crafting-Re
 ### ℹ More Information
 * Please report issues on the [official Burger Mod GitHub repository](https://github.com/Autovw/BurgerMod/issues)!
 * The Burger Mod is Forge only, and I'm not planning on bringing it to Fabric.
-* The 1.16 version of the mod is compatible with Minecraft 1.16.3 / 1.16.4 / 1.16.5.
 * Visit the [Burger Mod Wiki](https://github.com/Autovw/BurgerMod/wiki) for more information on everything this mod adds.
+* Join my new [Discord Server](https://discord.com/invite/KP3BBatuw5) for update notifications, mod support and more!
 
 ![Break](https://i.postimg.cc/J0dGdpgm/break.png)
 #### ⚠️ Disclaimer
