@@ -1,0 +1,11 @@
+{
+  "replace": false,
+  "values": [
+    "burgermod:beef_champignon_burger",
+    "burgermod:pork_champignon_burger",
+    "burgermod:mutton_champignon_burger",
+    "burgermod:chicken_champignon_burger",
+    "burgermod:salmon_champignon_burger",
+    "burgermod:cod_champignon_burger"
+  ]
+}
