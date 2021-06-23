@@ -13,7 +13,7 @@ apply plugin: 'net.minecraftforge.gradle'
 apply plugin: 'eclipse'
 apply plugin: 'maven-publish'
 
-version = '2.1.0-1.16.5'
+version = '2.2.0-1.16.5'
 group = 'com.autovw.burgermod' // http://maven.apache.org/guides/mini/guide-naming-conventions.html
 archivesBaseName = 'burgermod'
 
@@ -87,8 +87,8 @@ repositories {
 }
 
 dependencies {
-    minecraft 'net.minecraftforge:forge:1.16.5-36.1.31'
-    compile fg.deobf('curse.maven:catalogue-459701:3334740')
+    minecraft 'net.minecraftforge:forge:1.16.5-36.1.32'
+    compile fg.deobf('curse.maven:catalogue-459701:3335979')
 }
 
 jar {
