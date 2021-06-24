@@ -7,6 +7,7 @@ A mod that adds in burgers and other types of food that extend the vanilla game!
 * 4 types of meat burgers.
 * 2 types of fish burgers.
 * All burgers are available in 3 variants: Egg, Cheese and Champignon!
+* Golden Burgers, similar to Golden Apples. 
 * Other types of food such as: fries, scrambled eggs, cheese, chicken nuggets and more!
 * Support for Datapacks. (1.15+)
 
