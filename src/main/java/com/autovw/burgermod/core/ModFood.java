@@ -50,21 +50,21 @@ public class ModFood {
 
     // Used for: GOLDEN_BEEF, GOLDEN_PORK
     public static final Food GOLDEN_BURGER_TIER_1 = new Food.Builder().nutrition(10).saturationMod(1.4f).effect(() -> new EffectInstance
-            (Effects.REGENERATION, 100, 1), 1.0f).effect(new EffectInstance
+            (Effects.REGENERATION, 100, 1), 1.0f).effect(() -> new EffectInstance
             (Effects.ABSORPTION, 1200, 0), 1.0f).alwaysEat().build();
 
     // Used for: GOLDEN_MUTTON, GOLDEN_SALMON
     public static final Food GOLDEN_BURGER_TIER_2 = new Food.Builder().nutrition(8).saturationMod(1.4f).effect(() -> new EffectInstance
-            (Effects.REGENERATION, 100, 1), 1.0f).effect(new EffectInstance
+            (Effects.REGENERATION, 100, 1), 1.0f).effect(() -> new EffectInstance
             (Effects.ABSORPTION, 1200, 0), 1.0f).alwaysEat().build();
 
     // Used for: GOLDEN_CHICKEN
     public static final Food GOLDEN_BURGER_TIER_3 = new Food.Builder().nutrition(8).saturationMod(1.2f).effect(() -> new EffectInstance
-            (Effects.REGENERATION, 100, 1), 1.0f).effect(new EffectInstance
+            (Effects.REGENERATION, 100, 1), 1.0f).effect(() -> new EffectInstance
             (Effects.ABSORPTION, 1200, 0), 1.0f).alwaysEat().build();
 
     // Used for: GOLDEN_COD
     public static final Food GOLDEN_BURGER_TIER_4 = new Food.Builder().nutrition(7).saturationMod(1.2f).effect(() -> new EffectInstance
-            (Effects.REGENERATION, 100, 1), 1.0f).effect(new EffectInstance
+            (Effects.REGENERATION, 100, 1), 1.0f).effect(() -> new EffectInstance
             (Effects.ABSORPTION, 1200, 0), 1.0f).alwaysEat().build();
 }
