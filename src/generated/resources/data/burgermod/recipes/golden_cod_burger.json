@@ -10,7 +10,7 @@
       "tag": "burgermod:cod_burgers"
     },
     "G": {
-      "item": "minecraft:gold_ingot"
+      "tag": "forge:ingots/gold"
     }
   },
   "result": {

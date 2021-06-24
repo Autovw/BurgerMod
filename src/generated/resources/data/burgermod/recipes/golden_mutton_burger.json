@@ -10,7 +10,7 @@
       "tag": "burgermod:mutton_burgers"
     },
     "G": {
-      "item": "minecraft:gold_ingot"
+      "tag": "forge:ingots/gold"
     }
   },
   "result": {
