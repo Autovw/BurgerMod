@@ -12,7 +12,7 @@
         "items": [
           {
             "tag": "burgermod:mutton_burgers",
-            "item": "minecraft:gold_ingot"
+            "tag": "forge:ingots/gold"
           }
         ]
       }
