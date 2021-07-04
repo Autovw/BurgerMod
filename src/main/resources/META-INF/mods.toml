@@ -5,7 +5,7 @@ issueTrackerURL="https://github.com/Autovw/BurgerMod/issues"
 
 [[mods]]
 modId="burgermod"
-version="2.2.0"
+version="2.3.0"
 displayName="Burger Mod"
 updateJSONURL="https://raw.githubusercontent.com/Autovw/ModUpdates/master/burgermod/update.json"
 displayURL="https://github.com/Autovw/BurgerMod/wiki"
@@ -32,6 +32,6 @@ Visit the Burger Mod Wiki on GitHub, where you can find everything you need to k
     side="BOTH"
 
 [modproperties.burgermod]
-    configBackground="minecraft:textures/block/bricks.png" #Optional support for Configured mod.
     #As of version 1.2.0 Catalogue also supports images. Use "catalogueImageIcon" instead.
     catalogueItemIcon="burgermod:beef_burger" #Optional support for Cataloque mod.
+    configuredBackground="minecraft:textures/block/bricks.png" #Optional support for Configured mod.
