@@ -1,7 +1,6 @@
 package com.autovw.burgermod.core;
 
 import com.autovw.burgermod.BurgerMod;
-import net.minecraft.item.Food;
 import net.minecraft.item.Item;
 import net.minecraftforge.fml.RegistryObject;
 import net.minecraftforge.registries.DeferredRegister;
@@ -11,10 +10,12 @@ import net.minecraftforge.registries.ForgeRegistries;
  * Author: Autovw
  */
 public class ModItems {
-
+    // DeferredRegister is the correct way to register stuff.
     public static final DeferredRegister<Item> ITEMS = DeferredRegister.create(ForgeRegistries.ITEMS, BurgerMod.MOD_ID);
 
-    // The food properties are stored in the ModFood class.
+    /* The food properties are stored in the ModFood class to make this class look cleaner.
+     * The effect properties are stored in the ModEffects class.
+     */
 
     // Meat + Egg Burgers
     public static final RegistryObject<Item> BEEF_BURGER = ITEMS.register("beef_burger",
