@@ -30,6 +30,10 @@ public class Config {
     }
     // Stuff above this line is needed to register the common config.
 
+    /*
+     * This is the EffectsConfig.
+     * In this config are some effects properties stored which are utilized in the ModEffects class.
+     */
     public static class EffectsConfig {
         public static ForgeConfigSpec.ConfigValue<Integer> rawEggEffectDuration;
         public static ForgeConfigSpec.ConfigValue<Integer> rawEggEffectAmplifier;
