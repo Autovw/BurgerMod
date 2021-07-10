@@ -23,11 +23,13 @@ public class BurgerMod {
     public static final ItemGroup TAB_BURGERMOD = new BurgerGroup("burgermod_group");
 
     public BurgerMod() {
+        // Used to register the common config.
         ModLoadingContext.get().registerConfig(ModConfig.Type.COMMON, Config.commonConfig);
 
         IEventBus bus = FMLJavaModLoadingContext.get().getModEventBus();
         bus.addListener(this::setup);
 
+        // Used to register the ModItems class and everything inside of it.
         ModItems.ITEMS.register(bus);
 
         // Register ourselves for server and other game events we are interested in
