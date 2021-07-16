@@ -13,10 +13,10 @@ apply plugin: 'eclipse'
 apply plugin: 'maven-publish'
 
 version = '2.3.0-1.16.5'
-group = 'com.autovw.burgermod' // http://maven.apache.org/guides/mini/guide-naming-conventions.html
+group = 'com.autovw.burgermod'
 archivesBaseName = 'burgermod'
 
-sourceCompatibility = targetCompatibility = compileJava.sourceCompatibility = compileJava.targetCompatibility = '1.8' // Need this here so eclipse task generates correctly.
+sourceCompatibility = targetCompatibility = compileJava.sourceCompatibility = compileJava.targetCompatibility = '1.8'
 
 println('Java: ' + System.getProperty('java.version') + ' JVM: ' + System.getProperty('java.vm.version') + '(' + System.getProperty('java.vendor') + ') Arch: ' + System.getProperty('os.arch'))
 minecraft {
@@ -28,13 +28,8 @@ minecraft {
     runs {
         client {
             workingDirectory project.file('run')
-
-            // Recommended logging data for a userdev environment
             property 'forge.logging.markers', 'SCAN,REGISTRIES,REGISTRYDUMP'
-
-            // Recommended logging level for the console
             property 'forge.logging.console.level', 'debug'
-
             mods {
                 modid {
                     source sourceSets.main
@@ -44,13 +39,8 @@ minecraft {
 
         server {
             workingDirectory project.file('run')
-
-            // Recommended logging data for a userdev environment
             property 'forge.logging.markers', 'SCAN,REGISTRIES,REGISTRYDUMP'
-
-            // Recommended logging level for the console
             property 'forge.logging.console.level', 'debug'
-
             mods {
                 modid {
                     source sourceSets.main
@@ -60,13 +50,9 @@ minecraft {
 
         data {
             workingDirectory project.file('run')
-
             property 'forge.logging.markers', 'SCAN,REGISTRIES,REGISTRYDUMP'
-
             property 'forge.logging.console.level', 'debug'
-
             args '--mod', 'burgermod', '--all', '--output', file('src/generated/resources/'), '--existing', file('src/main/resources/')
-
             mods {
                 modid {
                     source sourceSets.main
@@ -86,7 +72,7 @@ repositories {
 }
 
 dependencies {
-    minecraft 'net.minecraftforge:forge:1.16.5-36.1.32'
+    minecraft 'net.minecraftforge:forge:1.16.5-36.1.33'
     compile fg.deobf('curse.maven:catalogue-459701:3335979')
     compile fg.deobf('curse.maven:configured-457570:3340535')
 }
