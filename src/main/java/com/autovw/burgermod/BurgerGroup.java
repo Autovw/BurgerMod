@@ -1,21 +1,22 @@
 package com.autovw.burgermod;
 
 import com.autovw.burgermod.core.ModItems;
-import net.minecraft.item.ItemGroup;
-import net.minecraft.item.ItemStack;
+import net.minecraft.world.item.CreativeModeTab;
+import net.minecraft.world.item.ItemStack;
 
 /**
  * Author: Autovw
  */
-public class BurgerGroup extends ItemGroup {
+public class BurgerGroup extends CreativeModeTab {
 
     // Creative inventory tab
     public BurgerGroup(String name) {
         super(name);
     }
 
+    // m_7968_ = getDefaultState
     @Override
-    public ItemStack makeIcon() {
-        return ModItems.BEEF_BURGER.get().getDefaultInstance();
+    public ItemStack m_6976_() {
+        return ModItems.BEEF_BURGER.get().m_7968_();
     }
 }
