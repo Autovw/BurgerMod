@@ -1,0 +1,8 @@
+{
+  "replace": false,
+  "values": [
+    "burgermod:beef_burger",
+    "burgermod:beef_cheese_burger",
+    "burgermod:beef_champignon_burger"
+  ]
+}
