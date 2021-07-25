@@ -80,11 +80,15 @@ public class ItemInit {
                     .food(new Food.Builder().hunger(2).meat().saturation(0.6f).build())));
 
     // Others
+    public static final RegistryObject<Item> CHEESE = ITEMS.register("cheese",
+            () -> new Item(new Item.Properties().group(ItemGroup.FOOD)
+                    .food(new Food.Builder().hunger(2).saturation(0.6f).build())));
+
     public static final RegistryObject<Item> COOKED_CHICKEN_NUGGET = ITEMS.register("cooked_chicken_nugget",
             () -> new Item(new Item.Properties().group(ItemGroup.FOOD)
                     .food(new Food.Builder().hunger(1).saturation(0.6f).meat().build())));
 
-    public static final RegistryObject<Item> CHEESE = ITEMS.register("cheese",
+    public static final RegistryObject<Item> FRIES = ITEMS.register("fries",
             () -> new Item(new Item.Properties().group(ItemGroup.FOOD)
-                    .food(new Food.Builder().hunger(2).saturation(0.6f).build())));
+                    .food(new Food.Builder().hunger(8).saturation(0.9f).meat().build())));
 }
