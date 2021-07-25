@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "C"
+  ],
+  "key": {
+    "C": {
+      "item": "minecraft:cooked_chicken"
+    }
+  },
+  "result": {
+    "item": "burgermod:cooked_chicken_nugget",
+    "count": 6
+  }
+}
