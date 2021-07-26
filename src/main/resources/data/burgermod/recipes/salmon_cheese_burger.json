@@ -13,7 +13,7 @@
       "item": "minecraft:cooked_salmon"
     },
     "E": {
-      "item": "burgermod:cheese"
+      "tag": "forge:cheese"
     }
   },
   "result": {

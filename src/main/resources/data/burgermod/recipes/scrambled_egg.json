@@ -5,7 +5,7 @@
   ],
   "key": {
     "E": {
-      "item": "minecraft:egg"
+      "tag": "forge:eggs"
     }
   },
   "result": {
