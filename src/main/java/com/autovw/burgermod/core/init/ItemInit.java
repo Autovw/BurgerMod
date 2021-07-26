@@ -90,5 +90,5 @@ public class ItemInit {
 
     public static final RegistryObject<Item> FRIES = ITEMS.register("fries",
             () -> new Item(new Item.Properties().group(ItemGroup.FOOD)
-                    .food(new Food.Builder().hunger(8).saturation(0.9f).meat().build())));
+                    .food(new Food.Builder().hunger(8).saturation(0.9f).build())));
 }
