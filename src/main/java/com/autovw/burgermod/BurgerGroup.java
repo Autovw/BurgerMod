@@ -14,9 +14,8 @@ public class BurgerGroup extends CreativeModeTab {
         super(name);
     }
 
-    // m_7968_ = getDefaultState
     @Override
-    public ItemStack m_6976_() {
-        return ModItems.BEEF_BURGER.get().m_7968_();
+    public ItemStack makeIcon() {
+        return ModItems.BEEF_BURGER.get().getDefaultInstance();
     }
 }
