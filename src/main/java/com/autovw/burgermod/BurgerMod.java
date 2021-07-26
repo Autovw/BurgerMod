@@ -9,6 +9,9 @@ import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
+/**
+ * Author: Autovw
+ */
 @Mod(BurgerMod.MOD_ID)
 public class BurgerMod {
     public static final Logger LOGGER = LogManager.getLogger();
