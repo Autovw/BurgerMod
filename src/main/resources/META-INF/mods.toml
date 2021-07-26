@@ -3,20 +3,19 @@ loaderVersion="[31,)"
 license="GPLv3"
 issueTrackerURL="https://github.com/Autovw/BurgerMod/issues"
 
-[[mods]] #mandatory
+[[mods]]
 modId="burgermod"
 version="1.7.0"
 displayName="Burger Mod"
 updateJSONURL="https://raw.githubusercontent.com/Autovw/ModUpdates/master/burgermod/update.json"
-displayURL="https://github.com/Autovw/BurgerMod/wiki"
+displayURL="https://www.curseforge.com/minecraft/mc-mods/autovws-burger-mod"
 logoFile="burgermod.png"
 #credits=""
 authors="Autovw"
 description='''
 A mod that adds in burgers and other types of food that extend the vanilla game!
 
-Visit the Burger Mod Wiki on GitHub, where you can find everything you need to know about the Burger Mod!
-You are currently using the Legacy Edition of the Burger Mod, update to 2.0.0+ for support and new content.
+You are currently using the Legacy Edition of the Burger Mod, update to 2.0.0+ for support and new content. Click on the link above to update!
 '''
 
 [[dependencies.burgermod]]
