@@ -1,5 +1,5 @@
 modLoader="javafml"
-loaderVersion="[31,)"
+loaderVersion="[28,)"
 license="GPLv3"
 issueTrackerURL="https://github.com/Autovw/BurgerMod/issues"
 
@@ -21,13 +21,13 @@ You are currently using the Legacy Edition of the Burger Mod, update to 2.0.0+ f
 [[dependencies.burgermod]]
     modId="forge"
     mandatory=true
-    versionRange="[31,)"
+    versionRange="[28,)"
     ordering="NONE"
     side="BOTH"
 [[dependencies.burgermod]]
     modId="minecraft"
     mandatory=true
-    versionRange="[1.15.2,1.16]"
+    versionRange="[1.14.4,1.15]"
     ordering="NONE"
     side="BOTH"
 
