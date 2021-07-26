@@ -7,6 +7,9 @@ import net.minecraft.item.Item;
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+ * Author: Autovw
+ */
 public class ItemInit {
 
     public static final List<Item> ITEMS = new ArrayList<Item>();
@@ -36,6 +39,7 @@ public class ItemInit {
     public static final Item FRIED_SCRAMBLED_EGG = new ItemBase("fried_scrambled_egg", 2, 0.6f, true);
 
     // Others
-    public static final Item COOKED_CHICKEN_NUGGET = new ItemBase("cooked_chicken_nugget", 1, 0.6f, true);
     public static final Item CHEESE = new ItemBase("cheese", 2, 0.6f, false);
+    public static final Item COOKED_CHICKEN_NUGGET = new ItemBase("cooked_chicken_nugget", 1, 0.6f, true);
+    public static final Item FRIES = new ItemBase("fries", 8, 0.9f, false);
 }

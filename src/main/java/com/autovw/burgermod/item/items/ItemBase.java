@@ -6,10 +6,13 @@ import com.autovw.burgermod.util.IHasModel;
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.item.ItemFood;
 
+/**
+ * Author: Autovw
+ */
 public class ItemBase extends ItemFood implements IHasModel {
 
-    public ItemBase(String name, int amount, float saturation, boolean isWolfFood) {
-        super(amount, saturation, isWolfFood);
+    public ItemBase(String name, int hunger, float saturation, boolean isWolfFood) {
+        super(hunger, saturation, isWolfFood);
         setUnlocalizedName(name);
         setRegistryName(name);
         setCreativeTab(CreativeTabs.FOOD);

@@ -9,10 +9,13 @@ import net.minecraft.potion.Potion;
 import net.minecraft.potion.PotionEffect;
 import net.minecraftforge.fml.common.FMLLog;
 
+/**
+ * Author: Autovw
+ */
 public class ItemRaw extends ItemFood implements IHasModel {
 
-    public ItemRaw(String name, int amount, float saturation, boolean isWolfFood) {
-        super(amount, saturation, isWolfFood);
+    public ItemRaw(String name, int hunger, float saturation, boolean isWolfFood) {
+        super(hunger, saturation, isWolfFood);
         setUnlocalizedName(name);
         setRegistryName(name);
         setCreativeTab(CreativeTabs.FOOD);
