@@ -73,7 +73,7 @@ public class ItemInit {
     public static final RegistryObject<Item> SCRAMBLED_EGG = ITEMS.register("scrambled_egg",
             () -> new Item(new Item.Properties().group(ItemGroup.FOOD)
                     .food(new Food.Builder().hunger(1).saturation(0.1f).effect(() -> new EffectInstance
-                            (Effects.POISON, 160, 0), 1.0f).build())));
+                            (Effects.POISON, 200, 0), 1.0f).build())));
 
     public static final RegistryObject<Item> FRIED_SCRAMBLED_EGG = ITEMS.register("fried_scrambled_egg",
             () -> new Item(new Item.Properties().group(ItemGroup.FOOD)
