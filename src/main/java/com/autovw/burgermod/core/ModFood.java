@@ -40,6 +40,8 @@ public class ModFood {
 
     // Used for: FRIES
     public static final Food FRIES_FOOD = new Food.Builder().nutrition(8).saturationMod(0.9f).build();
+    // Used for: HOTDOG
+    public static final Food HOTDOG_FOOD = new Food.Builder().nutrition(6).saturationMod(0.7f).meat().build();
     // Used for: CHICKEN_NUGGET
     public static final Food NUGGET_FOOD = new Food.Builder().nutrition(1).saturationMod(0.6f).meat().build();
 

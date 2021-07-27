@@ -98,4 +98,6 @@ public class ModItems {
             () -> new Item(new Item.Properties().tab(BurgerMod.TAB_BURGERMOD).food(ModFood.NUGGET_FOOD)));
     public static final RegistryObject<Item> FRIES = ITEMS.register("fries",
             () -> new Item(new Item.Properties().tab(BurgerMod.TAB_BURGERMOD).food(ModFood.FRIES_FOOD)));
+    public static final RegistryObject<Item> HOTDOG = ITEMS.register("hotdog",
+            () -> new Item(new Item.Properties().tab(BurgerMod.TAB_BURGERMOD).food(ModFood.HOTDOG_FOOD)));
 }
