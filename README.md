@@ -2,6 +2,8 @@
 # Burger Mod
 A mod that adds in burgers and other types of food that extend the vanilla game!
 
+Feel free to join my new [Discord Server](https://discord.com/invite/KP3BBatuw5) for update notifications, mod support and more!
+
 ![Break](https://i.postimg.cc/J0dGdpgm/break.png)
 ### ✅ Features
 * 4 types of meat burgers.
@@ -20,7 +22,6 @@ Check the [Burger Mod Wiki](https://github.com/Autovw/BurgerMod/wiki/Crafting-Re
 * Please report issues on the [official Burger Mod GitHub repository](https://github.com/Autovw/BurgerMod/issues)!
 * The Burger Mod is Forge only, and I'm not planning on bringing it to Fabric.
 * Visit the [Burger Mod Wiki](https://github.com/Autovw/BurgerMod/wiki) for more information on everything this mod adds.
-* Join my new [Discord Server](https://discord.com/invite/KP3BBatuw5) for update notifications, mod support and more!
 
 ![Break](https://i.postimg.cc/J0dGdpgm/break.png)
 #### ⚠️ Disclaimer
