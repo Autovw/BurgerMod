@@ -71,11 +71,9 @@ repositories {
 }
 
 dependencies {
-    minecraft 'net.minecraftforge:forge:1.17.1-37.0.12'
-
-    // This is broken right now, waiting for some PR that fixes it to get merged.
-    //runtimeOnly fg.deobf('curse.maven:catalogue-459701:3399552')
-    //runtimeOnly fg.deobf('curse.maven:configured-457570:3340535')
+    minecraft 'net.minecraftforge:forge:1.17.1-37.0.13'
+    runtimeOnly fg.deobf('curse.maven:catalogue-459701:3399552')
+    runtimeOnly fg.deobf('curse.maven:configured-457570:3397732')
 }
 
 jar {
