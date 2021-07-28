@@ -15,7 +15,7 @@ Feel free to join my new [Discord Server](https://discord.com/invite/KP3BBatuw5)
 
 ![Break](https://i.postimg.cc/J0dGdpgm/break.png)
 ### 🔨 Crafting Recipes
-Check the [Burger Mod Wiki](https://github.com/Autovw/BurgerMod/wiki/Crafting-Recipes) for all the crafting recipes!
+Check the [Burger Mod Wiki](https://github.com/Autovw/BurgerMod/wiki/Crafting-Recipes) for all the crafting recipes or install [JEI](https://www.curseforge.com/minecraft/mc-mods/jei)!
 
 ![Break](https://i.postimg.cc/J0dGdpgm/break.png)
 ### ℹ More Information
