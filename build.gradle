@@ -73,13 +73,13 @@ repositories {
 dependencies {
     minecraft 'net.minecraftforge:forge:1.17.1-37.0.13'
     runtimeOnly fg.deobf('curse.maven:catalogue-459701:3399552')
-    runtimeOnly fg.deobf('curse.maven:configured-457570:3397732')
+    runtimeOnly fg.deobf('curse.maven:configured-457570:3425826')
 }
 
 jar {
     manifest {
         attributes([
-            "Specification-Title": "burgermod",
+            "Specification-Title": "Burger Mod",
             "Specification-Vendor": "Autovw",
             "Specification-Version": "1", // We are version 1 of ourselves
             "Implementation-Title": project.name,
