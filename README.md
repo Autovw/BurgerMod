@@ -20,6 +20,7 @@ Check the [Burger Mod Wiki](https://github.com/Autovw/BurgerMod/wiki/Crafting-Re
 ![Break](https://i.postimg.cc/J0dGdpgm/break.png)
 ### ℹ More Information
 * Please report issues on the [official Burger Mod GitHub repository](https://github.com/Autovw/BurgerMod/issues)!
+* May I feature your mod in my modpack? Yes, absolutely!
 * The Burger Mod is Forge only, and I'm not planning on bringing it to Fabric.
 * Visit the [Burger Mod Wiki](https://github.com/Autovw/BurgerMod/wiki) for more information on everything this mod adds.
 
