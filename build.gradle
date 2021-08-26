@@ -65,7 +65,7 @@ minecraft {
 sourceSets.main.resources { srcDir 'src/generated/resources' }
 
 dependencies {
-    minecraft 'net.minecraftforge:forge:1.15.2-31.2.54'
+    minecraft 'net.minecraftforge:forge:1.15.2-31.2.55'
 }
 
 jar {
