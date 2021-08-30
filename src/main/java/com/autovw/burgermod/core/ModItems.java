@@ -2,6 +2,7 @@ package com.autovw.burgermod.core;
 
 import com.autovw.burgermod.BurgerMod;
 import net.minecraft.item.Item;
+import net.minecraft.item.Rarity;
 import net.minecraftforge.fml.RegistryObject;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
@@ -67,17 +68,17 @@ public class ModItems {
 
     // Golden Burgers
     public static final RegistryObject<Item> GOLDEN_BEEF_BURGER = ITEMS.register("golden_beef_burger",
-            () -> new Item(new Item.Properties().tab(BurgerMod.TAB_BURGERMOD).food(ModFood.GOLDEN_BURGER_TIER_1)));
+            () -> new Item(new Item.Properties().tab(BurgerMod.TAB_BURGERMOD).food(ModFood.GOLDEN_BURGER_TIER_1).rarity(Rarity.RARE)));
     public static final RegistryObject<Item> GOLDEN_PORK_BURGER = ITEMS.register("golden_pork_burger",
-            () -> new Item(new Item.Properties().tab(BurgerMod.TAB_BURGERMOD).food(ModFood.GOLDEN_BURGER_TIER_1)));
+            () -> new Item(new Item.Properties().tab(BurgerMod.TAB_BURGERMOD).food(ModFood.GOLDEN_BURGER_TIER_1).rarity(Rarity.RARE)));
     public static final RegistryObject<Item> GOLDEN_MUTTON_BURGER = ITEMS.register("golden_mutton_burger",
-            () -> new Item(new Item.Properties().tab(BurgerMod.TAB_BURGERMOD).food(ModFood.GOLDEN_BURGER_TIER_2)));
+            () -> new Item(new Item.Properties().tab(BurgerMod.TAB_BURGERMOD).food(ModFood.GOLDEN_BURGER_TIER_2).rarity(Rarity.RARE)));
     public static final RegistryObject<Item> GOLDEN_CHICKEN_BURGER = ITEMS.register("golden_chicken_burger",
-            () -> new Item(new Item.Properties().tab(BurgerMod.TAB_BURGERMOD).food(ModFood.GOLDEN_BURGER_TIER_3)));
+            () -> new Item(new Item.Properties().tab(BurgerMod.TAB_BURGERMOD).food(ModFood.GOLDEN_BURGER_TIER_3).rarity(Rarity.RARE)));
     public static final RegistryObject<Item> GOLDEN_SALMON_BURGER = ITEMS.register("golden_salmon_burger",
-            () -> new Item(new Item.Properties().tab(BurgerMod.TAB_BURGERMOD).food(ModFood.GOLDEN_BURGER_TIER_2)));
+            () -> new Item(new Item.Properties().tab(BurgerMod.TAB_BURGERMOD).food(ModFood.GOLDEN_BURGER_TIER_2).rarity(Rarity.RARE)));
     public static final RegistryObject<Item> GOLDEN_COD_BURGER = ITEMS.register("golden_cod_burger",
-            () -> new Item(new Item.Properties().tab(BurgerMod.TAB_BURGERMOD).food(ModFood.GOLDEN_BURGER_TIER_4)));
+            () -> new Item(new Item.Properties().tab(BurgerMod.TAB_BURGERMOD).food(ModFood.GOLDEN_BURGER_TIER_4).rarity(Rarity.RARE)));
 
     // Eggs
     public static final RegistryObject<Item> SCRAMBLED_EGG = ITEMS.register("scrambled_egg",
