@@ -30,6 +30,7 @@ public class ModEffects {
     public static final EffectInstance GOLDEN_BURGER_ABSORPTION = new EffectInstance(Effects.ABSORPTION,
             Config.EffectsConfig.goldenBurgerAbsorptionDuration.get(), Config.EffectsConfig.goldenBurgerAbsorptionAmplifier.get());
 
+    /* Delayed until the next major update!
     // ENCHANTED GOLDEN BURGERS
     // Stores the regeneration effects used by Enchanted Golden Burgers. The duration and amplifier are stored in the Config.
     public static final EffectInstance ENCHANTED_GOLDEN_BURGER_REGENERATION = new EffectInstance(Effects.REGENERATION,
@@ -46,4 +47,5 @@ public class ModEffects {
     // Stores the absorption effects used by Enchanted Golden Burgers. The duration and amplifier are stored in the Config.
     public static final EffectInstance ENCHANTED_GOLDEN_BURGER_ABSORPTION = new EffectInstance(Effects.ABSORPTION,
             Config.EffectsConfig.enchantedGoldenBurgerAbsorptionDuration.get(), Config.EffectsConfig.enchantedGoldenBurgerAbsorptionAmplifier.get());
+     */
 }

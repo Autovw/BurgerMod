@@ -62,6 +62,7 @@ public class ModFood {
             (ModEffects.GOLDEN_BURGER_REGENERATION), 1.0f).effect(() -> new EffectInstance
             (ModEffects.GOLDEN_BURGER_ABSORPTION), 1.0f).alwaysEat().build();
 
+    /* Delayed until the next major update!
     // USED for: GOLDEN_BEEF, GOLDEN_PORK
     public static final Food ENCHANTED_GOLDEN_BURGER_TIER_1 = new Food.Builder().nutrition(10).saturationMod(1.4f).effect(() -> new EffectInstance
             (ModEffects.ENCHANTED_GOLDEN_BURGER_REGENERATION), 1.0f).effect(() -> new EffectInstance
@@ -89,4 +90,5 @@ public class ModFood {
             (ModEffects.ENCHANTED_GOLDEN_BURGER_DAMAGE_RESISTANCE), 1.0f).effect(() -> new EffectInstance
             (ModEffects.ENCHANTED_GOLDEN_BURGER_FIRE_RESISTANCE), 1.0f).effect(() -> new EffectInstance
             (ModEffects.ENCHANTED_GOLDEN_BURGER_ABSORPTION), 1.0f).alwaysEat().build();
+     */
 }

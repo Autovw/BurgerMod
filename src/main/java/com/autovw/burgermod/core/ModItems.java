@@ -1,7 +1,6 @@
 package com.autovw.burgermod.core;
 
 import com.autovw.burgermod.BurgerMod;
-import com.autovw.burgermod.content.EnchantedBurgerItem;
 import net.minecraft.item.Item;
 import net.minecraft.item.Rarity;
 import net.minecraftforge.fml.RegistryObject;
@@ -80,20 +79,6 @@ public class ModItems {
             () -> new Item(new Item.Properties().tab(BurgerMod.TAB_BURGERMOD).food(ModFood.GOLDEN_BURGER_TIER_2).rarity(Rarity.RARE)));
     public static final RegistryObject<Item> GOLDEN_COD_BURGER = ITEMS.register("golden_cod_burger",
             () -> new Item(new Item.Properties().tab(BurgerMod.TAB_BURGERMOD).food(ModFood.GOLDEN_BURGER_TIER_4).rarity(Rarity.RARE)));
-
-    // Enchanted Golden Burgers
-    public static final RegistryObject<Item> ENCHANTED_GOLDEN_BEEF_BURGER = ITEMS.register("enchanted_golden_beef_burger",
-            () -> new EnchantedBurgerItem(new Item.Properties().tab(BurgerMod.TAB_BURGERMOD).food(ModFood.ENCHANTED_GOLDEN_BURGER_TIER_1).rarity(Rarity.EPIC)));
-    public static final RegistryObject<Item> ENCHANTED_GOLDEN_PORK_BURGER = ITEMS.register("enchanted_golden_pork_burger",
-            () -> new EnchantedBurgerItem(new Item.Properties().tab(BurgerMod.TAB_BURGERMOD).food(ModFood.ENCHANTED_GOLDEN_BURGER_TIER_1).rarity(Rarity.EPIC)));
-    public static final RegistryObject<Item> ENCHANTED_GOLDEN_MUTTON_BURGER = ITEMS.register("enchanted_golden_mutton_burger",
-            () -> new EnchantedBurgerItem(new Item.Properties().tab(BurgerMod.TAB_BURGERMOD).food(ModFood.ENCHANTED_GOLDEN_BURGER_TIER_2).rarity(Rarity.EPIC)));
-    public static final RegistryObject<Item> ENCHANTED_GOLDEN_CHICKEN_BURGER = ITEMS.register("enchanted_golden_chicken_burger",
-            () -> new EnchantedBurgerItem(new Item.Properties().tab(BurgerMod.TAB_BURGERMOD).food(ModFood.ENCHANTED_GOLDEN_BURGER_TIER_3).rarity(Rarity.EPIC)));
-    public static final RegistryObject<Item> ENCHANTED_GOLDEN_SALMON_BURGER = ITEMS.register("enchanted_golden_salmon_burger",
-            () -> new EnchantedBurgerItem(new Item.Properties().tab(BurgerMod.TAB_BURGERMOD).food(ModFood.ENCHANTED_GOLDEN_BURGER_TIER_2).rarity(Rarity.EPIC)));
-    public static final RegistryObject<Item> ENCHANTED_GOLDEN_COD_BURGER = ITEMS.register("enchanted_golden_cod_burger",
-            () -> new EnchantedBurgerItem(new Item.Properties().tab(BurgerMod.TAB_BURGERMOD).food(ModFood.ENCHANTED_GOLDEN_BURGER_TIER_4).rarity(Rarity.EPIC)));
 
     // Eggs
     public static final RegistryObject<Item> SCRAMBLED_EGG = ITEMS.register("scrambled_egg",

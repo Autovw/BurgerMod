@@ -43,6 +43,7 @@ public class Config {
         public static ForgeConfigSpec.ConfigValue<Integer> goldenBurgerRegenAmplifier;
         public static ForgeConfigSpec.ConfigValue<Integer> goldenBurgerAbsorptionDuration;
         public static ForgeConfigSpec.ConfigValue<Integer> goldenBurgerAbsorptionAmplifier;
+        /* Delayed until the next major update!
         public static ForgeConfigSpec.ConfigValue<Integer> enchantedGoldenBurgerRegenDuration;
         public static ForgeConfigSpec.ConfigValue<Integer> enchantedGoldenBurgerRegenAmplifier;
         public static ForgeConfigSpec.ConfigValue<Integer> enchantedGoldenBurgerDamageResistDuration;
@@ -51,6 +52,7 @@ public class Config {
         public static ForgeConfigSpec.ConfigValue<Integer> enchantedGoldenBurgerFireResistAmplifier;
         public static ForgeConfigSpec.ConfigValue<Integer> enchantedGoldenBurgerAbsorptionDuration;
         public static ForgeConfigSpec.ConfigValue<Integer> enchantedGoldenBurgerAbsorptionAmplifier;
+         */
 
         public EffectsConfig(ForgeConfigSpec.Builder builder) {
             builder.comment("Properties related to Burger Mod effects").push("effects_config");
@@ -69,6 +71,7 @@ public class Config {
                 }
                 builder.pop();
 
+                /* Delayed until the next major update!
                 builder.comment("Properties related to Enchanted Golden Burger effects").push("enchanted_golden_burger_effects");
                 {
                     enchantedGoldenBurgerRegenDuration = builder.comment("Adjust the regeneration effect duration in ticks here. 20 ticks = 1 second, 200 ticks = 10 seconds etc.").define("enchantedGoldenBurgerRegenDuration", 400);
@@ -81,6 +84,7 @@ public class Config {
                     enchantedGoldenBurgerAbsorptionAmplifier = builder.comment("Adjust the absorption effect level here. 0 = level 1, 1 = level 2 etc.").define("enchantedGoldenBurgerAbsorptionAmplifier", 3);
                 }
                 builder.pop();
+                 */
             }
             builder.pop();
         }
