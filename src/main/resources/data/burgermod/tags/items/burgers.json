@@ -1,23 +1,8 @@
 {
   "replace": false,
   "values": [
-    "burgermod:beef_burger",
-    "burgermod:pork_burger",
-    "burgermod:mutton_burger",
-    "burgermod:chicken_burger",
-    "burgermod:salmon_burger",
-    "burgermod:cod_burger",
-    "burgermod:beef_cheese_burger",
-    "burgermod:pork_cheese_burger",
-    "burgermod:mutton_cheese_burger",
-    "burgermod:chicken_cheese_burger",
-    "burgermod:salmon_cheese_burger",
-    "burgermod:cod_cheese_burger",
-    "burgermod:beef_champignon_burger",
-    "burgermod:pork_champignon_burger",
-    "burgermod:mutton_champignon_burger",
-    "burgermod:chicken_champignon_burger",
-    "burgermod:salmon_champignon_burger",
-    "burgermod:cod_champignon_burger"
+    "#burgermod:champignon_burgers",
+    "#burgermod:cheese_burger",
+    "#burgermod:egg_burger"
   ]
 }
