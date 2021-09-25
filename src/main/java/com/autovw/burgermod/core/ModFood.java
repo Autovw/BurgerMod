@@ -40,6 +40,8 @@ public class ModFood {
 
     // Used for: FRIES
     public static final FoodProperties FRIES_FOOD = new FoodProperties.Builder().nutrition(8).saturationMod(0.9f).build();
+    // Used for: SWEET_BERRY_TART
+    public static final FoodProperties BERRY_TART_FOOD = new FoodProperties.Builder().nutrition(7).saturationMod(0.5f).build();
     // Used for: HOTDOG
     public static final FoodProperties HOTDOG_FOOD = new FoodProperties.Builder().nutrition(6).saturationMod(0.7f).meat().build();
     // Used for: CHICKEN_NUGGET
