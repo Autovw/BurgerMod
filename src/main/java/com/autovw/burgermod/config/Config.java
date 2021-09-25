@@ -30,7 +30,7 @@ public class Config {
     }
     // Stuff above this line is needed to register the common config.
 
-    /*
+    /**
      * This is the EffectsConfig.
      * In this config are some effects properties stored which are utilized in the ModEffects class.
      */
@@ -45,32 +45,21 @@ public class Config {
         public static ForgeConfigSpec.ConfigValue<Integer> goldenBurgerAbsorptionAmplifier;
 
         public EffectsConfig(ForgeConfigSpec.Builder builder) {
-            builder.comment("Effects Config").push("effects_config");
+            builder.comment("Properties related to Burger Mod effects").push("effects_config");
             {
-                rawEggEffectDuration = builder
-                        .comment("Adjust the effect duration in ticks here. 20 ticks = 1 second, 200 ticks = 10 seconds etc.")
-                        .define("rawEggEffectDuration", 200);
-                rawEggEffectAmplifier = builder
-                        .comment("Adjust the effect level here. 0 = level 1, 1 = level 2 etc.")
-                        .define("rawEggEffectAmplifier", 0);
-                rawChampignonEffectDuration = builder
-                        .comment("Adjust the effect duration in ticks here. 20 ticks = 1 second, 200 ticks = 10 seconds etc.")
-                        .define("rawChampignonEffectDuration", 600);
-                rawChampignonEffectAmplifier = builder
-                        .comment("Adjust the effect level here. 0 = level 1, 1 = level 2 etc.")
-                        .define("rawChampignonEffectAmplifier", 1);
-                goldenBurgerRegenDuration = builder
-                        .comment("Adjust the regeneration effect duration in ticks here. 20 ticks = 1 second, 200 ticks = 10 seconds etc.")
-                        .define("goldenBurgerRegenDuration", 100);
-                goldenBurgerRegenAmplifier = builder
-                        .comment("Adjust the regeneration effect level here. 0 = level 1, 1 = level 2 etc.")
-                        .define("goldenBurgerRegenAmplifier", 1);
-                goldenBurgerAbsorptionDuration = builder
-                        .comment("Adjust the absorption effect duration in ticks here. 20 ticks = 1 second, 200 ticks = 10 seconds etc.")
-                        .define("goldenBurgerAbsorptionDuration", 1200);
-                goldenBurgerAbsorptionAmplifier = builder
-                        .comment("Adjust the absorption effect level here. 0 = level 1, 1 = level 2 etc.")
-                        .define("goldenBurgerAbsorptionAmplifier", 0);
+                rawEggEffectDuration = builder.comment("Adjust the effect duration in ticks here. 20 ticks = 1 second, 200 ticks = 10 seconds etc.").define("rawEggEffectDuration", 200);
+                rawEggEffectAmplifier = builder.comment("Adjust the effect level here. 0 = level 1, 1 = level 2 etc.").define("rawEggEffectAmplifier", 0);
+                rawChampignonEffectDuration = builder.comment("Adjust the effect duration in ticks here. 20 ticks = 1 second, 200 ticks = 10 seconds etc.").define("rawChampignonEffectDuration", 600);
+                rawChampignonEffectAmplifier = builder.comment("Adjust the effect level here. 0 = level 1, 1 = level 2 etc.").define("rawChampignonEffectAmplifier", 1);
+
+                builder.comment("Properties related to Golden Burger effects").push("golden_burger_effects");
+                {
+                    goldenBurgerRegenDuration = builder.comment("Adjust the regeneration effect duration in ticks here. 20 ticks = 1 second, 200 ticks = 10 seconds etc.").define("goldenBurgerRegenDuration", 100);
+                    goldenBurgerRegenAmplifier = builder.comment("Adjust the regeneration effect level here. 0 = level 1, 1 = level 2 etc.").define("goldenBurgerRegenAmplifier", 1);
+                    goldenBurgerAbsorptionDuration = builder.comment("Adjust the absorption effect duration in ticks here. 20 ticks = 1 second, 200 ticks = 10 seconds etc.").define("goldenBurgerAbsorptionDuration", 1200);
+                    goldenBurgerAbsorptionAmplifier = builder.comment("Adjust the absorption effect level here. 0 = level 1, 1 = level 2 etc.").define("goldenBurgerAbsorptionAmplifier", 0);
+                }
+                builder.pop();
             }
             builder.pop();
         }
