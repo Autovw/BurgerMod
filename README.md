@@ -2,7 +2,7 @@
 # Burger Mod
 A mod that adds in burgers and other types of food that extend the vanilla game!
 
-Feel free to join my new [Discord Server](https://discord.com/invite/KP3BBatuw5) for update notifications, mod support and more!
+Images can be found on the [images tab on CurseForge](https://www.curseforge.com/minecraft/mc-mods/autovws-burger-mod/screenshots)!
 
 ![Break](https://i.postimg.cc/J0dGdpgm/break.png)
 ### ✅ Features
@@ -11,7 +11,7 @@ Feel free to join my new [Discord Server](https://discord.com/invite/KP3BBatuw5)
 * All burgers are available in 3 variants: Egg, Cheese and Champignon!
 * Golden Burgers, similar to Golden Apples. 
 * Other types of food such as: fries, scrambled eggs, cheese, chicken nuggets and more!
-* Support for Datapacks. (1.14+)
+* Support for datapacks. (1.14+)
 
 ![Break](https://i.postimg.cc/J0dGdpgm/break.png)
 ### 🔨 Crafting Recipes
@@ -19,10 +19,14 @@ Check the [Burger Mod Wiki](https://github.com/Autovw/BurgerMod/wiki/Crafting-Re
 
 ![Break](https://i.postimg.cc/J0dGdpgm/break.png)
 ### ℹ More Information
-* Please report issues on the [official Burger Mod GitHub repository](https://github.com/Autovw/BurgerMod/issues)!
+* Please report issues to the [issue tracker on GitHub](https://github.com/Autovw/BurgerMod/issues)!
 * May I feature your mod in my modpack? Yes, absolutely!
 * The Burger Mod is Forge only, and I'm not planning on bringing it to Fabric.
 * Visit the [Burger Mod Wiki](https://github.com/Autovw/BurgerMod/wiki) for more information on everything this mod adds.
+
+![Break](https://i.postimg.cc/J0dGdpgm/break.png)
+### ⌨️Feel free to [join](https://discord.gg/KP3BBatuw5) my Discord server!
+*Join my Discord server if you want to get notified when there's a new update, mod support and more!*
 
 ![Break](https://i.postimg.cc/J0dGdpgm/break.png)
 #### ⚠️ Disclaimer
