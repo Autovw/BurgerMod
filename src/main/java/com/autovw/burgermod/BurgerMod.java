@@ -20,7 +20,7 @@ import org.apache.logging.log4j.Logger;
 public class BurgerMod {
     public static final Logger LOGGER = LogManager.getLogger();
     public static final String MOD_ID = "burgermod";
-    public static final CreativeModeTab TAB_BURGERMOD = new BurgerGroup(MOD_ID + ".tab");
+    public static final CreativeModeTab TAB_BURGERMOD = new BurgerCreativeTab(MOD_ID + ".tab");
 
     public BurgerMod() {
         // Used to register the common config.
