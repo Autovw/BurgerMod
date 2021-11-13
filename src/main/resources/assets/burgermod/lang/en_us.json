@@ -39,5 +39,10 @@
   "item.burgermod.hotdog": "Hotdog",
   "item.burgermod.sweet_berry_tart": "Sweet Berry Tart",
 
-  "itemGroup.burgermod.tab": "Burger Mod"
+  "itemGroup.burgermod.tab": "Burger Mod",
+
+  "advancements.burgermod.husbandry.craft_burger.title": "Tasty Burgers!",
+  "advancements.burgermod.husbandry.craft_burger.description": "Obtain a Burger",
+  "advancements.burgermod.husbandry.craft_golden_burger.title": "Better Burgers",
+  "advancements.burgermod.husbandry.craft_golden_burger.description": "Obtain a Golden Burger"
 }

@@ -39,5 +39,10 @@
   "item.burgermod.hotdog": "Hotdog",
   "item.burgermod.sweet_berry_tart": "Zoete Bessentaart",
 
-  "itemGroup.burgermod.tab": "Burger Mod"
+  "itemGroup.burgermod.tab": "Burger Mod",
+
+  "advancements.burgermod.husbandry.craft_burger.title": "Smaakvolle Burgers!",
+  "advancements.burgermod.husbandry.craft_burger.description": "Verkrijg een Burger",
+  "advancements.burgermod.husbandry.craft_golden_burger.title": "Betere Burgers",
+  "advancements.burgermod.husbandry.craft_golden_burger.description": "Verkrijg een Gouden burger"
 }
