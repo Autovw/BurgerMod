@@ -1,0 +1,39 @@
+{
+  "parent": "burgermod:husbandry/craft_burger",
+  "display": {
+    "icon": {
+      "item": "burgermod:golden_beef_burger",
+      "nbt": "{Damage:0}"
+    },
+    "title": {
+      "translate": "advancements.burgermod.husbandry.craft_golden_burger.title"
+    },
+    "description": {
+      "translate": "advancements.burgermod.husbandry.craft_golden_burger.description"
+    },
+    "frame": "challenge",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "rewards": {
+    "experience": 100
+  },
+  "criteria": {
+    "golden_burgers": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "tag": "burgermod:golden_burgers"
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "golden_burgers"
+    ]
+  ]
+}
