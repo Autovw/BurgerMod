@@ -2,7 +2,7 @@
   "replace": false,
   "values": [
     "#burgermod:champignon_burgers",
-    "#burgermod:cheese_burger",
-    "#burgermod:egg_burger"
+    "#burgermod:cheese_burgers",
+    "#burgermod:egg_burgers"
   ]
 }
