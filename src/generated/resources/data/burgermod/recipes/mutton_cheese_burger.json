@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " B",
+    "*#",
+    " B"
+  ],
+  "key": {
+    "B": {
+      "tag": "forge:bread"
+    },
+    "#": {
+      "item": "minecraft:cooked_mutton"
+    },
+    "*": {
+      "tag": "forge:cheese"
+    }
+  },
+  "result": {
+    "item": "burgermod:mutton_cheese_burger",
+    "count": 2
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:smoking",
+  "ingredient": {
+    "item": "burgermod:scrambled_egg"
+  },
+  "result": "burgermod:fried_scrambled_egg",
+  "experience": 0.25,
+  "cookingtime": 100
+}

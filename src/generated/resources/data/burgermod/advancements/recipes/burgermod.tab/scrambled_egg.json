@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "rewards": {
+    "recipes": [
+      "burgermod:scrambled_egg"
+    ]
+  },
+  "criteria": {
+    "has_eggs": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "tag": "forge:eggs"
+          }
+        ]
+      }
+    },
+    "has_the_recipe": {
+      "trigger": "minecraft:recipe_unlocked",
+      "conditions": {
+        "recipe": "burgermod:scrambled_egg"
+      }
+    }
+  },
+  "requirements": [
+    [
+      "has_eggs",
+      "has_the_recipe"
+    ]
+  ]
+}
