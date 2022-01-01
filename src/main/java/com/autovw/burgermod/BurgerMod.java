@@ -27,7 +27,7 @@ public class BurgerMod {
         ModLoadingContext.get().registerConfig(ModConfig.Type.COMMON, Config.commonConfig);
 
         IEventBus bus = FMLJavaModLoadingContext.get().getModEventBus();
-        bus.addListener(this::setup);
+        bus.addListener(this::commonSetup);
 
         // Used to register the ModItems class and everything inside of it.
         ModItems.ITEMS.register(bus);
@@ -36,5 +36,5 @@ public class BurgerMod {
         MinecraftForge.EVENT_BUS.register(this);
     }
 
-    private void setup(final FMLCommonSetupEvent event) { }
+    private void commonSetup(final FMLCommonSetupEvent event) {}
 }
