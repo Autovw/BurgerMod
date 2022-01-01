@@ -1,6 +1,7 @@
 package com.autovw.burgermod;
 
 import com.autovw.burgermod.core.ModItems;
+import net.minecraft.core.NonNullList;
 import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.ItemStack;
 
@@ -17,5 +18,10 @@ public class BurgerCreativeTab extends CreativeModeTab {
     @Override
     public ItemStack makeIcon() {
         return ModItems.BEEF_BURGER.get().getDefaultInstance();
+    }
+
+    @Override
+    public void fillItemList(NonNullList<ItemStack> items) {
+        super.fillItemList(items);
     }
 }
