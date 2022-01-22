@@ -1,12 +1,13 @@
 package com.autovw.burgermod.proxy;
 
-import net.minecraft.client.renderer.block.model.ModelResourceLocation;
+import cpw.mods.fml.common.event.FMLInitializationEvent;
+import cpw.mods.fml.common.event.FMLPostInitializationEvent;
+import cpw.mods.fml.common.event.FMLPreInitializationEvent;
 import net.minecraft.item.Item;
-import net.minecraftforge.client.model.ModelLoader;
-import net.minecraftforge.fml.common.event.FMLInitializationEvent;
-import net.minecraftforge.fml.common.event.FMLPostInitializationEvent;
-import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
 
+/**
+ * Author: Autovw
+ */
 public class ClientProxy implements IProxy {
 
     public void preInit(FMLPreInitializationEvent event) {
@@ -21,8 +22,7 @@ public class ClientProxy implements IProxy {
 
     }
 
-    @Override
     public void registerModel(Item item, int metadata) {
-        ModelLoader.setCustomModelResourceLocation(item, metadata, new ModelResourceLocation(item.getRegistryName(), "inventory"));
+
     }
 }
