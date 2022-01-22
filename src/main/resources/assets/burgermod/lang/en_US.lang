@@ -1,0 +1,19 @@
+item.beef_burger.name=Beef Burger
+item.pork_burger.name=Pork Burger
+item.mutton_burger.name=Mutton Burger
+item.chicken_burger.name=Chicken Burger
+item.salmon_burger.name=Salmon Burger
+item.cod_burger.name=Cod Burger
+
+item.beef_cheese_burger.name=Beef Burger with Cheese
+item.pork_cheese_burger.name=Pork Burger with Cheese
+item.mutton_cheese_burger.name=Mutton Burger with Cheese
+item.chicken_cheese_burger.name=Chicken Burger with Cheese
+item.salmon_cheese_burger.name=Salmon Burger with Cheese
+item.cod_cheese_burger.name=Cod Burger with Cheese
+
+item.scrambled_egg.name=Raw Scrambled Egg
+item.fried_scrambled_egg.name=Fried Scrambled Egg
+item.cooked_chicken_nugget.name=Cooked Chicken Nugget
+item.cheese.name=Cheese
+item.fries.name=Fries
