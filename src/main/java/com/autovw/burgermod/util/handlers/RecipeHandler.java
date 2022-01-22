@@ -1,10 +1,10 @@
 package com.autovw.burgermod.util.handlers;
 
 import com.autovw.burgermod.core.init.ItemInit;
-import cpw.mods.fml.common.registry.GameRegistry;
 import net.minecraft.init.Items;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
+import net.minecraftforge.fml.common.registry.GameRegistry;
 
 /**
  * Author: Autovw
@@ -15,12 +15,14 @@ public class RecipeHandler {
         /* Crafting recipes */
         addBurgerRecipe(ItemInit.BEEF_BURGER, new ItemStack(Items.cooked_beef), ItemInit.FRIED_SCRAMBLED_EGG);
         addBurgerRecipe(ItemInit.PORK_BURGER, new ItemStack(Items.cooked_porkchop), ItemInit.FRIED_SCRAMBLED_EGG);
+        addBurgerRecipe(ItemInit.MUTTON_BURGER, new ItemStack(Items.cooked_mutton), ItemInit.FRIED_SCRAMBLED_EGG);
         addBurgerRecipe(ItemInit.CHICKEN_BURGER, new ItemStack(Items.cooked_chicken), ItemInit.FRIED_SCRAMBLED_EGG);
         addBurgerRecipe(ItemInit.SALMON_BURGER, new ItemStack(Items.cooked_fish, 1, 1), ItemInit.FRIED_SCRAMBLED_EGG);
         addBurgerRecipe(ItemInit.COD_BURGER, new ItemStack(Items.cooked_fish), ItemInit.FRIED_SCRAMBLED_EGG);
 
         addBurgerRecipe(ItemInit.BEEF_CHEESE_BURGER, new ItemStack(Items.cooked_beef), ItemInit.CHEESE);
         addBurgerRecipe(ItemInit.PORK_CHEESE_BURGER, new ItemStack(Items.cooked_porkchop), ItemInit.CHEESE);
+        addBurgerRecipe(ItemInit.MUTTON_CHEESE_BURGER, new ItemStack(Items.cooked_mutton), ItemInit.CHEESE);
         addBurgerRecipe(ItemInit.CHICKEN_CHEESE_BURGER, new ItemStack(Items.cooked_chicken), ItemInit.CHEESE);
         addBurgerRecipe(ItemInit.SALMON_CHEESE_BURGER, new ItemStack(Items.cooked_fish, 1, 1), ItemInit.CHEESE);
         addBurgerRecipe(ItemInit.COD_CHEESE_BURGER, new ItemStack(Items.cooked_fish), ItemInit.CHEESE);

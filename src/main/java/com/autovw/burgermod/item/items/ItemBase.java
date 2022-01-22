@@ -14,7 +14,7 @@ public class ItemBase extends ItemFood {
     public ItemBase(String name, int hunger, float saturation, boolean isWolfFood) {
         super(hunger, saturation, isWolfFood);
         setUnlocalizedName(name);
-        setTextureName(BurgerMod.MODID + ":" + name);
+        setRegistryName(BurgerMod.MODID + ":" + name);
         setCreativeTab(CreativeTabs.tabFood);
 
         ItemInit.ITEMS.add(this);

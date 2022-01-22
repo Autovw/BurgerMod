@@ -5,17 +5,13 @@ buildscript {
             name = "forge"
             url = "https://files.minecraftforge.net/maven"
         }
-        maven {
-            name = "sonatype"
-            url = "https://oss.sonatype.org/content/repositories/snapshots/"
-        }
     }
     dependencies {
-        classpath 'net.minecraftforge.gradle:ForgeGradle:1.2-SNAPSHOT'
+        classpath 'net.minecraftforge.gradle:ForgeGradle:2.1-SNAPSHOT'
     }
 }
 
-apply plugin: 'forge'
+apply plugin: 'net.minecraftforge.gradle.forge'
 
 version = project.mod_version + '-' + project.mc_version
 group = 'com.autovw.burgermod'
@@ -24,9 +20,9 @@ archivesBaseName = 'burgermod'
 //sourceCompatibility = targetCompatibility = compileJava.sourceCompatibility = compileJava.targetCompatibility = '1.8'
 
 minecraft {
-    version = "1.7.10-10.13.4.1614-1.7.10"
+    version = "1.8.9-11.15.1.2318-1.8.9"
     runDir = "eclipse"
-    mappings = "snapshot_20140925"
+    mappings = "stable_20"
 
     // Replaces the version number in the main class whenever the version gets updated
     replace "@MODVERSION@", project.mod_version
