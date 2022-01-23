@@ -11,7 +11,7 @@ public class RegistryHandler {
 
     public static void init() {
         for (Item item : ItemInit.ITEMS) {
-            GameRegistry.registerItem(item);
+            GameRegistry.register(item);
         }
     }
 }

@@ -23,9 +23,9 @@ compileJava {
 }
 
 minecraft {
-    version = "1.10.2-12.18.3.2511"
+    version = "1.11.2-13.20.1.2588"
     runDir = "eclipse"
-    mappings = "snapshot_20161111"
+    mappings = "snapshot_20161220"
 
     // Replaces the version number in the main class whenever the version gets updated
     replace "@MODVERSION@", project.mod_version
