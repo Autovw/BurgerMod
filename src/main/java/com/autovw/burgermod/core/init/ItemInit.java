@@ -34,7 +34,7 @@ public class ItemInit {
     public static final Item COD_CHEESE_BURGER = new ItemBase("cod_cheese_burger", 7, 0.8f, false);
 
     // Eggs
-    public static final Item SCRAMBLED_EGG = new ItemBase("scrambled_egg", 1, 0.1f, false).addPoisonEffect(8, 0, 1.0f);
+    public static final Item SCRAMBLED_EGG = new ItemBase("scrambled_egg", 1, 0.1f, false).addPoisonEffect(160, 0, 1.0f);
     public static final Item FRIED_SCRAMBLED_EGG = new ItemBase("fried_scrambled_egg", 2, 0.6f, true);
 
     // Others

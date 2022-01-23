@@ -11,11 +11,7 @@ public class RegistryHandler {
 
     public static void init() {
         for (Item item : ItemInit.ITEMS) {
-            registerItem(item);
+            GameRegistry.registerItem(item);
         }
-    }
-
-    private static void registerItem(Item item) {
-        GameRegistry.registerItem(item, item.getUnlocalizedName().substring(5));
     }
 }
