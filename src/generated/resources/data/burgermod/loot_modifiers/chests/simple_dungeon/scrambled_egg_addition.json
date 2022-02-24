@@ -1,0 +1,12 @@
+{
+  "conditions": [
+    {
+      "condition": "forge:loot_table_id",
+      "loot_table_id": "minecraft:chests/simple_dungeon"
+    }
+  ],
+  "item_addition": "burgermod:scrambled_egg",
+  "min_addition": 1,
+  "max_addition": 2,
+  "type": "burgermod:chests/simple_dungeon/scrambled_egg_addition"
+}

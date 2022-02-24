@@ -1,10 +1,7 @@
 package com.autovw.burgermod.datagen;
 
 import com.autovw.burgermod.BurgerMod;
-import com.autovw.burgermod.datagen.providers.ModBlockTagsProvider;
-import com.autovw.burgermod.datagen.providers.ModItemModelProvider;
-import com.autovw.burgermod.datagen.providers.ModItemTagsProvider;
-import com.autovw.burgermod.datagen.providers.ModRecipeProvider;
+import com.autovw.burgermod.datagen.providers.*;
 import net.minecraft.data.DataGenerator;
 import net.minecraftforge.common.data.ExistingFileHelper;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
@@ -28,6 +25,7 @@ public class ModDataGenerator {
             generator.addProvider(blockTagsProvider);
             generator.addProvider(new ModItemTagsProvider(generator, blockTagsProvider, helper));
             generator.addProvider(new ModRecipeProvider(generator));
+            generator.addProvider(new ModLootModifierProvider(generator));
         }
 
         if (event.includeClient()) {
