@@ -1,6 +1,7 @@
 package com.autovw.burgermod;
 
 import com.autovw.burgermod.common.loot.RangedAdditionModifier;
+import com.autovw.burgermod.common.loot.RangedChanceAdditionModifier;
 import com.autovw.burgermod.config.Config;
 import com.autovw.burgermod.core.ModItems;
 import com.autovw.burgermod.datagen.providers.ModLootModifierProvider;
@@ -58,6 +59,10 @@ public class BurgerMod {
                 new RangedAdditionModifier.Serializer().setRegistryName(new ResourceLocation(MOD_ID, "chests/igloo_chest/pork_cheese_burger_addition")),
                 new RangedAdditionModifier.Serializer().setRegistryName(new ResourceLocation(MOD_ID, "chests/simple_dungeon/scrambled_egg_addition")),
                 new RangedAdditionModifier.Serializer().setRegistryName(new ResourceLocation(MOD_ID, "chests/woodland_mansion/cooked_champignons_addition")),
-                new RangedAdditionModifier.Serializer().setRegistryName(new ResourceLocation(MOD_ID, "chests/woodland_mansion/mutton_champignon_burger_addition")));
+                new RangedAdditionModifier.Serializer().setRegistryName(new ResourceLocation(MOD_ID, "chests/woodland_mansion/mutton_champignon_burger_addition")),
+                new RangedChanceAdditionModifier.Serializer().setRegistryName(new ResourceLocation(MOD_ID, "chests/simple_dungeon/golden_beef_burger_addition")),
+                new RangedChanceAdditionModifier.Serializer().setRegistryName(new ResourceLocation(MOD_ID, "chests/desert_pyramid/golden_mutton_burger_addition")),
+                new RangedChanceAdditionModifier.Serializer().setRegistryName(new ResourceLocation(MOD_ID, "chests/ruined_portal/golden_pork_burger_addition")),
+                new RangedChanceAdditionModifier.Serializer().setRegistryName(new ResourceLocation(MOD_ID, "chests/bastion_treasure/golden_pork_burger_addition")));
     }
 }

@@ -2,6 +2,7 @@ package com.autovw.burgermod.datagen.providers;
 
 import com.autovw.burgermod.BurgerMod;
 import com.autovw.burgermod.common.loot.RangedAdditionModifier;
+import com.autovw.burgermod.common.loot.RangedChanceAdditionModifier;
 import com.autovw.burgermod.core.ModItems;
 import net.minecraft.data.DataGenerator;
 import net.minecraft.resources.ResourceLocation;
@@ -31,6 +32,11 @@ public class ModLootModifierProvider extends GlobalLootModifierProvider {
         addRanged(BurgerMod.MOD_ID, new ResourceLocation("chests/simple_dungeon"), ModItems.SCRAMBLED_EGG.get(), 1, 2);
         addRanged(BurgerMod.MOD_ID, new ResourceLocation("chests/woodland_mansion"), ModItems.COOKED_CHAMPIGNONS.get(), 0, 4);
         addRanged(BurgerMod.MOD_ID, new ResourceLocation("chests/woodland_mansion"), ModItems.MUTTON_CHAMPIGNON_BURGER.get(), 0, 1);
+
+        addRangedChance(BurgerMod.MOD_ID, new ResourceLocation("chests/simple_dungeon"), ModItems.GOLDEN_BEEF_BURGER.get(), 1, 1, 0.25f);
+        addRangedChance(BurgerMod.MOD_ID, new ResourceLocation("chests/desert_pyramid"), ModItems.GOLDEN_MUTTON_BURGER.get(), 1, 1, 0.1f);
+        addRangedChance(BurgerMod.MOD_ID, new ResourceLocation("chests/ruined_portal"), ModItems.GOLDEN_PORK_BURGER.get(), 1, 1, 0.15f);
+        addRangedChance(BurgerMod.MOD_ID, new ResourceLocation("chests/bastion_treasure"), ModItems.GOLDEN_PORK_BURGER.get(), 1, 1, 0.4f);
     }
 
     // helper method for generating a new RangedAdditionModifier
@@ -38,5 +44,11 @@ public class ModLootModifierProvider extends GlobalLootModifierProvider {
         String name = target.getPath() + "/" + Objects.requireNonNull(addition.getRegistryName()).getPath() + "_addition";
         add(name, new RangedAdditionModifier.Serializer().setRegistryName(modId + ":" + name), new RangedAdditionModifier(new LootItemCondition[] {
                 LootTableIdCondition.builder(target).build() }, addition, minAddition, maxAddition));
+    }
+
+    protected void addRangedChance(String modId, ResourceLocation target, Item addition, int minAddition, int maxAddition, float chanceAddition) {
+        String name = target.getPath() + "/" + Objects.requireNonNull(addition.getRegistryName()).getPath() + "_addition";
+        add(name, new RangedChanceAdditionModifier.Serializer().setRegistryName(modId + ":" + name), new RangedChanceAdditionModifier(new LootItemCondition[] {
+                LootTableIdCondition.builder(target).build() }, addition, minAddition, maxAddition, chanceAddition));
     }
 }
