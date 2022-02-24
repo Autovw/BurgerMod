@@ -1,0 +1,12 @@
+{
+  "conditions": [
+    {
+      "condition": "forge:loot_table_id",
+      "loot_table_id": "minecraft:chests/village/village_butcher"
+    }
+  ],
+  "item_addition": "burgermod:cooked_chicken_nugget",
+  "min_addition": 2,
+  "max_addition": 5,
+  "type": "burgermod:chests/village/village_butcher/cooked_chicken_nugget_addition"
+}

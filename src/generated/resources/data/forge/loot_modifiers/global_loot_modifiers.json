@@ -1,0 +1,14 @@
+{
+  "replace": false,
+  "entries": [
+    "burgermod:chests/woodland_mansion/cooked_champignons_addition",
+    "burgermod:chests/village/village_fisher/cod_burger_addition",
+    "burgermod:chests/igloo_chest/pork_cheese_burger_addition",
+    "burgermod:chests/village/village_butcher/cooked_chicken_nugget_addition",
+    "burgermod:chests/woodland_mansion/mutton_champignon_burger_addition",
+    "burgermod:chests/village/village_snowy_house/hotdog_addition",
+    "burgermod:chests/simple_dungeon/scrambled_egg_addition",
+    "burgermod:chests/village/village_fisher/salmon_burger_addition",
+    "burgermod:chests/village/village_plains_house/fries_addition"
+  ]
+}
