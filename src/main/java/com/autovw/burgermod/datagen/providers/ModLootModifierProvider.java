@@ -36,7 +36,9 @@ public class ModLootModifierProvider extends GlobalLootModifierProvider {
         addRangedChance(BurgerMod.MOD_ID, new ResourceLocation("chests/simple_dungeon"), ModItems.GOLDEN_BEEF_BURGER.get(), 1, 1, 0.25f);
         addRangedChance(BurgerMod.MOD_ID, new ResourceLocation("chests/desert_pyramid"), ModItems.GOLDEN_MUTTON_BURGER.get(), 1, 1, 0.1f);
         addRangedChance(BurgerMod.MOD_ID, new ResourceLocation("chests/ruined_portal"), ModItems.GOLDEN_PORK_BURGER.get(), 1, 1, 0.15f);
+        addRangedChance(BurgerMod.MOD_ID, new ResourceLocation("chests/bastion_other"), ModItems.GOLDEN_SALMON_BURGER.get(), 0, 1, 0.2f);
         addRangedChance(BurgerMod.MOD_ID, new ResourceLocation("chests/bastion_treasure"), ModItems.GOLDEN_PORK_BURGER.get(), 1, 1, 0.4f);
+        addRangedChance(BurgerMod.MOD_ID, new ResourceLocation("chests/bastion_treasure"), ModItems.ENCHANTED_GOLDEN_BURGER.get(), 0, 1, 0.15f);
     }
 
     // helper method for generating a new RangedAdditionModifier
