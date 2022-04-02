@@ -1,0 +1,65 @@
+{
+  "parent": "minecraft:recipes/root",
+  "rewards": {
+    "recipes": [
+      "burgermod:hotdog"
+    ]
+  },
+  "criteria": {
+    "has_cooked_beef": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "minecraft:cooked_beef"
+          }
+        ]
+      }
+    },
+    "has_cooked_porkchop": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "minecraft:cooked_porkchop"
+          }
+        ]
+      }
+    },
+    "has_bread": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "minecraft:bread"
+          }
+        ]
+      }
+    },
+    "has_cooked_chicken_nugget": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "tag": "forge:nuggets/chicken"
+          }
+        ]
+      }
+    },
+    "has_the_recipe": {
+      "trigger": "minecraft:recipe_unlocked",
+      "conditions": {
+        "recipe": "burgermod:hotdog"
+      }
+    }
+  },
+  "requirements": [
+    [
+      "has_cooked_beef",
+      "has_cooked_porkchop",
+      "has_bread",
+      "has_cooked_chicken_nugget",
+      "has_the_recipe"
+    ]
+  ]
+}

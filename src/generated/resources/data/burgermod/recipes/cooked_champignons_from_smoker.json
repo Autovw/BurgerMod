@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:smoking",
+  "ingredient": {
+    "item": "burgermod:raw_champignons"
+  },
+  "result": "burgermod:cooked_champignons",
+  "experience": 0.25,
+  "cookingtime": 100
+}

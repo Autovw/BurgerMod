@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "rewards": {
+    "recipes": [
+      "burgermod:cooked_chicken_nugget"
+    ]
+  },
+  "criteria": {
+    "has_cooked_chicken": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "minecraft:cooked_chicken"
+          }
+        ]
+      }
+    },
+    "has_the_recipe": {
+      "trigger": "minecraft:recipe_unlocked",
+      "conditions": {
+        "recipe": "burgermod:cooked_chicken_nugget"
+      }
+    }
+  },
+  "requirements": [
+    [
+      "has_cooked_chicken",
+      "has_the_recipe"
+    ]
+  ]
+}

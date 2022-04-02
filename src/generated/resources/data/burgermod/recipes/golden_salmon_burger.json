@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "GGG",
+    "G#G",
+    "GGG"
+  ],
+  "key": {
+    "G": {
+      "tag": "forge:ingots/gold"
+    },
+    "#": {
+      "tag": "burgermod:salmon_burgers"
+    }
+  },
+  "result": {
+    "item": "burgermod:golden_salmon_burger"
+  }
+}

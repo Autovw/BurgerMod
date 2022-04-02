@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "rewards": {
+    "recipes": [
+      "burgermod:fried_scrambled_egg_from_campfire"
+    ]
+  },
+  "criteria": {
+    "has_scrambled_egg": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "burgermod:scrambled_egg"
+          }
+        ]
+      }
+    },
+    "has_the_recipe": {
+      "trigger": "minecraft:recipe_unlocked",
+      "conditions": {
+        "recipe": "burgermod:fried_scrambled_egg_from_campfire"
+      }
+    }
+  },
+  "requirements": [
+    [
+      "has_scrambled_egg",
+      "has_the_recipe"
+    ]
+  ]
+}
