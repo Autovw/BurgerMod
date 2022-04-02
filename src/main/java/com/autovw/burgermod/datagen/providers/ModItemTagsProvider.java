@@ -111,6 +111,7 @@ public class ModItemTagsProvider extends ItemTagsProvider {
 
         /* Minecraft tags */
         tag(ItemTags.PIGLIN_LOVED)
-                .addTag(ModTags.GOLDEN_BURGERS);
+                .addTag(ModTags.GOLDEN_BURGERS)
+                .add(ModItems.ENCHANTED_GOLDEN_BURGER.get());
     }
 }

@@ -1,6 +1,7 @@
 package com.autovw.burgermod.core;
 
 import com.autovw.burgermod.BurgerMod;
+import com.autovw.burgermod.common.item.EnchantedBurgerItem;
 import net.minecraft.world.food.FoodProperties;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.Rarity;
@@ -57,6 +58,9 @@ public class ModItems {
     public static final RegistryObject<Item> GOLDEN_SALMON_BURGER = register("golden_salmon_burger", ModFood.GOLDEN_BURGER_TIER_2, Rarity.RARE);
     public static final RegistryObject<Item> GOLDEN_COD_BURGER = register("golden_cod_burger", ModFood.GOLDEN_BURGER_TIER_4, Rarity.RARE);
 
+    // Enchanted Golden Burger
+    public static final RegistryObject<Item> ENCHANTED_GOLDEN_BURGER = registerEnchantedBurger("enchanted_golden_burger");
+
     // Eggs
     public static final RegistryObject<Item> SCRAMBLED_EGG = register("scrambled_egg", ModFood.RAW_EGG_FOOD);
     public static final RegistryObject<Item> FRIED_SCRAMBLED_EGG = register("fried_scrambled_egg", ModFood.FRIED_EGG_FOOD);
@@ -93,5 +97,9 @@ public class ModItems {
      */
     private static RegistryObject<Item> register(String name, FoodProperties food, Rarity rarity) {
         return ITEMS.register(name, () -> new Item(new Item.Properties().tab(BurgerMod.TAB_BURGERMOD).food(food).rarity(rarity)));
+    }
+
+    private static RegistryObject<Item> registerEnchantedBurger(String name) {
+        return ITEMS.register(name, () -> new EnchantedBurgerItem(new Item.Properties().tab(BurgerMod.TAB_BURGERMOD).food(ModFood.ENCHANTED_GOLDEN_BURGER).rarity(Rarity.EPIC)));
     }
 }

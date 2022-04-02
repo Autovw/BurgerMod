@@ -63,4 +63,11 @@ public class ModFood {
     public static final FoodProperties GOLDEN_BURGER_TIER_4 = new FoodProperties.Builder().nutrition(7).saturationMod(1.2f).effect( () -> new MobEffectInstance
             (ModEffects.GOLDEN_BURGER_REGENERATION), 1.0f).effect(() -> new MobEffectInstance
             (ModEffects.GOLDEN_BURGER_ABSORPTION), 1.0f).alwaysEat().build();
+
+    // Used for: ENCHANTED_GOLDEN_BURGER
+    public static final FoodProperties ENCHANTED_GOLDEN_BURGER = new FoodProperties.Builder().nutrition(8).saturationMod(1.6f).effect(() -> new MobEffectInstance
+            (ModEffects.ENCHANTED_GOLDEN_BURGER_REGENERATION), 1.0f).effect(() -> new MobEffectInstance
+            (ModEffects.ENCHANTED_GOLDEN_BURGER_DAMAGE_RESISTANCE), 1.0f).effect(() -> new MobEffectInstance
+            (ModEffects.ENCHANTED_GOLDEN_BURGER_FIRE_RESISTANCE), 1.0f).effect(() -> new MobEffectInstance
+            (ModEffects.ENCHANTED_GOLDEN_BURGER_ABSORPTION), 1.0f).alwaysEat().build();
 }

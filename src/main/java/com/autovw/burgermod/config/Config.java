@@ -43,6 +43,14 @@ public class Config {
         public static ForgeConfigSpec.ConfigValue<Integer> goldenBurgerRegenAmplifier;
         public static ForgeConfigSpec.ConfigValue<Integer> goldenBurgerAbsorptionDuration;
         public static ForgeConfigSpec.ConfigValue<Integer> goldenBurgerAbsorptionAmplifier;
+        public static ForgeConfigSpec.ConfigValue<Integer> enchantedGoldenBurgerRegenDuration;
+        public static ForgeConfigSpec.ConfigValue<Integer> enchantedGoldenBurgerRegenAmplifier;
+        public static ForgeConfigSpec.ConfigValue<Integer> enchantedGoldenBurgerDamageResistDuration;
+        public static ForgeConfigSpec.ConfigValue<Integer> enchantedGoldenBurgerDamageResistAmplifier;
+        public static ForgeConfigSpec.ConfigValue<Integer> enchantedGoldenBurgerFireResistDuration;
+        public static ForgeConfigSpec.ConfigValue<Integer> enchantedGoldenBurgerFireResistAmplifier;
+        public static ForgeConfigSpec.ConfigValue<Integer> enchantedGoldenBurgerAbsorptionDuration;
+        public static ForgeConfigSpec.ConfigValue<Integer> enchantedGoldenBurgerAbsorptionAmplifier;
 
         public EffectsConfig(ForgeConfigSpec.Builder builder) {
             builder.comment("Properties related to Burger Mod effects").push("effects_config");
@@ -58,6 +66,19 @@ public class Config {
                     goldenBurgerRegenAmplifier = builder.comment("Adjust the regeneration effect level here. 0 = level 1, 1 = level 2 etc.").define("goldenBurgerRegenAmplifier", 1);
                     goldenBurgerAbsorptionDuration = builder.comment("Adjust the absorption effect duration in ticks here. 20 ticks = 1 second, 200 ticks = 10 seconds etc.").define("goldenBurgerAbsorptionDuration", 1200);
                     goldenBurgerAbsorptionAmplifier = builder.comment("Adjust the absorption effect level here. 0 = level 1, 1 = level 2 etc.").define("goldenBurgerAbsorptionAmplifier", 0);
+                }
+                builder.pop();
+
+                builder.comment("Properties related to Enchanted Golden Burger effects").push("enchanted_golden_burger_effects");
+                {
+                    enchantedGoldenBurgerRegenDuration = builder.comment("Adjust the regeneration effect duration in ticks here. 20 ticks = 1 second, 200 ticks = 10 seconds etc.").define("enchantedGoldenBurgerRegenDuration", 400);
+                    enchantedGoldenBurgerRegenAmplifier = builder.comment("Adjust the regeneration effect level here. 0 = level 1, 1 = level 2 etc.").define("enchantedGoldenBurgerRegenAmplifier", 1);
+                    enchantedGoldenBurgerDamageResistDuration = builder.comment("Adjust the damage resistance effect duration in ticks here. 20 ticks = 1 second, 200 ticks = 10 seconds etc.").define("enchantedGoldenBurgerDamageResistDuration", 5000);
+                    enchantedGoldenBurgerDamageResistAmplifier = builder.comment("Adjust the damage resistance effect level here. 0 = level 1, 1 = level 2 etc.").define("enchantedGoldenBurgerDamageResistAmplifier", 0);
+                    enchantedGoldenBurgerFireResistDuration = builder.comment("Adjust the fire resistance effect duration in ticks here. 20 ticks = 1 second, 200 ticks = 10 seconds etc.").define("enchantedGoldenBurgerFireResistDuration", 5000);
+                    enchantedGoldenBurgerFireResistAmplifier = builder.comment("Adjust the fire resistance effect level here. 0 = level 1, 1 = level 2 etc.").define("enchantedGoldenBurgerFireResistAmplifier", 0);
+                    enchantedGoldenBurgerAbsorptionDuration = builder.comment("Adjust the absorption effect duration in ticks here. 20 ticks = 1 second, 200 ticks = 10 seconds etc.").define("enchantedGoldenBurgerAbsorptionDuration", 1600);
+                    enchantedGoldenBurgerAbsorptionAmplifier = builder.comment("Adjust the absorption effect level here. 0 = level 1, 1 = level 2 etc.").define("enchantedGoldenBurgerAbsorptionAmplifier", 3);
                 }
                 builder.pop();
             }
