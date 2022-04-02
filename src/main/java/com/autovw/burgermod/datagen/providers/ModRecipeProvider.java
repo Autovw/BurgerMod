@@ -7,6 +7,7 @@ import net.minecraft.data.DataGenerator;
 import net.minecraft.data.recipes.*;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.tags.Tag;
+import net.minecraft.tags.TagKey;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.Items;
 import net.minecraft.world.item.crafting.Ingredient;
@@ -78,7 +79,7 @@ public class ModRecipeProvider extends RecipeProvider {
      * @param mainIngredient The main ingredient (e.g. minecraft:steak for a beef burger)
      * @param extraIngredient Extra ingredient, a tag by default (e.g. forge:cheese for a cheese burger)
      */
-    public static void baseBurgerRecipe(Consumer<FinishedRecipe> recipeConsumer, ItemLike result, int resultAmount, ItemLike mainIngredient, Tag<Item> extraIngredient) {
+    public static void baseBurgerRecipe(Consumer<FinishedRecipe> recipeConsumer, ItemLike result, int resultAmount, ItemLike mainIngredient, TagKey<Item> extraIngredient) {
         ShapedRecipeBuilder.shaped(result, resultAmount)
                 .define('B', ModTags.FORGE_BREAD)
                 .define('#', mainIngredient)
@@ -101,7 +102,7 @@ public class ModRecipeProvider extends RecipeProvider {
      * @param mainIngredient The main ingredient. If you want to return an item instead of a tag you should use the above method.
      * @param extraIngredient Extra ingredient, a tag by default (e.g. forge:cheese for a cheese burger)
      */
-    public static void baseBurgerRecipe(Consumer<FinishedRecipe> recipeConsumer, ItemLike result, int resultAmount, Tag<Item> mainIngredient, Tag<Item> extraIngredient) {
+    public static void baseBurgerRecipe(Consumer<FinishedRecipe> recipeConsumer, ItemLike result, int resultAmount, TagKey<Item> mainIngredient, TagKey<Item> extraIngredient) {
         ShapedRecipeBuilder.shaped(result, resultAmount)
                 .define('B', ModTags.FORGE_BREAD)
                 .define('#', mainIngredient)
@@ -119,7 +120,7 @@ public class ModRecipeProvider extends RecipeProvider {
         baseBurgerRecipe(recipeConsumer, result, 2, ingredient, ModTags.FORGE_FRIED_EGG);
     }
 
-    public static void eggBurgerRecipe(Consumer<FinishedRecipe> recipeConsumer, ItemLike result, Tag<Item> ingredient) {
+    public static void eggBurgerRecipe(Consumer<FinishedRecipe> recipeConsumer, ItemLike result, TagKey<Item> ingredient) {
         baseBurgerRecipe(recipeConsumer, result, 2, ingredient, ModTags.FORGE_FRIED_EGG);
     }
 
@@ -127,7 +128,7 @@ public class ModRecipeProvider extends RecipeProvider {
         baseBurgerRecipe(recipeConsumer, result, 2, ingredient, ModTags.FORGE_CHEESE);
     }
 
-    public static void cheeseBurgerRecipe(Consumer<FinishedRecipe> recipeConsumer, ItemLike result, Tag<Item> ingredient) {
+    public static void cheeseBurgerRecipe(Consumer<FinishedRecipe> recipeConsumer, ItemLike result, TagKey<Item> ingredient) {
         baseBurgerRecipe(recipeConsumer, result, 2, ingredient, ModTags.FORGE_CHEESE);
     }
 
@@ -135,7 +136,7 @@ public class ModRecipeProvider extends RecipeProvider {
         baseBurgerRecipe(recipeConsumer, result, 2, ingredient, ModTags.FORGE_COOKED_MUSHROOM);
     }
 
-    public static void champignonBurgerRecipe(Consumer<FinishedRecipe> recipeConsumer, ItemLike result, Tag<Item> ingredient) {
+    public static void champignonBurgerRecipe(Consumer<FinishedRecipe> recipeConsumer, ItemLike result, TagKey<Item> ingredient) {
         baseBurgerRecipe(recipeConsumer, result, 2, ingredient, ModTags.FORGE_COOKED_MUSHROOM);
     }
 
@@ -146,7 +147,7 @@ public class ModRecipeProvider extends RecipeProvider {
      * @param result The golden burger
      * @param ingredient Crafting ingredient
      */
-    public static void goldenBurgerRecipe(Consumer<FinishedRecipe> recipeConsumer, ItemLike result, Tag<Item> ingredient) {
+    public static void goldenBurgerRecipe(Consumer<FinishedRecipe> recipeConsumer, ItemLike result, TagKey<Item> ingredient) {
         ShapedRecipeBuilder.shaped(result)
                 .define('G', Tags.Items.INGOTS_GOLD)
                 .define('#', ingredient)

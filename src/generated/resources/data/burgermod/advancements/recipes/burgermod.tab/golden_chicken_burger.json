@@ -16,7 +16,7 @@
         ]
       }
     },
-    "has_NamedTag[burgermod:chicken_burgers]": {
+    "has_TagKey[minecraft:item / burgermod:chicken_burgers]": {
       "trigger": "minecraft:inventory_changed",
       "conditions": {
         "items": [
@@ -36,7 +36,7 @@
   "requirements": [
     [
       "has_gold",
-      "has_NamedTag[burgermod:chicken_burgers]",
+      "has_TagKey[minecraft:item / burgermod:chicken_burgers]",
       "has_the_recipe"
     ]
   ]
