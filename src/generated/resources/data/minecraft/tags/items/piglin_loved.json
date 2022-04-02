@@ -1,6 +1,7 @@
 {
   "replace": false,
   "values": [
-    "#burgermod:golden_burgers"
+    "#burgermod:golden_burgers",
+    "burgermod:enchanted_golden_burger"
   ]
 }

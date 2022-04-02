@@ -30,22 +30,17 @@ public class ModEffects {
     public static final EffectInstance GOLDEN_BURGER_ABSORPTION = new EffectInstance(Effects.ABSORPTION,
             Config.EffectsConfig.goldenBurgerAbsorptionDuration.get(), Config.EffectsConfig.goldenBurgerAbsorptionAmplifier.get());
 
-    /* Delayed until the next major update!
-    // ENCHANTED GOLDEN BURGERS
+    // ENCHANTED GOLDEN BURGER
     // Stores the regeneration effects used by Enchanted Golden Burgers. The duration and amplifier are stored in the Config.
     public static final EffectInstance ENCHANTED_GOLDEN_BURGER_REGENERATION = new EffectInstance(Effects.REGENERATION,
             Config.EffectsConfig.enchantedGoldenBurgerRegenDuration.get(), Config.EffectsConfig.enchantedGoldenBurgerRegenAmplifier.get());
-
     // Stores the damage resistance effects used by Enchanted Golden Burgers. The duration and amplifier are stored in the Config.
     public static final EffectInstance ENCHANTED_GOLDEN_BURGER_DAMAGE_RESISTANCE = new EffectInstance(Effects.DAMAGE_RESISTANCE,
             Config.EffectsConfig.enchantedGoldenBurgerDamageResistDuration.get(), Config.EffectsConfig.enchantedGoldenBurgerDamageResistAmplifier.get());
-
     // Stores the fire resistance effects used by Enchanted Golden Burgers. The duration and amplifier are stored in the Config.
     public static final EffectInstance ENCHANTED_GOLDEN_BURGER_FIRE_RESISTANCE = new EffectInstance(Effects.FIRE_RESISTANCE,
             Config.EffectsConfig.enchantedGoldenBurgerFireResistDuration.get(), Config.EffectsConfig.enchantedGoldenBurgerFireResistAmplifier.get());
-
     // Stores the absorption effects used by Enchanted Golden Burgers. The duration and amplifier are stored in the Config.
     public static final EffectInstance ENCHANTED_GOLDEN_BURGER_ABSORPTION = new EffectInstance(Effects.ABSORPTION,
             Config.EffectsConfig.enchantedGoldenBurgerAbsorptionDuration.get(), Config.EffectsConfig.enchantedGoldenBurgerAbsorptionAmplifier.get());
-     */
 }
