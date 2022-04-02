@@ -5,7 +5,7 @@ issueTrackerURL="https://github.com/Autovw/BurgerMod/issues"
 
 [[mods]]
 modId="burgermod"
-version="2.6.0"
+version="2.7.0"
 displayName="Burger Mod"
 updateJSONURL="https://raw.githubusercontent.com/Autovw/ModUpdates/master/burgermod/update.json"
 displayURL="https://github.com/Autovw/BurgerMod/wiki"
@@ -27,7 +27,7 @@ Visit the Burger Mod Wiki on GitHub, where you can find everything you need to k
 [[dependencies.burgermod]]
     modId="minecraft"
     mandatory=true
-    versionRange="[1.16.5,1.17]"
+    versionRange="[1.16.5,1.17)"
     ordering="NONE"
     side="BOTH"
 
