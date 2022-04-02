@@ -27,7 +27,7 @@ Visit the Burger Mod Wiki on GitHub, where you can find everything you need to k
 [[dependencies.burgermod]]
     modId="minecraft"
     mandatory=true
-    versionRange="[1.18.1,1.19]"
+    versionRange="[1.18.1,1.18.2)"
     ordering="NONE"
     side="BOTH"
 
