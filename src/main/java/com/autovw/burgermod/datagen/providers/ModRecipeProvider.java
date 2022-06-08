@@ -1,12 +1,11 @@
 package com.autovw.burgermod.datagen.providers;
 
 import com.autovw.burgermod.BurgerMod;
-import com.autovw.burgermod.core.ModItems;
-import com.autovw.burgermod.core.ModTags;
+import com.autovw.burgermod.core.registry.ModItems;
+import com.autovw.burgermod.core.util.ModTags;
 import net.minecraft.data.DataGenerator;
 import net.minecraft.data.recipes.*;
 import net.minecraft.resources.ResourceLocation;
-import net.minecraft.tags.Tag;
 import net.minecraft.tags.TagKey;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.Items;

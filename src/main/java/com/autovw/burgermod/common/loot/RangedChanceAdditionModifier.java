@@ -1,6 +1,7 @@
 package com.autovw.burgermod.common.loot;
 
 import com.google.gson.JsonObject;
+import it.unimi.dsi.fastutil.objects.ObjectArrayList;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.util.GsonHelper;
 import net.minecraft.world.item.Item;
@@ -12,7 +13,6 @@ import net.minecraftforge.common.loot.LootModifier;
 import net.minecraftforge.registries.ForgeRegistries;
 import org.jetbrains.annotations.NotNull;
 
-import java.util.List;
 import java.util.Objects;
 
 /**
@@ -38,9 +38,9 @@ public class RangedChanceAdditionModifier extends LootModifier {
 
     @NotNull
     @Override
-    protected List<ItemStack> doApply(List<ItemStack> generatedLoot, LootContext context) {
+    protected ObjectArrayList<ItemStack> doApply(ObjectArrayList<ItemStack> generatedLoot, LootContext context) {
         if (maxAddition >= minAddition && context.getRandom().nextFloat() <= chanceAddition) {
-            generatedLoot.add(new ItemStack(itemAddition, context.getRandom().ints(minAddition, maxAddition + 1).iterator().nextInt()));
+            generatedLoot.add(new ItemStack(itemAddition, context.getRandom().nextIntBetweenInclusive(minAddition, maxAddition + 1)));
         }
         return generatedLoot;
     }

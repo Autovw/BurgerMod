@@ -13,7 +13,8 @@ import net.minecraftforge.forge.event.lifecycle.GatherDataEvent;
  */
 @Mod.EventBusSubscriber(modid = BurgerMod.MOD_ID, bus = Mod.EventBusSubscriber.Bus.MOD)
 public class ModDataGenerator {
-    private ModDataGenerator() {}
+    private ModDataGenerator() {
+    }
 
     @SuppressWarnings("unused")
     @SubscribeEvent
@@ -22,15 +23,13 @@ public class ModDataGenerator {
         ExistingFileHelper helper = event.getExistingFileHelper();
         ModBlockTagsProvider blockTagsProvider = new ModBlockTagsProvider(generator, helper);
 
-        if (event.includeServer()) {
-            generator.addProvider(blockTagsProvider);
-            generator.addProvider(new ModItemTagsProvider(generator, blockTagsProvider, helper));
-            generator.addProvider(new ModRecipeProvider(generator));
-            generator.addProvider(new ModLootModifierProvider(generator));
-        }
+        // server
+        generator.addProvider(event.includeServer(), blockTagsProvider);
+        generator.addProvider(event.includeServer(), new ModItemTagsProvider(generator, blockTagsProvider, helper));
+        generator.addProvider(event.includeServer(), new ModRecipeProvider(generator));
+        generator.addProvider(event.includeServer(), new ModLootModifierProvider(generator));
 
-        if (event.includeClient()) {
-            generator.addProvider(new ModItemModelProvider(generator, helper));
-        }
+        // client
+        generator.addProvider(event.includeClient(), new ModItemModelProvider(generator, helper));
     }
 }

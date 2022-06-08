@@ -1,7 +1,7 @@
 package com.autovw.burgermod.datagen.providers;
 
 import com.autovw.burgermod.BurgerMod;
-import com.autovw.burgermod.core.ModItems;
+import com.autovw.burgermod.core.registry.ModItems;
 import net.minecraft.data.DataGenerator;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.item.Item;

@@ -1,4 +1,4 @@
-package com.autovw.burgermod.core;
+package com.autovw.burgermod.core.util;
 
 import com.autovw.burgermod.BurgerMod;
 import net.minecraft.resources.ResourceLocation;
