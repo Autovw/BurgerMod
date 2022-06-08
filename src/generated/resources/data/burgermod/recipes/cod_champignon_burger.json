@@ -1,23 +1,23 @@
 {
   "type": "minecraft:crafting_shaped",
-  "pattern": [
-    " B",
-    "*#",
-    " B"
-  ],
   "key": {
-    "B": {
-      "tag": "forge:bread"
-    },
     "#": {
       "item": "minecraft:cooked_cod"
     },
     "*": {
       "tag": "forge:cooked_mushroom"
+    },
+    "B": {
+      "tag": "forge:bread"
     }
   },
+  "pattern": [
+    " B",
+    "*#",
+    " B"
+  ],
   "result": {
-    "item": "burgermod:cod_champignon_burger",
-    "count": 2
+    "count": 2,
+    "item": "burgermod:cod_champignon_burger"
   }
 }

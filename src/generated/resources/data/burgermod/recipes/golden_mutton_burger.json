@@ -1,18 +1,18 @@
 {
   "type": "minecraft:crafting_shaped",
+  "key": {
+    "#": {
+      "tag": "burgermod:mutton_burgers"
+    },
+    "G": {
+      "tag": "forge:ingots/gold"
+    }
+  },
   "pattern": [
     "GGG",
     "G#G",
     "GGG"
   ],
-  "key": {
-    "G": {
-      "tag": "forge:ingots/gold"
-    },
-    "#": {
-      "tag": "burgermod:mutton_burgers"
-    }
-  },
   "result": {
     "item": "burgermod:golden_mutton_burger"
   }

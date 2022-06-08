@@ -13,8 +13,6 @@ import net.minecraftforge.common.data.GlobalLootModifierProvider;
 import net.minecraftforge.common.loot.LootTableIdCondition;
 import net.minecraftforge.registries.ForgeRegistries;
 
-import java.util.Objects;
-
 /**
  * Author: Autovw
  */
@@ -46,15 +44,13 @@ public class ModLootModifierProvider extends GlobalLootModifierProvider {
     // helper method for generating a new RangedAdditionModifier
     protected void addRanged(RangedAdditionModifier.Serializer serializer, Item addition, int minAddition, int maxAddition) {
         ResourceLocation lootLoc = ForgeRegistries.LOOT_MODIFIER_SERIALIZERS.get().getKey(serializer);
-        String name = lootLoc.getPath() + "/" + Objects.requireNonNull(ForgeRegistries.ITEMS.getKey(addition)).getPath() + "_addition";
-        add(name, serializer, new RangedAdditionModifier(new LootItemCondition[] {
+        add(lootLoc.getPath(), serializer, new RangedAdditionModifier(new LootItemCondition[] {
                 LootTableIdCondition.builder(lootLoc).build() }, addition, minAddition, maxAddition));
     }
 
     protected void addRangedChance(RangedChanceAdditionModifier.Serializer serializer, Item addition, int minAddition, int maxAddition, float chanceAddition) {
         ResourceLocation lootLoc = ForgeRegistries.LOOT_MODIFIER_SERIALIZERS.get().getKey(serializer);
-        String name = lootLoc.getPath() + "/" + Objects.requireNonNull(ForgeRegistries.ITEMS.getKey(addition)).getPath() + "_addition";
-        add(name, serializer, new RangedChanceAdditionModifier(new LootItemCondition[] {
+        add(lootLoc.getPath(), serializer, new RangedChanceAdditionModifier(new LootItemCondition[] {
                 LootTableIdCondition.builder(lootLoc).build() }, addition, minAddition, maxAddition, chanceAddition));
     }
 }

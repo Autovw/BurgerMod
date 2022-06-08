@@ -1,12 +1,12 @@
 {
+  "type": "burgermod:chests/village/village_snowy_house/hotdog_addition",
   "conditions": [
     {
       "condition": "forge:loot_table_id",
-      "loot_table_id": "minecraft:chests/village/village_snowy_house"
+      "loot_table_id": "burgermod:chests/village/village_snowy_house/hotdog_addition"
     }
   ],
   "item_addition": "burgermod:hotdog",
-  "min_addition": 0,
   "max_addition": 3,
-  "type": "burgermod:chests/village/village_snowy_house/hotdog_addition"
+  "min_addition": 0
 }

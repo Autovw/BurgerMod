@@ -1,13 +1,13 @@
 {
+  "type": "burgermod:chests/ruined_portal/golden_pork_burger_addition",
+  "chance_addition": 0.15,
   "conditions": [
     {
       "condition": "forge:loot_table_id",
-      "loot_table_id": "minecraft:chests/ruined_portal"
+      "loot_table_id": "burgermod:chests/ruined_portal/golden_pork_burger_addition"
     }
   ],
   "item_addition": "burgermod:golden_pork_burger",
-  "min_addition": 1,
   "max_addition": 1,
-  "chance_addition": 0.15,
-  "type": "burgermod:chests/ruined_portal/golden_pork_burger_addition"
+  "min_addition": 1
 }

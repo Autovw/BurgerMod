@@ -6,7 +6,7 @@
     }
   ],
   "result": {
-    "item": "burgermod:cooked_chicken_nugget",
-    "count": 6
+    "count": 6,
+    "item": "burgermod:cooked_chicken_nugget"
   }
 }

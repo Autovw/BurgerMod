@@ -1,5 +1,4 @@
 {
-  "replace": false,
   "entries": [
     "burgermod:chests/woodland_mansion/cooked_champignons_addition",
     "burgermod:chests/simple_dungeon/golden_beef_burger_addition",
@@ -16,5 +15,6 @@
     "burgermod:chests/village/village_snowy_house/hotdog_addition",
     "burgermod:chests/desert_pyramid/golden_mutton_burger_addition",
     "burgermod:chests/village/village_plains_house/fries_addition"
-  ]
+  ],
+  "replace": false
 }

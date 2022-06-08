@@ -24,7 +24,7 @@
     }
   ],
   "result": {
-    "item": "burgermod:cheese",
-    "count": 6
+    "count": 6,
+    "item": "burgermod:cheese"
   }
 }

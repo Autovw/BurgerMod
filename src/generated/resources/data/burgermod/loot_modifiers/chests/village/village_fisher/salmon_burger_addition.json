@@ -1,12 +1,12 @@
 {
+  "type": "burgermod:chests/village/village_fisher/salmon_burger_addition",
   "conditions": [
     {
       "condition": "forge:loot_table_id",
-      "loot_table_id": "minecraft:chests/village/village_fisher"
+      "loot_table_id": "burgermod:chests/village/village_fisher/salmon_burger_addition"
     }
   ],
   "item_addition": "burgermod:salmon_burger",
-  "min_addition": 0,
   "max_addition": 1,
-  "type": "burgermod:chests/village/village_fisher/salmon_burger_addition"
+  "min_addition": 0
 }

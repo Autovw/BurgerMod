@@ -1,12 +1,12 @@
 {
+  "type": "burgermod:chests/woodland_mansion/cooked_champignons_addition",
   "conditions": [
     {
       "condition": "forge:loot_table_id",
-      "loot_table_id": "minecraft:chests/woodland_mansion"
+      "loot_table_id": "burgermod:chests/woodland_mansion/cooked_champignons_addition"
     }
   ],
   "item_addition": "burgermod:cooked_champignons",
-  "min_addition": 0,
   "max_addition": 4,
-  "type": "burgermod:chests/woodland_mansion/cooked_champignons_addition"
+  "min_addition": 0
 }

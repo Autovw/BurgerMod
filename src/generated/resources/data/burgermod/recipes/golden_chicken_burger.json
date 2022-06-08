@@ -1,18 +1,18 @@
 {
   "type": "minecraft:crafting_shaped",
+  "key": {
+    "#": {
+      "tag": "burgermod:chicken_burgers"
+    },
+    "G": {
+      "tag": "forge:ingots/gold"
+    }
+  },
   "pattern": [
     "GGG",
     "G#G",
     "GGG"
   ],
-  "key": {
-    "G": {
-      "tag": "forge:ingots/gold"
-    },
-    "#": {
-      "tag": "burgermod:chicken_burgers"
-    }
-  },
   "result": {
     "item": "burgermod:golden_chicken_burger"
   }

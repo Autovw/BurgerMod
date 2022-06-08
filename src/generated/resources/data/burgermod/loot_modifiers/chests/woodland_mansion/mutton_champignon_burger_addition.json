@@ -1,12 +1,12 @@
 {
+  "type": "burgermod:chests/woodland_mansion/mutton_champignon_burger_addition",
   "conditions": [
     {
       "condition": "forge:loot_table_id",
-      "loot_table_id": "minecraft:chests/woodland_mansion"
+      "loot_table_id": "burgermod:chests/woodland_mansion/mutton_champignon_burger_addition"
     }
   ],
   "item_addition": "burgermod:mutton_champignon_burger",
-  "min_addition": 0,
   "max_addition": 1,
-  "type": "burgermod:chests/woodland_mansion/mutton_champignon_burger_addition"
+  "min_addition": 0
 }

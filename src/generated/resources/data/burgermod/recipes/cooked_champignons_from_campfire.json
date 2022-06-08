@@ -1,9 +1,9 @@
 {
   "type": "minecraft:campfire_cooking",
+  "cookingtime": 600,
+  "experience": 0.25,
   "ingredient": {
     "item": "burgermod:raw_champignons"
   },
-  "result": "burgermod:cooked_champignons",
-  "experience": 0.25,
-  "cookingtime": 600
+  "result": "burgermod:cooked_champignons"
 }
