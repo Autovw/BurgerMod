@@ -3,6 +3,7 @@ package com.autovw.burgermod;
 import com.autovw.burgermod.config.Config;
 import com.autovw.burgermod.core.registry.ModItems;
 import com.autovw.burgermod.core.registry.ModLootModifiers;
+import com.mojang.logging.LogUtils;
 import net.minecraft.world.item.CreativeModeTab;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.eventbus.api.IEventBus;
@@ -11,15 +12,14 @@ import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.config.ModConfig;
 import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
-import org.apache.logging.log4j.LogManager;
-import org.apache.logging.log4j.Logger;
+import org.slf4j.Logger;
 
 /**
  * Author: Autovw
  */
 @Mod(BurgerMod.MOD_ID)
 public class BurgerMod {
-    public static final Logger LOGGER = LogManager.getLogger();
+    private static final Logger LOGGER = LogUtils.getLogger();
     public static final String MOD_ID = "burgermod";
     public static final CreativeModeTab TAB_BURGERMOD = new BurgerCreativeTab(MOD_ID + ".tab");
 
