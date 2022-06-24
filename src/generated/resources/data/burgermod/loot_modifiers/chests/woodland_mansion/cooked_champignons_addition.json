@@ -3,7 +3,7 @@
   "conditions": [
     {
       "condition": "forge:loot_table_id",
-      "loot_table_id": "burgermod:chests/woodland_mansion/cooked_champignons_addition"
+      "loot_table_id": "minecraft:chests/woodland_mansion"
     }
   ],
   "item_addition": "burgermod:cooked_champignons",

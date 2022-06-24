@@ -3,7 +3,7 @@
   "conditions": [
     {
       "condition": "forge:loot_table_id",
-      "loot_table_id": "burgermod:chests/village/village_snowy_house/hotdog_addition"
+      "loot_table_id": "minecraft:chests/village/village_snowy_house"
     }
   ],
   "item_addition": "burgermod:hotdog",

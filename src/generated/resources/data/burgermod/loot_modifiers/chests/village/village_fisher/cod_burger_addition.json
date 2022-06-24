@@ -3,7 +3,7 @@
   "conditions": [
     {
       "condition": "forge:loot_table_id",
-      "loot_table_id": "burgermod:chests/village/village_fisher/cod_burger_addition"
+      "loot_table_id": "minecraft:chests/village/village_fisher"
     }
   ],
   "item_addition": "burgermod:cod_burger",

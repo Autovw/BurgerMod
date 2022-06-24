@@ -4,7 +4,7 @@
   "conditions": [
     {
       "condition": "forge:loot_table_id",
-      "loot_table_id": "burgermod:chests/bastion_treasure/golden_pork_burger_addition"
+      "loot_table_id": "minecraft:chests/bastion_treasure"
     }
   ],
   "item_addition": "burgermod:golden_pork_burger",

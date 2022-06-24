@@ -4,7 +4,7 @@
   "conditions": [
     {
       "condition": "forge:loot_table_id",
-      "loot_table_id": "burgermod:chests/desert_pyramid/golden_mutton_burger_addition"
+      "loot_table_id": "minecraft:chests/desert_pyramid"
     }
   ],
   "item_addition": "burgermod:golden_mutton_burger",

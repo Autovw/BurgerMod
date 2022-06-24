@@ -3,7 +3,7 @@
   "conditions": [
     {
       "condition": "forge:loot_table_id",
-      "loot_table_id": "burgermod:chests/igloo_chest/pork_cheese_burger_addition"
+      "loot_table_id": "minecraft:chests/igloo_chest"
     }
   ],
   "item_addition": "burgermod:pork_cheese_burger",

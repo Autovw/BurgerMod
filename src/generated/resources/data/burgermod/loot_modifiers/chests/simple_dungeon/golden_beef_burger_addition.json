@@ -4,7 +4,7 @@
   "conditions": [
     {
       "condition": "forge:loot_table_id",
-      "loot_table_id": "burgermod:chests/simple_dungeon/golden_beef_burger_addition"
+      "loot_table_id": "minecraft:chests/simple_dungeon"
     }
   ],
   "item_addition": "burgermod:golden_beef_burger",
