@@ -1,0 +1,50 @@
+{
+  "item.burgermod.beef_burger": "Rindfleisch-Burger mit Ei",
+  "item.burgermod.pork_burger": "Schweinefleisch-Burger mit Ei",
+  "item.burgermod.mutton_burger": "Schaffleisch-Burger mit Ei",
+  "item.burgermod.chicken_burger": "Hühnchen-Burger mit Ei",
+  "item.burgermod.salmon_burger": "Lachs-Burger mit Ei",
+  "item.burgermod.cod_burger": "Kabeljau-Burger mit Ei",
+
+  "item.burgermod.beef_cheese_burger": "Rindfleisch-Burger mit Käse",
+  "item.burgermod.pork_cheese_burger": "Schweinefleisch-Burger mit Käse",
+  "item.burgermod.mutton_cheese_burger": "Schaffleisch-Burger mit Käse",
+  "item.burgermod.chicken_cheese_burger": "Hühnchen-Burger mit Käse",
+  "item.burgermod.salmon_cheese_burger": "Lachs-Burger mit Käse",
+  "item.burgermod.cod_cheese_burger": "Kabeljau-Burger mit Käse",
+
+  "item.burgermod.beef_champignon_burger": "Rindfleisch-Burger mit Champignon",
+  "item.burgermod.pork_champignon_burger": "Schweinefleisch-Burger mit Champignon",
+  "item.burgermod.mutton_champignon_burger": "Schaffleisch-Burger mit Champignon",
+  "item.burgermod.chicken_champignon_burger": "Hühnchen-Burger mit Champignon",
+  "item.burgermod.salmon_champignon_burger": "Lachs-Burger mit Champignon",
+  "item.burgermod.cod_champignon_burger": "Kabeljau-Burger mit Champignon",
+
+  "item.burgermod.golden_beef_burger": "Goldener Eindfleisch-Burger",
+  "item.burgermod.golden_pork_burger": "Goldener Schweinefleisch-Burger",
+  "item.burgermod.golden_mutton_burger": "Goldener Schaffleisch-Burger",
+  "item.burgermod.golden_chicken_burger": "Goldener Hühnchen-Burger",
+  "item.burgermod.golden_salmon_burger": "Goldener Lachs-Burger",
+  "item.burgermod.golden_cod_burger": "Goldener Kabeljau-Burger",
+
+  "item.burgermod.enchanted_golden_burger": "Verzeuberter Golden-Burger",
+
+  "item.burgermod.scrambled_egg": "Rührei",
+  "item.burgermod.fried_scrambled_egg": "Gebratenes Rührei",
+
+  "item.burgermod.raw_champignons": "Rohe Champignons",
+  "item.burgermod.cooked_champignons": "Gekochte Champignons",
+
+  "item.burgermod.cheese": "Käse",
+  "item.burgermod.cooked_chicken_nugget": "Chicken Nugget",
+  "item.burgermod.fries": "Pommes",
+  "item.burgermod.hotdog": "Hotdog",
+  "item.burgermod.sweet_berry_tart": "Süßbeeren-Torte",
+
+  "itemGroup.burgermod.tab": "Burger Mod",
+
+  "advancements.burgermod.husbandry.craft_burger.title": "Leckere Burger!",
+  "advancements.burgermod.husbandry.craft_burger.description": "Erhalte einen Burger",
+  "advancements.burgermod.husbandry.craft_golden_burger.title": "Bessere Burger",
+  "advancements.burgermod.husbandry.craft_golden_burger.description": "Erhalte einen Goldenen Burger"
+}
