@@ -1,6 +1,6 @@
 {
   "type": "burgermod:chests/bastion_treasure/enchanted_golden_burger_addition",
-  "chance_addition": 0.15,
+  "chance_addition": 0.2,
   "conditions": [
     {
       "condition": "forge:loot_table_id",
