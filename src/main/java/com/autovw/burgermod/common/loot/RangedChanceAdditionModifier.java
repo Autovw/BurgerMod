@@ -40,7 +40,7 @@ public class RangedChanceAdditionModifier extends LootModifier {
     @Override
     protected ObjectArrayList<ItemStack> doApply(ObjectArrayList<ItemStack> generatedLoot, LootContext context) {
         if (maxAddition >= minAddition && context.getRandom().nextFloat() <= chanceAddition) {
-            generatedLoot.add(new ItemStack(itemAddition, context.getRandom().nextIntBetweenInclusive(minAddition, maxAddition + 1)));
+            generatedLoot.add(new ItemStack(itemAddition, context.getRandom().nextIntBetweenInclusive(minAddition, maxAddition)));
         }
         return generatedLoot;
     }
