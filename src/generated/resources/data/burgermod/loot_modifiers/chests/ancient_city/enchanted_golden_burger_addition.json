@@ -1,0 +1,13 @@
+{
+  "type": "burgermod:chests/ancient_city/enchanted_golden_burger_addition",
+  "chance_addition": 0.25,
+  "conditions": [
+    {
+      "condition": "forge:loot_table_id",
+      "loot_table_id": "minecraft:chests/ancient_city"
+    }
+  ],
+  "item_addition": "burgermod:enchanted_golden_burger",
+  "max_addition": 1,
+  "min_addition": 0
+}

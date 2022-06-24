@@ -31,4 +31,5 @@ public class ModLootModifiers {
     public static final RegistryObject<RangedChanceAdditionModifier.Serializer> BASTION_HOGLIN_STABLE_GOLDEN_CHICKEN_BURGER_ADDITION = LOOT_MODIFIERS.register("chests/bastion_hoglin_stable/golden_chicken_burger_addition", RangedChanceAdditionModifier.Serializer::new);
     public static final RegistryObject<RangedChanceAdditionModifier.Serializer> BASTION_TREASURE_GOLDEN_PORK_BURGER_ADDITION = LOOT_MODIFIERS.register("chests/bastion_treasure/golden_pork_burger_addition", RangedChanceAdditionModifier.Serializer::new);
     public static final RegistryObject<RangedChanceAdditionModifier.Serializer> BASTION_TREASURE_ENCHANTED_GOLDEN_BURGER_ADDITION = LOOT_MODIFIERS.register("chests/bastion_treasure/enchanted_golden_burger_addition", RangedChanceAdditionModifier.Serializer::new);
+    public static final RegistryObject<RangedChanceAdditionModifier.Serializer> ANCIENT_CITY_ENCHANTED_GOLDEN_BURGER_ADDITION = LOOT_MODIFIERS.register("chests/ancient_city/enchanted_golden_burger_addition", RangedChanceAdditionModifier.Serializer::new);
 }
