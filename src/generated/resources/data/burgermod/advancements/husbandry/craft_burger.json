@@ -2,8 +2,7 @@
   "parent": "minecraft:husbandry/plant_seed",
   "display": {
     "icon": {
-      "item": "burgermod:beef_burger",
-      "nbt": "{Damage:0}"
+      "item": "burgermod:beef_burger"
     },
     "title": {
       "translate": "advancements.burgermod.husbandry.craft_burger.title"

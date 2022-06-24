@@ -2,8 +2,7 @@
   "parent": "burgermod:husbandry/craft_burger",
   "display": {
     "icon": {
-      "item": "burgermod:golden_beef_burger",
-      "nbt": "{Damage:0}"
+      "item": "burgermod:golden_beef_burger"
     },
     "title": {
       "translate": "advancements.burgermod.husbandry.craft_golden_burger.title"
