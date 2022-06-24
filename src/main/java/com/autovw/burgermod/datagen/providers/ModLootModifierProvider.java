@@ -37,6 +37,7 @@ public class ModLootModifierProvider extends GlobalLootModifierProvider {
         addRangedChance(ModLootModifiers.DESERT_PYRAMID_GOLDEN_MUTTON_BURGER_ADDITION.get(), new ResourceLocation("chests/desert_pyramid"), ModItems.GOLDEN_MUTTON_BURGER.get(), 1, 1, 0.1f);
         addRangedChance(ModLootModifiers.RUINED_PORTAL_GOLDEN_PORK_BURGER_ADDITION.get(), new ResourceLocation("chests/ruined_portal"), ModItems.GOLDEN_PORK_BURGER.get(), 1, 1, 0.15f);
         addRangedChance(ModLootModifiers.BASTION_OTHER_GOLDEN_SALMON_BURGER_ADDITION.get(), new ResourceLocation("chests/bastion_other"), ModItems.GOLDEN_SALMON_BURGER.get(), 0, 1, 0.2f);
+        addRangedChance(ModLootModifiers.BASTION_HOGLIN_STABLE_GOLDEN_CHICKEN_BURGER_ADDITION.get(), new ResourceLocation("chests/bastion_hoglin_stable"), ModItems.GOLDEN_CHICKEN_BURGER.get(), 0, 1, 0.3f);
         addRangedChance(ModLootModifiers.BASTION_TREASURE_GOLDEN_PORK_BURGER_ADDITION.get(), new ResourceLocation("chests/bastion_treasure"), ModItems.GOLDEN_PORK_BURGER.get(), 1, 1, 0.4f);
         addRangedChance(ModLootModifiers.BASTION_TREASURE_ENCHANTED_GOLDEN_BURGER_ADDITION.get(), new ResourceLocation("chests/bastion_treasure"), ModItems.ENCHANTED_GOLDEN_BURGER.get(), 0, 1, 0.2f);
     }

@@ -28,6 +28,7 @@ public class ModLootModifiers {
     public static final RegistryObject<RangedChanceAdditionModifier.Serializer> DESERT_PYRAMID_GOLDEN_MUTTON_BURGER_ADDITION = LOOT_MODIFIERS.register("chests/desert_pyramid/golden_mutton_burger_addition", RangedChanceAdditionModifier.Serializer::new);
     public static final RegistryObject<RangedChanceAdditionModifier.Serializer> RUINED_PORTAL_GOLDEN_PORK_BURGER_ADDITION = LOOT_MODIFIERS.register("chests/ruined_portal/golden_pork_burger_addition", RangedChanceAdditionModifier.Serializer::new);
     public static final RegistryObject<RangedChanceAdditionModifier.Serializer> BASTION_OTHER_GOLDEN_SALMON_BURGER_ADDITION = LOOT_MODIFIERS.register("chests/bastion_other/golden_salmon_burger_addition", RangedChanceAdditionModifier.Serializer::new);
+    public static final RegistryObject<RangedChanceAdditionModifier.Serializer> BASTION_HOGLIN_STABLE_GOLDEN_CHICKEN_BURGER_ADDITION = LOOT_MODIFIERS.register("chests/bastion_hoglin_stable/golden_chicken_burger_addition", RangedChanceAdditionModifier.Serializer::new);
     public static final RegistryObject<RangedChanceAdditionModifier.Serializer> BASTION_TREASURE_GOLDEN_PORK_BURGER_ADDITION = LOOT_MODIFIERS.register("chests/bastion_treasure/golden_pork_burger_addition", RangedChanceAdditionModifier.Serializer::new);
     public static final RegistryObject<RangedChanceAdditionModifier.Serializer> BASTION_TREASURE_ENCHANTED_GOLDEN_BURGER_ADDITION = LOOT_MODIFIERS.register("chests/bastion_treasure/enchanted_golden_burger_addition", RangedChanceAdditionModifier.Serializer::new);
 }
