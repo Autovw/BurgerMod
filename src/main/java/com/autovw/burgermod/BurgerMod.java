@@ -63,6 +63,7 @@ public class BurgerMod {
                 new RangedChanceAdditionModifier.Serializer().setRegistryName(new ResourceLocation(MOD_ID, "chests/desert_pyramid/golden_mutton_burger_addition")),
                 new RangedChanceAdditionModifier.Serializer().setRegistryName(new ResourceLocation(MOD_ID, "chests/ruined_portal/golden_pork_burger_addition")),
                 new RangedChanceAdditionModifier.Serializer().setRegistryName(new ResourceLocation(MOD_ID, "chests/bastion_other/golden_salmon_burger_addition")),
+                new RangedChanceAdditionModifier.Serializer().setRegistryName(new ResourceLocation(MOD_ID, "chests/bastion_hoglin_stable/golden_chicken_burger_addition")),
                 new RangedChanceAdditionModifier.Serializer().setRegistryName(new ResourceLocation(MOD_ID, "chests/bastion_treasure/golden_pork_burger_addition")),
                 new RangedChanceAdditionModifier.Serializer().setRegistryName(new ResourceLocation(MOD_ID, "chests/bastion_treasure/enchanted_golden_burger_addition")));
     }
