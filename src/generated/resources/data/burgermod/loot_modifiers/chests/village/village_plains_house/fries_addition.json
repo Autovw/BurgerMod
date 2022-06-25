@@ -1,12 +1,15 @@
 {
   "type": "burgermod:chests/village/village_plains_house/fries_addition",
+  "addition": {
+    "chance": 1.0,
+    "item": "burgermod:fries",
+    "max": 2,
+    "min": 0
+  },
   "conditions": [
     {
       "condition": "forge:loot_table_id",
       "loot_table_id": "minecraft:chests/village/village_plains_house"
     }
-  ],
-  "item_addition": "burgermod:fries",
-  "max_addition": 2,
-  "min_addition": 0
+  ]
 }

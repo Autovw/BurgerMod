@@ -17,7 +17,10 @@ import java.util.Objects;
 
 /**
  * Author: Autovw
+ * @deprecated use {@link LootAdditionModifier}
  */
+// TODO remove in 1.19.1
+@Deprecated(since = "2.8.0", forRemoval = true)
 public class RangedChanceAdditionModifier extends LootModifier {
     private final Item itemAddition;
     private final int minAddition, maxAddition;

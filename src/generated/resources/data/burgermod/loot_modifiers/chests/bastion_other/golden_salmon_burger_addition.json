@@ -1,13 +1,15 @@
 {
   "type": "burgermod:chests/bastion_other/golden_salmon_burger_addition",
-  "chance_addition": 0.2,
+  "addition": {
+    "chance": 0.2,
+    "item": "burgermod:golden_salmon_burger",
+    "max": 1,
+    "min": 0
+  },
   "conditions": [
     {
       "condition": "forge:loot_table_id",
       "loot_table_id": "minecraft:chests/bastion_other"
     }
-  ],
-  "item_addition": "burgermod:golden_salmon_burger",
-  "max_addition": 1,
-  "min_addition": 0
+  ]
 }

@@ -1,12 +1,15 @@
 {
   "type": "burgermod:chests/igloo_chest/pork_cheese_burger_addition",
+  "addition": {
+    "chance": 1.0,
+    "item": "burgermod:pork_cheese_burger",
+    "max": 1,
+    "min": 0
+  },
   "conditions": [
     {
       "condition": "forge:loot_table_id",
       "loot_table_id": "minecraft:chests/igloo_chest"
     }
-  ],
-  "item_addition": "burgermod:pork_cheese_burger",
-  "max_addition": 1,
-  "min_addition": 0
+  ]
 }

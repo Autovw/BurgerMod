@@ -1,13 +1,15 @@
 {
   "type": "burgermod:chests/bastion_hoglin_stable/golden_chicken_burger_addition",
-  "chance_addition": 0.3,
+  "addition": {
+    "chance": 0.3,
+    "item": "burgermod:golden_chicken_burger",
+    "max": 1,
+    "min": 0
+  },
   "conditions": [
     {
       "condition": "forge:loot_table_id",
       "loot_table_id": "minecraft:chests/bastion_hoglin_stable"
     }
-  ],
-  "item_addition": "burgermod:golden_chicken_burger",
-  "max_addition": 1,
-  "min_addition": 0
+  ]
 }
