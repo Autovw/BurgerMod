@@ -54,17 +54,23 @@ public class ModLootModifierProvider extends GlobalLootModifierProvider {
                 LootTableIdCondition.builder(target).build() }, addition, minAddition, maxAddition, chanceAddition));
     }
 
+    /**
+     * @deprecated use {@link #addModifier(LootAdditionModifier.Serializer, ResourceLocation, Item, int, int)}
+     */
     @Deprecated(since = "2.8.0", forRemoval = true)
-    protected void addRanged(RangedAdditionModifier.Serializer serializer, ResourceLocation target, Item addition, int minAddition, int maxAddition) {
+    protected void addRanged(RangedAdditionModifier.Serializer serializer, Item addition, int minAddition, int maxAddition) {
         ResourceLocation lootLoc = ForgeRegistries.LOOT_MODIFIER_SERIALIZERS.get().getKey(serializer);
         add(lootLoc.getPath(), serializer, new RangedAdditionModifier(new LootItemCondition[] {
-                LootTableIdCondition.builder(target).build() }, addition, minAddition, maxAddition));
+                LootTableIdCondition.builder(lootLoc).build() }, addition, minAddition, maxAddition));
     }
 
+    /**
+     * @deprecated use {@link #addModifier(LootAdditionModifier.Serializer, ResourceLocation, Item, int, int, float)}
+     */
     @Deprecated(since = "2.8.0", forRemoval = true)
-    protected void addRangedChance(RangedChanceAdditionModifier.Serializer serializer, ResourceLocation target, Item addition, int minAddition, int maxAddition, float chanceAddition) {
+    protected void addRangedChance(RangedChanceAdditionModifier.Serializer serializer, Item addition, int minAddition, int maxAddition, float chanceAddition) {
         ResourceLocation lootLoc = ForgeRegistries.LOOT_MODIFIER_SERIALIZERS.get().getKey(serializer);
         add(lootLoc.getPath(), serializer, new RangedChanceAdditionModifier(new LootItemCondition[] {
-                LootTableIdCondition.builder(target).build() }, addition, minAddition, maxAddition, chanceAddition));
+                LootTableIdCondition.builder(lootLoc).build() }, addition, minAddition, maxAddition, chanceAddition));
     }
 }
