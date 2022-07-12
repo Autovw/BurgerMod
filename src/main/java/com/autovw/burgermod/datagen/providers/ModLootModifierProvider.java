@@ -2,8 +2,6 @@ package com.autovw.burgermod.datagen.providers;
 
 import com.autovw.burgermod.BurgerMod;
 import com.autovw.burgermod.common.loot.LootAdditionModifier;
-import com.autovw.burgermod.common.loot.RangedAdditionModifier;
-import com.autovw.burgermod.common.loot.RangedChanceAdditionModifier;
 import com.autovw.burgermod.core.registry.ModItems;
 import com.autovw.burgermod.core.registry.ModLootModifiers;
 import net.minecraft.data.DataGenerator;
@@ -52,25 +50,5 @@ public class ModLootModifierProvider extends GlobalLootModifierProvider {
         ResourceLocation lootLoc = ForgeRegistries.LOOT_MODIFIER_SERIALIZERS.get().getKey(serializer);
         add(lootLoc.getPath(), serializer, new LootAdditionModifier(new LootItemCondition[] {
                 LootTableIdCondition.builder(target).build() }, addition, minAddition, maxAddition, chanceAddition));
-    }
-
-    /**
-     * @deprecated use {@link #addModifier(LootAdditionModifier.Serializer, ResourceLocation, Item, int, int)}
-     */
-    @Deprecated(since = "2.8.0", forRemoval = true)
-    protected void addRanged(RangedAdditionModifier.Serializer serializer, Item addition, int minAddition, int maxAddition) {
-        ResourceLocation lootLoc = ForgeRegistries.LOOT_MODIFIER_SERIALIZERS.get().getKey(serializer);
-        add(lootLoc.getPath(), serializer, new RangedAdditionModifier(new LootItemCondition[] {
-                LootTableIdCondition.builder(lootLoc).build() }, addition, minAddition, maxAddition));
-    }
-
-    /**
-     * @deprecated use {@link #addModifier(LootAdditionModifier.Serializer, ResourceLocation, Item, int, int, float)}
-     */
-    @Deprecated(since = "2.8.0", forRemoval = true)
-    protected void addRangedChance(RangedChanceAdditionModifier.Serializer serializer, Item addition, int minAddition, int maxAddition, float chanceAddition) {
-        ResourceLocation lootLoc = ForgeRegistries.LOOT_MODIFIER_SERIALIZERS.get().getKey(serializer);
-        add(lootLoc.getPath(), serializer, new RangedChanceAdditionModifier(new LootItemCondition[] {
-                LootTableIdCondition.builder(lootLoc).build() }, addition, minAddition, maxAddition, chanceAddition));
     }
 }
