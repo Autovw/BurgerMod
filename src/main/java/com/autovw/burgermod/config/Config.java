@@ -19,11 +19,13 @@ public class Config {
 
     public static class Common {
         public final EffectsConfig effectsConfig;
+        public final LootConfig lootConfig;
 
         public Common(ForgeConfigSpec.Builder builder) {
             builder.push("common");
             {
                 this.effectsConfig = new EffectsConfig(builder);
+                this.lootConfig = new LootConfig(builder);
             }
             builder.pop();
         }
@@ -81,6 +83,21 @@ public class Config {
                     enchantedGoldenBurgerAbsorptionAmplifier = builder.comment("Adjust the absorption effect level here. 0 = level 1, 1 = level 2 etc.").define("enchantedGoldenBurgerAbsorptionAmplifier", 3);
                 }
                 builder.pop();
+            }
+            builder.pop();
+        }
+    }
+
+    /**
+     * Config with options related to the loot modifiers of this mod
+     */
+    public static class LootConfig {
+        public static ForgeConfigSpec.BooleanValue generateChestLoot;
+
+        public LootConfig(ForgeConfigSpec.Builder builder) {
+            builder.comment("Loot related config options").push("loot_config");
+            {
+                generateChestLoot = builder.comment("If true, items from this mod are added to vanilla loot tables. True by default.").define("generateChestLoot", true);
             }
             builder.pop();
         }
