@@ -10,7 +10,7 @@ buildscript {
 apply plugin: 'net.minecraftforge.gradle'
 apply plugin: 'maven-publish'
 
-version = '2.9.0-1.19.1'
+version = '2.9.0-1.19.2'
 group = 'com.autovw.burgermod'
 archivesBaseName = 'burgermod'
 
@@ -18,7 +18,7 @@ java.toolchain.languageVersion = JavaLanguageVersion.of(17)
 
 println('Java: ' + System.getProperty('java.version') + ' JVM: ' + System.getProperty('java.vm.version') + '(' + System.getProperty('java.vendor') + ') Arch: ' + System.getProperty('os.arch'))
 minecraft {
-    mappings channel: 'official', version: '1.19.1'
+    mappings channel: 'official', version: '1.19.2'
     // makeObfSourceJar = false // an Srg named sources jar is made by default. uncomment this to disable.
     
     // accessTransformer = file('src/main/resources/META-INF/accesstransformer.cfg')
@@ -70,22 +70,22 @@ repositories {
 }
 
 dependencies {
-    minecraft 'net.minecraftforge:forge:1.19.1-42.0.0'
+    minecraft 'net.minecraftforge:forge:1.19.2-43.0.0'
 
     //runtimeOnly fg.deobf('curse.maven:catalogue-459701:3871526')
     //runtimeOnly fg.deobf('curse.maven:configured-457570:3871521')
-    //runtimeOnly fg.deobf('curse.maven:jei-238222:3835406')
+    runtimeOnly fg.deobf('curse.maven:jei-238222:3920263')
 }
 
 jar {
     manifest {
         attributes([
             "Specification-Title": "Burger Mod",
-            "Specification-Vendor": "${mod_vendor}",
+            "Specification-Vendor": project.mod_vendor,
             "Specification-Version": "1", // We are version 1 of ourselves
             "Implementation-Title": project.name,
             "Implementation-Version": project.jar.archiveVersion,
-            "Implementation-Vendor" :"${mod_vendor}",
+            "Implementation-Vendor": project.mod_vendor,
             "Implementation-Timestamp": new Date().format("yyyy-MM-dd'T'HH:mm:ssZ")
         ])
     }
