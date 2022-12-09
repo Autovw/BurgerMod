@@ -1,27 +1,30 @@
 package com.autovw.burgermod.datagen.providers;
 
-import com.autovw.burgermod.BurgerMod;
 import com.autovw.burgermod.core.registry.ModItems;
 import com.autovw.burgermod.core.util.ModTags;
-import net.minecraft.data.DataGenerator;
-import net.minecraft.data.tags.BlockTagsProvider;
+import net.minecraft.core.HolderLookup;
+import net.minecraft.data.PackOutput;
 import net.minecraft.data.tags.ItemTagsProvider;
+import net.minecraft.data.tags.TagsProvider;
 import net.minecraft.tags.ItemTags;
 import net.minecraft.world.item.Items;
+import net.minecraft.world.level.block.Block;
 import net.minecraftforge.common.Tags;
 import net.minecraftforge.common.data.ExistingFileHelper;
 import org.jetbrains.annotations.Nullable;
 
+import java.util.concurrent.CompletableFuture;
+
 /**
- * Author: Autovw
+ * @author Autovw
  */
 public class ModItemTagsProvider extends ItemTagsProvider {
-    public ModItemTagsProvider(DataGenerator generator, BlockTagsProvider blockTagsProvider, @Nullable ExistingFileHelper existingFileHelper) {
-        super(generator, blockTagsProvider, BurgerMod.MOD_ID, existingFileHelper);
+    public ModItemTagsProvider(PackOutput pack, CompletableFuture<HolderLookup.Provider> registries, TagsProvider<Block> blockTagsProvider, String modId, @Nullable ExistingFileHelper existingFileHelper) {
+        super(pack, registries, blockTagsProvider, modId, existingFileHelper);
     }
 
     @Override
-    protected void addTags() {
+    protected void addTags(HolderLookup.Provider registries) {
         /* Tags added by the mod */
         tag(ModTags.BEEF_BURGERS)
                 .add(ModItems.BEEF_BURGER.get())

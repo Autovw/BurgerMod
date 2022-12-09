@@ -11,10 +11,9 @@ import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
 
 /**
- * Author: Autovw
+ * @author Autovw
  */
 public class ModItems {
-    // DeferredRegister is the correct way to register stuff.
     public static final DeferredRegister<Item> ITEMS = DeferredRegister.create(ForgeRegistries.ITEMS, BurgerMod.MOD_ID);
 
     /* The food properties are stored in the ModFood class to make this class look cleaner.
@@ -85,7 +84,7 @@ public class ModItems {
      * @return The food item
      */
     private static RegistryObject<Item> register(String name, FoodProperties food) {
-        return ITEMS.register(name, () -> new Item(new Item.Properties().tab(BurgerMod.TAB_BURGERMOD).food(food)));
+        return ITEMS.register(name, () -> new Item(new Item.Properties().food(food)));
     }
 
     /**
@@ -97,10 +96,10 @@ public class ModItems {
      * @return The food item
      */
     private static RegistryObject<Item> register(String name, FoodProperties food, Rarity rarity) {
-        return ITEMS.register(name, () -> new Item(new Item.Properties().tab(BurgerMod.TAB_BURGERMOD).food(food).rarity(rarity)));
+        return ITEMS.register(name, () -> new Item(new Item.Properties().food(food).rarity(rarity)));
     }
 
     private static RegistryObject<Item> registerEnchantedBurger(String name) {
-        return ITEMS.register(name, () -> new EnchantedBurgerItem(new Item.Properties().tab(BurgerMod.TAB_BURGERMOD).food(ModFood.ENCHANTED_GOLDEN_BURGER).rarity(Rarity.EPIC)));
+        return ITEMS.register(name, () -> new EnchantedBurgerItem(new Item.Properties().food(ModFood.ENCHANTED_GOLDEN_BURGER).rarity(Rarity.EPIC)));
     }
 }

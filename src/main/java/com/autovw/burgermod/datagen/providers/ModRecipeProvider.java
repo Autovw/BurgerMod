@@ -3,7 +3,7 @@ package com.autovw.burgermod.datagen.providers;
 import com.autovw.burgermod.BurgerMod;
 import com.autovw.burgermod.core.registry.ModItems;
 import com.autovw.burgermod.core.util.ModTags;
-import net.minecraft.data.DataGenerator;
+import net.minecraft.data.PackOutput;
 import net.minecraft.data.recipes.*;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.tags.TagKey;
@@ -16,15 +16,15 @@ import net.minecraftforge.common.Tags;
 import java.util.function.Consumer;
 
 /**
- * Author: Autovw
+ * @author Autovw
  */
 public class ModRecipeProvider extends RecipeProvider {
-    public ModRecipeProvider(DataGenerator generator) {
-        super(generator);
+    public ModRecipeProvider(PackOutput packOutput) {
+        super(packOutput);
     }
 
     @Override
-    protected void buildCraftingRecipes(Consumer<FinishedRecipe> consumer) {
+    protected void buildRecipes(Consumer<FinishedRecipe> consumer) {
         /* Burgers */
         eggBurgerRecipe(consumer, ModItems.BEEF_BURGER.get(), Items.COOKED_BEEF);
         eggBurgerRecipe(consumer, ModItems.PORK_BURGER.get(), Items.COOKED_PORKCHOP);
@@ -79,7 +79,7 @@ public class ModRecipeProvider extends RecipeProvider {
      * @param extraIngredient Extra ingredient, a tag by default (e.g. forge:cheese for a cheese burger)
      */
     public static void baseBurgerRecipe(Consumer<FinishedRecipe> recipeConsumer, ItemLike result, int resultAmount, ItemLike mainIngredient, TagKey<Item> extraIngredient) {
-        ShapedRecipeBuilder.shaped(result, resultAmount)
+        ShapedRecipeBuilder.shaped(RecipeCategory.FOOD, result, resultAmount)
                 .define('B', ModTags.FORGE_BREAD)
                 .define('#', mainIngredient)
                 .define('*', extraIngredient)
@@ -102,7 +102,7 @@ public class ModRecipeProvider extends RecipeProvider {
      * @param extraIngredient Extra ingredient, a tag by default (e.g. forge:cheese for a cheese burger)
      */
     public static void baseBurgerRecipe(Consumer<FinishedRecipe> recipeConsumer, ItemLike result, int resultAmount, TagKey<Item> mainIngredient, TagKey<Item> extraIngredient) {
-        ShapedRecipeBuilder.shaped(result, resultAmount)
+        ShapedRecipeBuilder.shaped(RecipeCategory.FOOD, result, resultAmount)
                 .define('B', ModTags.FORGE_BREAD)
                 .define('#', mainIngredient)
                 .define('*', extraIngredient)
@@ -147,7 +147,7 @@ public class ModRecipeProvider extends RecipeProvider {
      * @param ingredient Crafting ingredient
      */
     public static void goldenBurgerRecipe(Consumer<FinishedRecipe> recipeConsumer, ItemLike result, TagKey<Item> ingredient) {
-        ShapedRecipeBuilder.shaped(result)
+        ShapedRecipeBuilder.shaped(RecipeCategory.FOOD, result)
                 .define('G', Tags.Items.INGOTS_GOLD)
                 .define('#', ingredient)
                 .pattern("GGG")
@@ -168,15 +168,15 @@ public class ModRecipeProvider extends RecipeProvider {
      * @param modId Provide your modId so the data generator knows where to dump your recipes
      */
     public static void baseFoodCookingRecipe(Consumer<FinishedRecipe> recipeConsumer, ItemLike result, ItemLike ingredient, float experience, String modId) {
-        SimpleCookingRecipeBuilder.smelting(Ingredient.of(ingredient), result, experience, 200)
+        SimpleCookingRecipeBuilder.smelting(Ingredient.of(ingredient), RecipeCategory.FOOD, result, experience, 200)
                 .unlockedBy("has_" + ingredient.toString(), has(ingredient))
                 .save(recipeConsumer, new ResourceLocation(modId, result + "_from_smelting"));
 
-        SimpleCookingRecipeBuilder.campfireCooking(Ingredient.of(ingredient), result, experience, 600)
+        SimpleCookingRecipeBuilder.campfireCooking(Ingredient.of(ingredient), RecipeCategory.FOOD, result, experience, 600)
                 .unlockedBy("has_" + ingredient.toString(), has(ingredient))
                 .save(recipeConsumer, new ResourceLocation(modId, result + "_from_campfire"));
 
-        SimpleCookingRecipeBuilder.smoking(Ingredient.of(ingredient), result, experience, 100)
+        SimpleCookingRecipeBuilder.smoking(Ingredient.of(ingredient), RecipeCategory.FOOD, result, experience, 100)
                 .unlockedBy("has_" + ingredient.toString(), has(ingredient))
                 .save(recipeConsumer, new ResourceLocation(modId, result + "_from_smoker"));
     }
@@ -186,7 +186,7 @@ public class ModRecipeProvider extends RecipeProvider {
     }
 
     private static void scrambledEggRecipe(Consumer<FinishedRecipe> recipeConsumer, ItemLike result) {
-        ShapelessRecipeBuilder.shapeless(result)
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.FOOD, result)
                 .requires(Tags.Items.EGGS)
                 .unlockedBy("has_eggs", has(Tags.Items.EGGS))
                 .save(recipeConsumer);
@@ -198,7 +198,7 @@ public class ModRecipeProvider extends RecipeProvider {
 
     private static void internalCheeseRecipe(Consumer<FinishedRecipe> recipeConsumer, ItemLike result, ItemLike ingredient1, ItemLike ingredient2) {
         for (int amount = 1; amount <= 8; amount++) {
-            ShapelessRecipeBuilder.shapeless(result, amount)
+            ShapelessRecipeBuilder.shapeless(RecipeCategory.FOOD, result, amount)
                     .requires(ingredient1)
                     .requires(ingredient2, amount)
                     .unlockedBy("has_" + ingredient1.toString(), has(ingredient1)).unlockedBy("has_" + ingredient2.toString(), has(ingredient2))
@@ -207,21 +207,21 @@ public class ModRecipeProvider extends RecipeProvider {
     }
 
     private static void rawChampignonRecipe(Consumer<FinishedRecipe> recipeConsumer, ItemLike result) {
-        ShapelessRecipeBuilder.shapeless(result)
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.FOOD, result)
                 .requires(Items.BROWN_MUSHROOM, 2)
                 .unlockedBy("has_brown_mushroom", has(Items.BROWN_MUSHROOM))
                 .save(recipeConsumer);
     }
 
     private static void chickenNuggetRecipe(Consumer<FinishedRecipe> recipeConsumer) {
-        ShapelessRecipeBuilder.shapeless(ModItems.COOKED_CHICKEN_NUGGET.get(), 6)
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.FOOD, ModItems.COOKED_CHICKEN_NUGGET.get(), 6)
                 .requires(Items.COOKED_CHICKEN)
                 .unlockedBy("has_cooked_chicken", has(Items.COOKED_CHICKEN))
                 .save(recipeConsumer);
     }
 
     private static void friesRecipe(Consumer<FinishedRecipe> recipeConsumer) {
-        ShapedRecipeBuilder.shaped(ModItems.FRIES.get(), 2)
+        ShapedRecipeBuilder.shaped(RecipeCategory.FOOD, ModItems.FRIES.get(), 2)
                 .define('P', Items.BAKED_POTATO)
                 .pattern("PPP")
                 .unlockedBy("has_baked_potato", has(Items.BAKED_POTATO))
@@ -229,7 +229,7 @@ public class ModRecipeProvider extends RecipeProvider {
     }
 
     private static void hotdogRecipe(Consumer<FinishedRecipe> recipeConsumer) {
-        ShapelessRecipeBuilder.shapeless(ModItems.HOTDOG.get(), 4)
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.FOOD, ModItems.HOTDOG.get(), 4)
                 .requires(Items.COOKED_BEEF)
                 .requires(Items.COOKED_PORKCHOP)
                 .requires(Items.BREAD)
@@ -242,7 +242,7 @@ public class ModRecipeProvider extends RecipeProvider {
     }
 
     private static void sweetBerryTartRecipe(Consumer<FinishedRecipe> recipeConsumer) {
-        ShapelessRecipeBuilder.shapeless(ModItems.SWEET_BERRY_TART.get())
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.FOOD, ModItems.SWEET_BERRY_TART.get())
                 .requires(Items.SWEET_BERRIES, 3)
                 .requires(Items.WHEAT)
                 .requires(Items.SUGAR)

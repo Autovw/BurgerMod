@@ -4,7 +4,6 @@ import com.autovw.burgermod.config.Config;
 import com.autovw.burgermod.core.registry.ModItems;
 import com.autovw.burgermod.core.registry.ModLootModifiers;
 import com.mojang.logging.LogUtils;
-import net.minecraft.world.item.CreativeModeTab;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.fml.ModLoadingContext;
@@ -15,22 +14,20 @@ import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import org.slf4j.Logger;
 
 /**
- * Author: Autovw
+ * @author Autovw
  */
 @Mod(BurgerMod.MOD_ID)
 public class BurgerMod {
     private static final Logger LOGGER = LogUtils.getLogger();
     public static final String MOD_ID = "burgermod";
-    public static final CreativeModeTab TAB_BURGERMOD = new BurgerCreativeTab(MOD_ID + ".tab");
 
     public BurgerMod() {
-        // Used to register the common config.
+        // Registers the common config for Burger Mod
         ModLoadingContext.get().registerConfig(ModConfig.Type.COMMON, Config.commonConfig);
 
         IEventBus bus = FMLJavaModLoadingContext.get().getModEventBus();
         bus.addListener(this::commonSetup);
 
-        // Used to register the ModItems class and everything inside of it.
         ModItems.ITEMS.register(bus);
         ModLootModifiers.LOOT_MODIFIERS.register(bus);
 

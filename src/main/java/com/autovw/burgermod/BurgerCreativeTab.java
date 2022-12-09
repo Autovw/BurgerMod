@@ -1,38 +1,29 @@
 package com.autovw.burgermod;
 
 import com.autovw.burgermod.core.registry.ModItems;
-import net.minecraft.core.NonNullList;
-import net.minecraft.world.item.CreativeModeTab;
-import net.minecraft.world.item.ItemStack;
-import net.minecraftforge.registries.ForgeRegistries;
-
-import java.util.Objects;
+import net.minecraft.network.chat.Component;
+import net.minecraft.resources.ResourceLocation;
+import net.minecraftforge.event.CreativeModeTabEvent;
+import net.minecraftforge.eventbus.api.SubscribeEvent;
+import net.minecraftforge.fml.common.Mod;
+import net.minecraftforge.registries.RegistryObject;
 
 /**
- * Author: Autovw
+ * @author Autovw
  */
-public class BurgerCreativeTab extends CreativeModeTab {
-
-    // Creative inventory tab
-    public BurgerCreativeTab(String name) {
-        super(name);
+@Mod.EventBusSubscriber(modid = BurgerMod.MOD_ID, bus = Mod.EventBusSubscriber.Bus.MOD)
+public class BurgerCreativeTab {
+    private BurgerCreativeTab() {
     }
 
-    @Override
-    public ItemStack makeIcon() {
-        return ModItems.BEEF_BURGER.get().getDefaultInstance();
-    }
-
-    @Override
-    public void fillItemList(NonNullList<ItemStack> items) {
-        super.fillItemList(items);
-        items.sort((s1, s2) -> {
-            String item1 = Objects.requireNonNull(ForgeRegistries.ITEMS.getKey(s1.getItem())).getNamespace();
-            String item2 = Objects.requireNonNull(ForgeRegistries.ITEMS.getKey(s2.getItem())).getNamespace();
-
-            if (item1.equals(BurgerMod.MOD_ID) == item2.equals(BurgerMod.MOD_ID)) return 0;
-
-            return item1.equals(BurgerMod.MOD_ID) ? -1 : 1;
+    @SubscribeEvent
+    public static void onRegisterCreativeModeTabEvent(final CreativeModeTabEvent.Register event) {
+        event.registerCreativeModeTab(new ResourceLocation(BurgerMod.MOD_ID, ".tab"), builder -> {
+            builder.title(Component.translatable("itemGroup." + BurgerMod.MOD_ID + ".tab"))
+                    .icon(() -> ModItems.BEEF_BURGER.get().getDefaultInstance())
+                    .displayItems((flagSet, entries, flag) -> {
+                        ModItems.ITEMS.getEntries().stream().map(RegistryObject::get).forEach(entries::accept);
+                    });
         });
     }
 }
