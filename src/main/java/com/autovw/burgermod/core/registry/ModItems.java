@@ -13,7 +13,7 @@ import net.minecraftforge.registries.RegistryObject;
 /**
  * @author Autovw
  */
-public class ModItems {
+public final class ModItems {
     public static final DeferredRegister<Item> ITEMS = DeferredRegister.create(ForgeRegistries.ITEMS, BurgerMod.MOD_ID);
 
     /* The food properties are stored in the ModFood class to make this class look cleaner.

@@ -9,9 +9,9 @@ import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
 
 /**
- * Author: Autovw
+ * @author Autovw
  */
-public class ModLootModifiers {
+public final class ModLootModifiers {
     public static final DeferredRegister<Codec<? extends IGlobalLootModifier>> LOOT_MODIFIERS = DeferredRegister.create(ForgeRegistries.Keys.GLOBAL_LOOT_MODIFIER_SERIALIZERS, BurgerMod.MOD_ID);
 
     public static final RegistryObject<Codec<LootAdditionModifier>> LOOT_ADDITION_MODIFIER = LOOT_MODIFIERS.register("loot_addition_modifier", () -> LootAdditionModifier.CODEC);
