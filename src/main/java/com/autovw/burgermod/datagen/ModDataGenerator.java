@@ -34,10 +34,10 @@ public class ModDataGenerator {
         generator.addProvider(event.includeServer(), blockTagsProvider);
         generator.addProvider(event.includeServer(), new ModItemTagsProvider(packOutput, lookupProvider, blockTagsProvider, MOD_ID, helper));
         generator.addProvider(event.includeServer(), new ModRecipeProvider(packOutput));
-        generator.addProvider(event.includeServer(), new ModLootModifierProvider(generator));
+        generator.addProvider(event.includeServer(), new ModLootModifierProvider(packOutput));
         generator.addProvider(event.includeServer(), new ModAdvancementProvider(packOutput, lookupProvider, helper));
 
         // client
-        generator.addProvider(event.includeClient(), new ModItemModelProvider(generator, helper));
+        generator.addProvider(event.includeClient(), new ModItemModelProvider(packOutput, helper));
     }
 }

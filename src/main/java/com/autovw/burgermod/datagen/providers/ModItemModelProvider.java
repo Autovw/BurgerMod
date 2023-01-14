@@ -2,7 +2,7 @@ package com.autovw.burgermod.datagen.providers;
 
 import com.autovw.burgermod.BurgerMod;
 import com.autovw.burgermod.core.registry.ModItems;
-import net.minecraft.data.DataGenerator;
+import net.minecraft.data.PackOutput;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.item.Item;
 import net.minecraftforge.client.model.generators.ItemModelBuilder;
@@ -10,11 +10,11 @@ import net.minecraftforge.client.model.generators.ItemModelProvider;
 import net.minecraftforge.common.data.ExistingFileHelper;
 
 /**
- * Author: Autovw
+ * @author Autovw
  */
 public class ModItemModelProvider extends ItemModelProvider {
-    public ModItemModelProvider(DataGenerator generator, ExistingFileHelper existingFileHelper) {
-        super(generator, BurgerMod.MOD_ID, existingFileHelper);
+    public ModItemModelProvider(PackOutput output, ExistingFileHelper existingFileHelper) {
+        super(output, BurgerMod.MOD_ID, existingFileHelper);
     }
 
     @Override
