@@ -50,7 +50,7 @@ public class ModItemModelProvider extends ItemModelProvider {
         itemModel(ModItems.GOLDEN_COD_BURGER.get());
 
         /* Enchanted Golden Burger */
-        itemModel(ModItems.ENCHANTED_GOLDEN_BURGER.get(), new ResourceLocation(BurgerMod.MOD_ID, "items/golden_beef_burger"));
+        itemModel(ModItems.ENCHANTED_GOLDEN_BURGER.get(), new ResourceLocation(BurgerMod.MOD_ID, "item/golden_beef_burger"));
 
         /* Ingredients */
         itemModel(ModItems.SCRAMBLED_EGG.get());
@@ -78,6 +78,6 @@ public class ModItemModelProvider extends ItemModelProvider {
     }
 
     private ItemModelBuilder itemModel(Item item) {
-        return itemModel(item, new ResourceLocation(BurgerMod.MOD_ID, "items/" + item.toString()));
+        return itemModel(item, new ResourceLocation(BurgerMod.MOD_ID, "item/" + item.toString()));
     }
 }

@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:item/generated",
   "textures": {
-    "layer0": "burgermod:items/mutton_champignon_burger"
+    "layer0": "burgermod:item/mutton_champignon_burger"
   }
 }
