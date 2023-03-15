@@ -1,5 +1,6 @@
 {
   "type": "minecraft:crafting_shaped",
+  "category": "misc",
   "key": {
     "#": {
       "tag": "burgermod:chicken_burgers"
@@ -15,5 +16,6 @@
   ],
   "result": {
     "item": "burgermod:golden_chicken_burger"
-  }
+  },
+  "show_notification": true
 }

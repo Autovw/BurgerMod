@@ -1,5 +1,6 @@
 {
   "type": "minecraft:crafting_shaped",
+  "category": "misc",
   "key": {
     "#": {
       "item": "minecraft:cooked_cod"
@@ -19,5 +20,6 @@
   "result": {
     "count": 2,
     "item": "burgermod:cod_cheese_burger"
-  }
+  },
+  "show_notification": true
 }

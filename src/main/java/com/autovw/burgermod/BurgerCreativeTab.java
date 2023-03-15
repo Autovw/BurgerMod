@@ -21,7 +21,7 @@ public class BurgerCreativeTab {
         event.registerCreativeModeTab(new ResourceLocation(BurgerMod.MOD_ID, ".tab"), builder -> {
             builder.title(Component.translatable("itemGroup." + BurgerMod.MOD_ID + ".tab"))
                     .icon(() -> ModItems.BEEF_BURGER.get().getDefaultInstance())
-                    .displayItems((flagSet, entries, flag) -> {
+                    .displayItems((displayParameters, entries) -> {
                         ModItems.ITEMS.getEntries().stream().map(RegistryObject::get).forEach(entries::accept);
                     });
         });
