@@ -67,5 +67,6 @@
     "recipes": [
       "burgermod:hotdog"
     ]
-  }
+  },
+  "sends_telemetry_event": false
 }

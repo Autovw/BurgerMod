@@ -39,5 +39,6 @@
     "recipes": [
       "burgermod:golden_chicken_burger"
     ]
-  }
+  },
+  "sends_telemetry_event": false
 }

@@ -28,5 +28,6 @@
     "recipes": [
       "burgermod:scrambled_egg"
     ]
-  }
+  },
+  "sends_telemetry_event": false
 }

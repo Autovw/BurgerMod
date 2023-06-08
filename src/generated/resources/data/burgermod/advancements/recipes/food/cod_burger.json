@@ -52,5 +52,6 @@
     "recipes": [
       "burgermod:cod_burger"
     ]
-  }
+  },
+  "sends_telemetry_event": false
 }

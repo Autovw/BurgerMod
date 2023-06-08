@@ -43,5 +43,6 @@
     "recipes": [
       "burgermod:cheese_7"
     ]
-  }
+  },
+  "sends_telemetry_event": false
 }

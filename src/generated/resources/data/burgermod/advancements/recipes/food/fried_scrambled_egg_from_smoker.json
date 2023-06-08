@@ -30,5 +30,6 @@
     "recipes": [
       "burgermod:fried_scrambled_egg_from_smoker"
     ]
-  }
+  },
+  "sends_telemetry_event": false
 }

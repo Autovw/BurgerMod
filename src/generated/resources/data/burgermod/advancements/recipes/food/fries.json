@@ -30,5 +30,6 @@
     "recipes": [
       "burgermod:fries"
     ]
-  }
+  },
+  "sends_telemetry_event": false
 }

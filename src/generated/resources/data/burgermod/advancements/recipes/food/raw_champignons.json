@@ -30,5 +30,6 @@
     "recipes": [
       "burgermod:raw_champignons"
     ]
-  }
+  },
+  "sends_telemetry_event": false
 }

@@ -39,5 +39,6 @@
     "recipes": [
       "burgermod:golden_cod_burger"
     ]
-  }
+  },
+  "sends_telemetry_event": false
 }

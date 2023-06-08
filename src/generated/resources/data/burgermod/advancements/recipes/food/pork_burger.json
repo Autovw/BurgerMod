@@ -52,5 +52,6 @@
     "recipes": [
       "burgermod:pork_burger"
     ]
-  }
+  },
+  "sends_telemetry_event": false
 }

@@ -30,6 +30,7 @@ public class BurgerMod {
 
         ModItems.ITEMS.register(bus);
         ModLootModifiers.LOOT_MODIFIERS.register(bus);
+        BurgerCreativeTab.TABS.register(bus);
 
         // Register ourselves for server and other game events we are interested in
         MinecraftForge.EVENT_BUS.register(this);

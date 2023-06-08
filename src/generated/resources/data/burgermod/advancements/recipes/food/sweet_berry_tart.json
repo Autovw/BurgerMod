@@ -56,5 +56,6 @@
     "recipes": [
       "burgermod:sweet_berry_tart"
     ]
-  }
+  },
+  "sends_telemetry_event": false
 }
