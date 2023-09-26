@@ -10,7 +10,7 @@ buildscript {
 apply plugin: 'net.minecraftforge.gradle'
 apply plugin: 'maven-publish'
 
-version = '2.9.4-1.20.1'
+version = '2.9.4-1.20.2'
 group = 'com.autovw.burgermod'
 archivesBaseName = 'burgermod'
 
@@ -18,7 +18,7 @@ java.toolchain.languageVersion = JavaLanguageVersion.of(17)
 
 println('Java: ' + System.getProperty('java.version') + ' JVM: ' + System.getProperty('java.vm.version') + '(' + System.getProperty('java.vendor') + ') Arch: ' + System.getProperty('os.arch'))
 minecraft {
-    mappings channel: 'official', version: '1.20.1'
+    mappings channel: 'official', version: '1.20.2'
     // makeObfSourceJar = false // an Srg named sources jar is made by default. uncomment this to disable.
     
     // accessTransformer = file('src/main/resources/META-INF/accesstransformer.cfg')
@@ -70,11 +70,11 @@ repositories {
 }
 
 dependencies {
-    minecraft 'net.minecraftforge:forge:1.20.1-47.0.1'
+    minecraft 'net.minecraftforge:forge:1.20.2-48.0.6'
 
     //runtimeOnly fg.deobf('curse.maven:catalogue-459701:4171025')
     //runtimeOnly fg.deobf('curse.maven:configured-457570:4166861')
-    //runtimeOnly fg.deobf('curse.maven:jei-238222:3920263')
+    runtimeOnly fg.deobf('curse.maven:jei-238222:4767571')
 }
 
 jar {

@@ -30,9 +30,9 @@
   },
   "requirements": [
     [
+      "has_the_recipe",
       "has_gold",
-      "has_TagKey[minecraft:item / burgermod:beef_burgers]",
-      "has_the_recipe"
+      "has_TagKey[minecraft:item / burgermod:beef_burgers]"
     ]
   ],
   "rewards": {

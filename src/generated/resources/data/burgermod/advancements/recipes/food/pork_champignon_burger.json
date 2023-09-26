@@ -42,10 +42,10 @@
   },
   "requirements": [
     [
+      "has_the_recipe",
       "has_bread",
       "has_cooked_porkchop",
-      "has_TagKey[minecraft:item / forge:cooked_mushroom]",
-      "has_the_recipe"
+      "has_TagKey[minecraft:item / forge:cooked_mushroom]"
     ]
   ],
   "rewards": {
