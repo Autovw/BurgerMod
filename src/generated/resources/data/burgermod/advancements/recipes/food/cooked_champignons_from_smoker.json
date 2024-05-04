@@ -5,9 +5,7 @@
       "conditions": {
         "items": [
           {
-            "items": [
-              "burgermod:raw_champignons"
-            ]
+            "items": "burgermod:raw_champignons"
           }
         ]
       },
@@ -30,6 +28,5 @@
     "recipes": [
       "burgermod:cooked_champignons_from_smoker"
     ]
-  },
-  "sends_telemetry_event": false
+  }
 }

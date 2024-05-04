@@ -15,7 +15,7 @@
     "GGG"
   ],
   "result": {
-    "item": "burgermod:golden_cod_burger"
-  },
-  "show_notification": true
+    "count": 1,
+    "id": "burgermod:golden_cod_burger"
+  }
 }

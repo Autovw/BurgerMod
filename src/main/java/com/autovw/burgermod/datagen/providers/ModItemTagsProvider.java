@@ -115,5 +115,16 @@ public class ModItemTagsProvider extends ItemTagsProvider {
         tag(ItemTags.PIGLIN_LOVED)
                 .addTag(ModTags.GOLDEN_BURGERS)
                 .add(ModItems.ENCHANTED_GOLDEN_BURGER.get());
+
+        tag(ItemTags.MEAT)
+                .add(ModItems.COOKED_CHICKEN_NUGGET.get());
+
+        tag(ItemTags.WOLF_FOOD)
+                .addTag(ModTags.BEEF_BURGERS)
+                .addTag(ModTags.PORK_BURGERS)
+                .addTag(ModTags.MUTTON_BURGERS)
+                .addTag(ModTags.CHICKEN_BURGERS)
+                .add(ModItems.FRIED_SCRAMBLED_EGG.get())
+                .add(ModItems.HOTDOG.get());
     }
 }

@@ -5,9 +5,7 @@
       "conditions": {
         "items": [
           {
-            "items": [
-              "minecraft:bread"
-            ]
+            "items": "minecraft:bread"
           }
         ]
       },
@@ -17,9 +15,7 @@
       "conditions": {
         "items": [
           {
-            "items": [
-              "minecraft:cooked_beef"
-            ]
+            "items": "minecraft:cooked_beef"
           }
         ]
       },
@@ -29,7 +25,7 @@
       "conditions": {
         "items": [
           {
-            "tag": "forge:nuggets/chicken"
+            "items": "#forge:nuggets/chicken"
           }
         ]
       },
@@ -39,9 +35,7 @@
       "conditions": {
         "items": [
           {
-            "items": [
-              "minecraft:cooked_porkchop"
-            ]
+            "items": "minecraft:cooked_porkchop"
           }
         ]
       },
@@ -67,6 +61,5 @@
     "recipes": [
       "burgermod:hotdog"
     ]
-  },
-  "sends_telemetry_event": false
+  }
 }

@@ -5,9 +5,7 @@
       "conditions": {
         "items": [
           {
-            "items": [
-              "minecraft:sugar"
-            ]
+            "items": "minecraft:sugar"
           }
         ]
       },
@@ -17,9 +15,7 @@
       "conditions": {
         "items": [
           {
-            "items": [
-              "minecraft:sweet_berries"
-            ]
+            "items": "minecraft:sweet_berries"
           }
         ]
       },
@@ -35,9 +31,7 @@
       "conditions": {
         "items": [
           {
-            "items": [
-              "minecraft:wheat"
-            ]
+            "items": "minecraft:wheat"
           }
         ]
       },
@@ -56,6 +50,5 @@
     "recipes": [
       "burgermod:sweet_berry_tart"
     ]
-  },
-  "sends_telemetry_event": false
+  }
 }

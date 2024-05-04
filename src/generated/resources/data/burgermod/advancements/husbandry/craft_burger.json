@@ -5,7 +5,7 @@
       "conditions": {
         "items": [
           {
-            "tag": "burgermod:burgers"
+            "items": "#burgermod:burgers"
           }
         ]
       },
@@ -13,16 +13,13 @@
     }
   },
   "display": {
-    "announce_to_chat": true,
     "description": {
       "translate": "advancements.burgermod.husbandry.craft_burger.description"
     },
-    "frame": "task",
-    "hidden": false,
     "icon": {
-      "item": "burgermod:beef_burger"
+      "count": 1,
+      "id": "burgermod:beef_burger"
     },
-    "show_toast": true,
     "title": {
       "translate": "advancements.burgermod.husbandry.craft_burger.title"
     }

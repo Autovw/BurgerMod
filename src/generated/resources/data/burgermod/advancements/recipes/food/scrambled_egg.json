@@ -5,7 +5,7 @@
       "conditions": {
         "items": [
           {
-            "tag": "forge:eggs"
+            "items": "#forge:eggs"
           }
         ]
       },
@@ -28,6 +28,5 @@
     "recipes": [
       "burgermod:scrambled_egg"
     ]
-  },
-  "sends_telemetry_event": false
+  }
 }

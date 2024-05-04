@@ -1,0 +1,10 @@
+{
+  "values": [
+    "#burgermod:beef_burgers",
+    "#burgermod:pork_burgers",
+    "#burgermod:mutton_burgers",
+    "#burgermod:chicken_burgers",
+    "burgermod:fried_scrambled_egg",
+    "burgermod:hotdog"
+  ]
+}

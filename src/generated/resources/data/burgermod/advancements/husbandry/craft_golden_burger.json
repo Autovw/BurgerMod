@@ -5,7 +5,7 @@
       "conditions": {
         "items": [
           {
-            "tag": "burgermod:golden_burgers"
+            "items": "#burgermod:golden_burgers"
           }
         ]
       },
@@ -13,16 +13,14 @@
     }
   },
   "display": {
-    "announce_to_chat": true,
     "description": {
       "translate": "advancements.burgermod.husbandry.craft_golden_burger.description"
     },
     "frame": "challenge",
-    "hidden": false,
     "icon": {
-      "item": "burgermod:golden_beef_burger"
+      "count": 1,
+      "id": "burgermod:golden_beef_burger"
     },
-    "show_toast": true,
     "title": {
       "translate": "advancements.burgermod.husbandry.craft_golden_burger.title"
     }

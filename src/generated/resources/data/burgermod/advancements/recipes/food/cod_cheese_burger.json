@@ -5,7 +5,7 @@
       "conditions": {
         "items": [
           {
-            "tag": "forge:cheese"
+            "items": "#forge:cheese"
           }
         ]
       },
@@ -15,7 +15,7 @@
       "conditions": {
         "items": [
           {
-            "tag": "forge:bread"
+            "items": "#forge:bread"
           }
         ]
       },
@@ -25,9 +25,7 @@
       "conditions": {
         "items": [
           {
-            "items": [
-              "minecraft:cooked_cod"
-            ]
+            "items": "minecraft:cooked_cod"
           }
         ]
       },
@@ -52,6 +50,5 @@
     "recipes": [
       "burgermod:cod_cheese_burger"
     ]
-  },
-  "sends_telemetry_event": false
+  }
 }

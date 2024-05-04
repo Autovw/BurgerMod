@@ -3,6 +3,7 @@ package com.autovw.burgermod.datagen.providers;
 import com.autovw.burgermod.BurgerMod;
 import com.autovw.burgermod.core.registry.ModItems;
 import com.autovw.burgermod.core.util.ModTags;
+import net.minecraft.core.HolderLookup;
 import net.minecraft.data.PackOutput;
 import net.minecraft.data.recipes.*;
 import net.minecraft.resources.ResourceLocation;
@@ -13,12 +14,14 @@ import net.minecraft.world.item.crafting.Ingredient;
 import net.minecraft.world.level.ItemLike;
 import net.minecraftforge.common.Tags;
 
+import java.util.concurrent.CompletableFuture;
+
 /**
  * @author Autovw
  */
 public class ModRecipeProvider extends RecipeProvider {
-    public ModRecipeProvider(PackOutput packOutput) {
-        super(packOutput);
+    public ModRecipeProvider(PackOutput output, CompletableFuture<HolderLookup.Provider> registries) {
+        super(output, registries);
     }
 
     @Override

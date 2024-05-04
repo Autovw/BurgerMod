@@ -19,7 +19,6 @@
   ],
   "result": {
     "count": 2,
-    "item": "burgermod:pork_champignon_burger"
-  },
-  "show_notification": true
+    "id": "burgermod:pork_champignon_burger"
+  }
 }

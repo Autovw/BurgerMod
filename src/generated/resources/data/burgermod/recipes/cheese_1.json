@@ -10,6 +10,7 @@
     }
   ],
   "result": {
-    "item": "burgermod:cheese"
+    "count": 1,
+    "id": "burgermod:cheese"
   }
 }

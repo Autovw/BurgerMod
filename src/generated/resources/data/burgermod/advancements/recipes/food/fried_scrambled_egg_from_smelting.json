@@ -5,9 +5,7 @@
       "conditions": {
         "items": [
           {
-            "items": [
-              "burgermod:scrambled_egg"
-            ]
+            "items": "burgermod:scrambled_egg"
           }
         ]
       },
@@ -30,6 +28,5 @@
     "recipes": [
       "burgermod:fried_scrambled_egg_from_smelting"
     ]
-  },
-  "sends_telemetry_event": false
+  }
 }

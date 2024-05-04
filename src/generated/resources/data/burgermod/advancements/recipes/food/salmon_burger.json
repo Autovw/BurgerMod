@@ -5,7 +5,7 @@
       "conditions": {
         "items": [
           {
-            "tag": "forge:fried_egg"
+            "items": "#forge:fried_egg"
           }
         ]
       },
@@ -15,7 +15,7 @@
       "conditions": {
         "items": [
           {
-            "tag": "forge:bread"
+            "items": "#forge:bread"
           }
         ]
       },
@@ -25,9 +25,7 @@
       "conditions": {
         "items": [
           {
-            "items": [
-              "minecraft:cooked_salmon"
-            ]
+            "items": "minecraft:cooked_salmon"
           }
         ]
       },
@@ -52,6 +50,5 @@
     "recipes": [
       "burgermod:salmon_burger"
     ]
-  },
-  "sends_telemetry_event": false
+  }
 }

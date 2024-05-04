@@ -6,5 +6,7 @@
   "ingredient": {
     "item": "burgermod:raw_champignons"
   },
-  "result": "burgermod:cooked_champignons"
+  "result": {
+    "id": "burgermod:cooked_champignons"
+  }
 }

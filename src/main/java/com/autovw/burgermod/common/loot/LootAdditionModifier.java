@@ -2,7 +2,7 @@ package com.autovw.burgermod.common.loot;
 
 import com.autovw.burgermod.config.Config;
 import com.autovw.burgermod.core.registry.ModItems;
-import com.mojang.serialization.Codec;
+import com.mojang.serialization.MapCodec;
 import com.mojang.serialization.codecs.RecordCodecBuilder;
 import it.unimi.dsi.fastutil.objects.ObjectArrayList;
 import net.minecraft.resources.ResourceLocation;
@@ -14,11 +14,11 @@ import net.minecraftforge.common.loot.LootModifier;
 import org.jetbrains.annotations.NotNull;
 
 /**
- * Author: Autovw
+ * @author Autovw
  * @since 2.8.0, overhauled in 2.9.0 due to breaking changes in Forge
  */
 public class LootAdditionModifier extends LootModifier {
-    public static final Codec<LootAdditionModifier> CODEC = RecordCodecBuilder.create(instance -> codecStart(instance)
+    public static final MapCodec<LootAdditionModifier> CODEC = RecordCodecBuilder.mapCodec(instance -> codecStart(instance)
             .apply(instance, LootAdditionModifier::new));
 
     /**
@@ -94,7 +94,7 @@ public class LootAdditionModifier extends LootModifier {
     }
 
     @Override
-    public Codec<? extends LootAdditionModifier> codec() {
+    public MapCodec<LootAdditionModifier> codec() {
         return CODEC;
     }
 }

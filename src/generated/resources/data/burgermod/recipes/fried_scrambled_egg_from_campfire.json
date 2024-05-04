@@ -6,5 +6,7 @@
   "ingredient": {
     "item": "burgermod:scrambled_egg"
   },
-  "result": "burgermod:fried_scrambled_egg"
+  "result": {
+    "id": "burgermod:fried_scrambled_egg"
+  }
 }
