@@ -1,0 +1,50 @@
+{
+  "item.burgermod.beef_burger": "牛肉鸡蛋堡",
+  "item.burgermod.pork_burger": "猪肉鸡蛋堡",
+  "item.burgermod.mutton_burger": "羊肉鸡蛋堡",
+  "item.burgermod.chicken_burger": "鸡肉鸡蛋堡",
+  "item.burgermod.salmon_burger": "鲑鱼鸡蛋堡",
+  "item.burgermod.cod_burger": "鳕鱼鸡蛋堡",
+
+  "item.burgermod.beef_cheese_burger": "芝士牛肉堡",
+  "item.burgermod.pork_cheese_burger": "芝士猪肉堡",
+  "item.burgermod.mutton_cheese_burger": "芝士羊肉煲",
+  "item.burgermod.chicken_cheese_burger": "芝士鸡肉堡",
+  "item.burgermod.salmon_cheese_burger": "芝士鲑鱼堡",
+  "item.burgermod.cod_cheese_burger": "芝士鳕鱼堡",
+
+  "item.burgermod.beef_champignon_burger": "蘑菇牛肉堡",
+  "item.burgermod.pork_champignon_burger": "蘑菇猪肉堡",
+  "item.burgermod.mutton_champignon_burger": "蘑菇羊肉堡",
+  "item.burgermod.chicken_champignon_burger": "蘑菇鸡肉堡",
+  "item.burgermod.salmon_champignon_burger": "蘑菇鲑鱼堡",
+  "item.burgermod.cod_champignon_burger": "蘑菇鳕鱼堡",
+
+  "item.burgermod.golden_beef_burger": "黄金牛肉堡",
+  "item.burgermod.golden_pork_burger": "黄金猪肉堡",
+  "item.burgermod.golden_mutton_burger": "黄金羊肉堡",
+  "item.burgermod.golden_chicken_burger": "黄金鸡肉堡",
+  "item.burgermod.golden_salmon_burger": "黄金鲑鱼堡",
+  "item.burgermod.golden_cod_burger": "黄金鳕鱼堡",
+
+  "item.burgermod.enchanted_golden_burger": "魔法黄金汉堡",
+
+  "item.burgermod.scrambled_egg": "半熟煎蛋",
+  "item.burgermod.fried_scrambled_egg": "煎蛋",
+
+  "item.burgermod.raw_champignons": "半熟蘑菇",
+  "item.burgermod.cooked_champignons": "煮蘑菇",
+
+  "item.burgermod.cheese": "芝士",
+  "item.burgermod.cooked_chicken_nugget": "熟鸡块",
+  "item.burgermod.fries": "薯条",
+  "item.burgermod.hotdog": "热狗",
+  "item.burgermod.sweet_berry_tart": "甜浆果馅饼",
+
+  "itemGroup.burgermod.tab": "Burger Mod",
+
+  "advancements.burgermod.husbandry.craft_burger.title": "美味的汉堡!",
+  "advancements.burgermod.husbandry.craft_burger.description": "制作出一个汉堡",
+  "advancements.burgermod.husbandry.craft_golden_burger.title": "更好的汉堡",
+  "advancements.burgermod.husbandry.craft_golden_burger.description": "获得一个黄金类的汉堡"
+}
