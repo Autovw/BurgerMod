@@ -1,0 +1,54 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_TagKey[minecraft:item / forge:cooked_mushroom]": {
+      "conditions": {
+        "items": [
+          {
+            "items": "#forge:cooked_mushroom"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_bread": {
+      "conditions": {
+        "items": [
+          {
+            "items": "#forge:bread"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_minecraft:cooked_salmon": {
+      "conditions": {
+        "items": [
+          {
+            "items": "minecraft:cooked_salmon"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "burgermod:salmon_champignon_burger"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_bread",
+      "has_minecraft:cooked_salmon",
+      "has_TagKey[minecraft:item / forge:cooked_mushroom]"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "burgermod:salmon_champignon_burger"
+    ]
+  }
+}

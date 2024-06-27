@@ -18,7 +18,7 @@ public class ModLootModifierProvider extends GlobalLootModifierProvider {
     }
 
     @Override
-    protected void start() {
+    protected void start(HolderLookup.Provider provider) {
         add("loot_addition_modifier", new LootAdditionModifier(new LootItemCondition[] {}));
     }
 }

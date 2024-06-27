@@ -39,53 +39,53 @@ public class LootAdditionModifier extends LootModifier {
         // only add loot if generateChestLoot is turned on in the config
         if (Config.LootConfig.generateChestLoot.get()) {
             // without chance
-            if (queriedTableId.equals(new ResourceLocation("chests/village/village_plains_house"))) {
+            if (queriedTableId.equals(ResourceLocation.withDefaultNamespace("chests/village/village_plains_house"))) {
                 generatedLoot.add(new ItemStack(ModItems.FRIES.get(), random.nextIntBetweenInclusive(0, 2)));
             }
-            if (queriedTableId.equals(new ResourceLocation("chests/village/village_snowy_house"))) {
+            if (queriedTableId.equals(ResourceLocation.withDefaultNamespace("chests/village/village_snowy_house"))) {
                 generatedLoot.add(new ItemStack(ModItems.HOTDOG.get(), random.nextIntBetweenInclusive(0, 3)));
             }
-            if (queriedTableId.equals(new ResourceLocation("chests/village/village_butcher"))) {
+            if (queriedTableId.equals(ResourceLocation.withDefaultNamespace("chests/village/village_butcher"))) {
                 generatedLoot.add(new ItemStack(ModItems.COOKED_CHICKEN_NUGGET.get(), random.nextIntBetweenInclusive(2, 5)));
             }
-            if (queriedTableId.equals(new ResourceLocation("chests/village/village_fisher"))) {
+            if (queriedTableId.equals(ResourceLocation.withDefaultNamespace("chests/village/village_fisher"))) {
                 generatedLoot.add(new ItemStack(ModItems.COD_BURGER.get(), random.nextIntBetweenInclusive(0, 1)));
                 generatedLoot.add(new ItemStack(ModItems.SALMON_BURGER.get(), random.nextIntBetweenInclusive(0, 1)));
             }
-            if (queriedTableId.equals(new ResourceLocation("chests/igloo_chest"))) {
+            if (queriedTableId.equals(ResourceLocation.withDefaultNamespace("chests/igloo_chest"))) {
                 generatedLoot.add(new ItemStack(ModItems.PORK_CHEESE_BURGER.get(), random.nextIntBetweenInclusive(0, 1)));
             }
-            if (queriedTableId.equals(new ResourceLocation("chests/simple_dungeon"))) {
+            if (queriedTableId.equals(ResourceLocation.withDefaultNamespace("chests/simple_dungeon"))) {
                 generatedLoot.add(new ItemStack(ModItems.SCRAMBLED_EGG.get(), random.nextIntBetweenInclusive(1, 2)));
             }
-            if (queriedTableId.equals(new ResourceLocation("chests/woodland_mansion"))) {
+            if (queriedTableId.equals(ResourceLocation.withDefaultNamespace("chests/woodland_mansion"))) {
                 generatedLoot.add(new ItemStack(ModItems.COOKED_CHAMPIGNONS.get(), random.nextIntBetweenInclusive(0, 4)));
                 generatedLoot.add(new ItemStack(ModItems.MUTTON_CHAMPIGNON_BURGER.get(), random.nextIntBetweenInclusive(0, 1)));
             }
 
             // with chance
-            if (queriedTableId.equals(new ResourceLocation("chests/simple_dungeon")) && random.nextFloat() <= 0.25f) {
+            if (queriedTableId.equals(ResourceLocation.withDefaultNamespace("chests/simple_dungeon")) && random.nextFloat() <= 0.25f) {
                 generatedLoot.add(new ItemStack(ModItems.GOLDEN_BEEF_BURGER.get(), context.getRandom().nextIntBetweenInclusive(1, 1)));
             }
-            if (queriedTableId.equals(new ResourceLocation("chests/desert_pyramid")) && random.nextFloat() <= 0.1f) {
+            if (queriedTableId.equals(ResourceLocation.withDefaultNamespace("chests/desert_pyramid")) && random.nextFloat() <= 0.1f) {
                 generatedLoot.add(new ItemStack(ModItems.GOLDEN_MUTTON_BURGER.get(), context.getRandom().nextIntBetweenInclusive(1, 1)));
             }
-            if (queriedTableId.equals(new ResourceLocation("chests/ruined_portal")) && random.nextFloat() <= 0.15f) {
+            if (queriedTableId.equals(ResourceLocation.withDefaultNamespace("chests/ruined_portal")) && random.nextFloat() <= 0.15f) {
                 generatedLoot.add(new ItemStack(ModItems.GOLDEN_PORK_BURGER.get(), context.getRandom().nextIntBetweenInclusive(1, 1)));
             }
-            if (queriedTableId.equals(new ResourceLocation("chests/bastion_other")) && random.nextFloat() <= 0.2f) {
+            if (queriedTableId.equals(ResourceLocation.withDefaultNamespace("chests/bastion_other")) && random.nextFloat() <= 0.2f) {
                 generatedLoot.add(new ItemStack(ModItems.GOLDEN_SALMON_BURGER.get(), context.getRandom().nextIntBetweenInclusive(0, 1)));
             }
-            if (queriedTableId.equals(new ResourceLocation("chests/bastion_hoglin_stable")) && random.nextFloat() <= 0.3f) {
+            if (queriedTableId.equals(ResourceLocation.withDefaultNamespace("chests/bastion_hoglin_stable")) && random.nextFloat() <= 0.3f) {
                 generatedLoot.add(new ItemStack(ModItems.GOLDEN_CHICKEN_BURGER.get(), context.getRandom().nextIntBetweenInclusive(0, 1)));
             }
-            if (queriedTableId.equals(new ResourceLocation("chests/bastion_treasure")) && random.nextFloat() <= 0.4f) {
+            if (queriedTableId.equals(ResourceLocation.withDefaultNamespace("chests/bastion_treasure")) && random.nextFloat() <= 0.4f) {
                 generatedLoot.add(new ItemStack(ModItems.GOLDEN_PORK_BURGER.get(), context.getRandom().nextIntBetweenInclusive(1, 1)));
             }
-            if (queriedTableId.equals(new ResourceLocation("chests/bastion_treasure")) && random.nextFloat() <= 0.2f) {
+            if (queriedTableId.equals(ResourceLocation.withDefaultNamespace("chests/bastion_treasure")) && random.nextFloat() <= 0.2f) {
                 generatedLoot.add(new ItemStack(ModItems.ENCHANTED_GOLDEN_BURGER.get(), context.getRandom().nextIntBetweenInclusive(0, 1)));
             }
-            if (queriedTableId.equals(new ResourceLocation("chests/ancient_city")) && random.nextFloat() <= 0.25f) {
+            if (queriedTableId.equals(ResourceLocation.withDefaultNamespace("chests/ancient_city")) && random.nextFloat() <= 0.25f) {
                 generatedLoot.add(new ItemStack(ModItems.ENCHANTED_GOLDEN_BURGER.get(), context.getRandom().nextIntBetweenInclusive(0, 1)));
             }
         }

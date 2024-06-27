@@ -166,24 +166,23 @@ public class ModRecipeProvider extends RecipeProvider {
      * @param result Result item
      * @param ingredient Ingredient item
      * @param experience Experience given upon obtaining the result item
-     * @param modId Provide your modId so the data generator knows where to dump your recipes
      */
-    public static void baseFoodCookingRecipe(RecipeOutput output, ItemLike result, ItemLike ingredient, float experience, String modId) {
+    public static void baseFoodCookingRecipe(RecipeOutput output, ItemLike result, ItemLike ingredient, float experience) {
         SimpleCookingRecipeBuilder.smelting(Ingredient.of(ingredient), RecipeCategory.FOOD, result, experience, 200)
                 .unlockedBy("has_" + ingredient.toString(), has(ingredient))
-                .save(output, new ResourceLocation(modId, result + "_from_smelting"));
+                .save(output, ResourceLocation.parse(result + "_from_smelting"));
 
         SimpleCookingRecipeBuilder.campfireCooking(Ingredient.of(ingredient), RecipeCategory.FOOD, result, experience, 600)
                 .unlockedBy("has_" + ingredient.toString(), has(ingredient))
-                .save(output, new ResourceLocation(modId, result + "_from_campfire"));
+                .save(output, ResourceLocation.parse(result + "_from_campfire"));
 
         SimpleCookingRecipeBuilder.smoking(Ingredient.of(ingredient), RecipeCategory.FOOD, result, experience, 100)
                 .unlockedBy("has_" + ingredient.toString(), has(ingredient))
-                .save(output, new ResourceLocation(modId, result + "_from_smoker"));
+                .save(output, ResourceLocation.parse(result + "_from_smoker"));
     }
 
     private static void cookingRecipe(RecipeOutput output, ItemLike result, ItemLike ingredient) {
-        baseFoodCookingRecipe(output, result, ingredient, 0.25F, BurgerMod.MOD_ID);
+        baseFoodCookingRecipe(output, result, ingredient, 0.25F);
     }
 
     private static void scrambledEggRecipe(RecipeOutput output, ItemLike result) {
@@ -203,7 +202,7 @@ public class ModRecipeProvider extends RecipeProvider {
                     .requires(ingredient1)
                     .requires(ingredient2, amount)
                     .unlockedBy("has_" + ingredient1.toString(), has(ingredient1)).unlockedBy("has_" + ingredient2.toString(), has(ingredient2))
-                    .save(output, new ResourceLocation(BurgerMod.MOD_ID, result.toString() + "_" + amount));
+                    .save(output, ResourceLocation.parse(result.toString() + "_" + amount));
         }
     }
 

@@ -7,7 +7,7 @@ import net.minecraft.tags.TagKey;
 import net.minecraft.world.item.Item;
 
 /**
- * Author: Autovw
+ * @author Autovw
  */
 public class ModTags {
     public static final TagKey<Item> BEEF_BURGERS = itemTag("beef_burgers");
@@ -29,10 +29,10 @@ public class ModTags {
     public static final TagKey<Item> FORGE_BREAD = forgeItemTag("bread");
 
     private static TagKey<Item> itemTag(String tagName) {
-        return ItemTags.create(new ResourceLocation(BurgerMod.MOD_ID, tagName));
+        return ItemTags.create(ResourceLocation.fromNamespaceAndPath(BurgerMod.MOD_ID, tagName));
     }
 
     private static TagKey<Item> forgeItemTag(String tagLoc) {
-        return ItemTags.create(new ResourceLocation("forge", tagLoc));
+        return ItemTags.create(ResourceLocation.fromNamespaceAndPath("forge", tagLoc));
     }
 }

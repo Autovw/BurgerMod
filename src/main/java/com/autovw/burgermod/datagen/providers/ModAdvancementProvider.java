@@ -32,17 +32,17 @@ public class ModAdvancementProvider extends ForgeAdvancementProvider {
         @Override
         public void generate(HolderLookup.Provider registries, Consumer<AdvancementHolder> consumer, ExistingFileHelper fileHelper) {
             AdvancementHolder craftBurger = Advancement.Builder.advancement()
-                    .parent(new ResourceLocation("husbandry/plant_seed"))
+                    .parent(ResourceLocation.withDefaultNamespace("husbandry/plant_seed"))
                     .display(ModItems.BEEF_BURGER.get(), Component.translatable("advancements.burgermod.husbandry.craft_burger.title"), Component.translatable("advancements.burgermod.husbandry.craft_burger.description"), null, AdvancementType.TASK, true, true, false)
                     .addCriterion("burgers", InventoryChangeTrigger.TriggerInstance.hasItems(ItemPredicate.Builder.item().of(ModTags.BURGERS)))
-                    .save(consumer, new ResourceLocation(BurgerMod.MOD_ID, "husbandry/craft_burger"));
+                    .save(consumer, ResourceLocation.fromNamespaceAndPath(BurgerMod.MOD_ID, "husbandry/craft_burger"));
 
             Advancement.Builder.advancement()
                     .parent(craftBurger)
                     .display(ModItems.GOLDEN_BEEF_BURGER.get(), Component.translatable("advancements.burgermod.husbandry.craft_golden_burger.title"), Component.translatable("advancements.burgermod.husbandry.craft_golden_burger.description"), null, AdvancementType.CHALLENGE, true, true, false)
                     .rewards(AdvancementRewards.Builder.experience(100))
                     .addCriterion("golden_burgers", InventoryChangeTrigger.TriggerInstance.hasItems(ItemPredicate.Builder.item().of(ModTags.GOLDEN_BURGERS)))
-                    .save(consumer, new ResourceLocation(BurgerMod.MOD_ID, "husbandry/craft_golden_burger"));
+                    .save(consumer, ResourceLocation.fromNamespaceAndPath(BurgerMod.MOD_ID, "husbandry/craft_golden_burger"));
         }
     }
 }
