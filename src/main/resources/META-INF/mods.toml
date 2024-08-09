@@ -5,7 +5,7 @@ issueTrackerURL="https://github.com/Autovw/BurgerMod/issues"
 
 [[mods]]
 modId="burgermod"
-version="2.9.5"
+version="2.9.6"
 displayName="Burger Mod"
 updateJSONURL="https://raw.githubusercontent.com/Autovw/ModUpdates/master/burgermod/update.json"
 displayURL="https://github.com/Autovw/BurgerMod/wiki"
