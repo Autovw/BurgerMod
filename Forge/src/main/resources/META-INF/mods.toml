@@ -1,0 +1,37 @@
+modLoader="javafml"
+loaderVersion="[52,)"
+license="GNU General Public License v3.0"
+issueTrackerURL="https://github.com/Autovw/BurgerMod/issues"
+
+[[mods]]
+modId="burgermod"
+version="${mod_version}"
+displayName="Burger Mod"
+updateJSONURL="https://raw.githubusercontent.com/Autovw/ModUpdates/master/burgermod/update.json"
+displayURL="https://github.com/Autovw/BurgerMod/wiki"
+logoFile="burgermod_banner.png"
+#credits=""
+authors="Autovw"
+description='''
+A mod that adds in burgers and other types of food that extend the vanilla game!
+
+Visit the Burger Mod Wiki on GitHub, where you can find everything you need to know about the Burger Mod!
+'''
+
+[[dependencies.burgermod]]
+    modId="forge"
+    mandatory=true
+    versionRange="[52.0.1,)"
+    ordering="NONE"
+    side="BOTH"
+[[dependencies.burgermod]]
+    modId="minecraft"
+    mandatory=true
+    versionRange="[1.21.1]"
+    ordering="NONE"
+    side="BOTH"
+
+[modproperties.burgermod]
+    #As of version 1.2.0 Catalogue also supports images. Use "catalogueImageIcon" instead.
+    catalogueItemIcon="burgermod:beef_burger" #Optional support for Cataloque mod.
+    configuredBackground="minecraft:textures/block/bricks.png" #Optional support for Configured mod.
