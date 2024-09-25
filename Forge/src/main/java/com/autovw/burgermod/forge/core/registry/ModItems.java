@@ -2,7 +2,7 @@ package com.autovw.burgermod.forge.core.registry;
 
 import com.autovw.burgermod.common.BurgerMod;
 import com.autovw.burgermod.common.common.item.EnchantedBurgerItem;
-import com.autovw.burgermod.forge.core.util.ModFood;
+import com.autovw.burgermod.common.core.util.ModFood;
 import net.minecraft.world.food.FoodProperties;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.Rarity;

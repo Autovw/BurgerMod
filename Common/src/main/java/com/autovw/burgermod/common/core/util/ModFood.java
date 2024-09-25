@@ -1,4 +1,4 @@
-package com.autovw.burgermod.forge.core.util;
+package com.autovw.burgermod.common.core.util;
 
 import net.minecraft.world.effect.MobEffectInstance;
 import net.minecraft.world.food.FoodProperties;
