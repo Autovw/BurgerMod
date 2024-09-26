@@ -109,8 +109,8 @@ public class ModDataGenHelper
                 .pattern("*#")
                 .pattern(" B")
                 .unlockedBy("has_bread", has(breadTag))
-                .unlockedBy("has_" + mainIngredient.toString(), has(mainIngredient))
-                .unlockedBy("has_" + extraIngredient.toString(), has(extraIngredient))
+                .unlockedBy("has_main_ingredient", has(mainIngredient))
+                .unlockedBy("has_extra_ingredient", has(extraIngredient))
                 .save(output);
     }
 
@@ -134,8 +134,8 @@ public class ModDataGenHelper
                 .pattern("*#")
                 .pattern(" B")
                 .unlockedBy("has_bread", has(breadTag))
-                .unlockedBy("has_" + mainIngredient.toString(), has(mainIngredient))
-                .unlockedBy("has_" + extraIngredient.toString(), has(extraIngredient))
+                .unlockedBy("has_main_ingredient", has(mainIngredient))
+                .unlockedBy("has_extra_ingredient", has(extraIngredient))
                 .save(output);
     }
 
@@ -174,7 +174,7 @@ public class ModDataGenHelper
                 .pattern("G#G")
                 .pattern("GGG")
                 .unlockedBy("has_gold", has(goldIngotTag))
-                .unlockedBy("has_" + ingredient.toString(), has(ingredient))
+                .unlockedBy("has_burger", has(ingredient))
                 .save(output);
     }
 

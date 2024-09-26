@@ -1,16 +1,6 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_TagKey[minecraft:item / c:foods/cooked_mushroom]": {
-      "conditions": {
-        "items": [
-          {
-            "items": "#c:foods/cooked_mushroom"
-          }
-        ]
-      },
-      "trigger": "minecraft:inventory_changed"
-    },
     "has_bread": {
       "conditions": {
         "items": [
@@ -21,7 +11,17 @@
       },
       "trigger": "minecraft:inventory_changed"
     },
-    "has_minecraft:cooked_salmon": {
+    "has_extra_ingredient": {
+      "conditions": {
+        "items": [
+          {
+            "items": "#c:foods/cooked_mushroom"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_main_ingredient": {
       "conditions": {
         "items": [
           {
@@ -42,8 +42,8 @@
     [
       "has_the_recipe",
       "has_bread",
-      "has_minecraft:cooked_salmon",
-      "has_TagKey[minecraft:item / c:foods/cooked_mushroom]"
+      "has_main_ingredient",
+      "has_extra_ingredient"
     ]
   ],
   "rewards": {

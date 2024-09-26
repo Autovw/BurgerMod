@@ -1,7 +1,7 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_TagKey[minecraft:item / burgermod:mutton_burgers]": {
+    "has_burger": {
       "conditions": {
         "items": [
           {
@@ -32,7 +32,7 @@
     [
       "has_the_recipe",
       "has_gold",
-      "has_TagKey[minecraft:item / burgermod:mutton_burgers]"
+      "has_burger"
     ]
   ],
   "rewards": {
