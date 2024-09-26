@@ -43,6 +43,8 @@
 
   "itemGroup.burgermod.tab": "Бургер Мод",
 
+  "advancements.burgermod.husbandry.obtain_fries.title": "Do You Want Fries With That?",
+  "advancements.burgermod.husbandry.obtain_fries.description": "Obtain some Fries",
   "advancements.burgermod.husbandry.craft_burger.title": "Вкусные бургеры!",
   "advancements.burgermod.husbandry.craft_burger.description": "Получите бургер",
   "advancements.burgermod.husbandry.craft_golden_burger.title": "Бургеры получше",

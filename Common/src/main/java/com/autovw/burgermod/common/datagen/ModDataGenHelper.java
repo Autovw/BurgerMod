@@ -29,6 +29,12 @@ public class ModDataGenHelper
 {
     public static void advancements(HolderLookup.Provider registries, Consumer<AdvancementHolder> consumer)
     {
+        Advancement.Builder.advancement()
+                .parent(ResourceLocation.withDefaultNamespace("husbandry/root"))
+                .display(ModItems.FRIES, Component.translatable("advancements.burgermod.husbandry.obtain_fries.title"), Component.translatable("advancements.burgermod.husbandry.obtain_fries.description"), null, AdvancementType.TASK, true, true, false)
+                .addCriterion("fries", InventoryChangeTrigger.TriggerInstance.hasItems(ModItems.FRIES))
+                .save(consumer, ResourceLocation.fromNamespaceAndPath(BurgerMod.MOD_ID, "husbandry/obtain_fries").toString());
+
         AdvancementHolder craftBurger = Advancement.Builder.advancement()
                 .parent(ResourceLocation.withDefaultNamespace("husbandry/plant_seed"))
                 .display(ModItems.BEEF_BURGER, Component.translatable("advancements.burgermod.husbandry.craft_burger.title"), Component.translatable("advancements.burgermod.husbandry.craft_burger.description"), null, AdvancementType.TASK, true, true, false)

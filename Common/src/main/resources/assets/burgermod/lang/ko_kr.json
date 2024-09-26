@@ -43,6 +43,8 @@
 
   "itemGroup.burgermod.tab": "버거 모드",
 
+  "advancements.burgermod.husbandry.obtain_fries.title": "Do You Want Fries With That?",
+  "advancements.burgermod.husbandry.obtain_fries.description": "Obtain some Fries",
   "advancements.burgermod.husbandry.craft_burger.title": "맛있는 버거!",
   "advancements.burgermod.husbandry.craft_burger.description": "버거를 획득하세요",
   "advancements.burgermod.husbandry.craft_golden_burger.title": "더 나은 버거",

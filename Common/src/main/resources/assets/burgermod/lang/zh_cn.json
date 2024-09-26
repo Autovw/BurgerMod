@@ -43,6 +43,8 @@
 
   "itemGroup.burgermod.tab": "Burger Mod",
 
+  "advancements.burgermod.husbandry.obtain_fries.title": "Do You Want Fries With That?",
+  "advancements.burgermod.husbandry.obtain_fries.description": "Obtain some Fries",
   "advancements.burgermod.husbandry.craft_burger.title": "美味的汉堡!",
   "advancements.burgermod.husbandry.craft_burger.description": "制作出一个汉堡",
   "advancements.burgermod.husbandry.craft_golden_burger.title": "更好的汉堡",

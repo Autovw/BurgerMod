@@ -1,0 +1,33 @@
+{
+  "parent": "minecraft:husbandry/root",
+  "criteria": {
+    "fries": {
+      "conditions": {
+        "items": [
+          {
+            "items": "burgermod:fries"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "description": {
+      "translate": "advancements.burgermod.husbandry.obtain_fries.description"
+    },
+    "icon": {
+      "count": 1,
+      "id": "burgermod:fries"
+    },
+    "title": {
+      "translate": "advancements.burgermod.husbandry.obtain_fries.title"
+    }
+  },
+  "requirements": [
+    [
+      "fries"
+    ]
+  ],
+  "sends_telemetry_event": true
+}
