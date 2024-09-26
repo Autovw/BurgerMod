@@ -35,12 +35,19 @@ public class ModDataGenHelper
                 .addCriterion("burgers", InventoryChangeTrigger.TriggerInstance.hasItems(ItemPredicate.Builder.item().of(ModTags.BURGERS)))
                 .save(consumer, ResourceLocation.fromNamespaceAndPath(BurgerMod.MOD_ID, "husbandry/craft_burger").toString());
 
-        Advancement.Builder.advancement()
+        AdvancementHolder goldenBurger = Advancement.Builder.advancement()
                 .parent(craftBurger)
                 .display(ModItems.GOLDEN_BEEF_BURGER, Component.translatable("advancements.burgermod.husbandry.craft_golden_burger.title"), Component.translatable("advancements.burgermod.husbandry.craft_golden_burger.description"), null, AdvancementType.CHALLENGE, true, true, false)
                 .rewards(AdvancementRewards.Builder.experience(100))
                 .addCriterion("golden_burgers", InventoryChangeTrigger.TriggerInstance.hasItems(ItemPredicate.Builder.item().of(ModTags.GOLDEN_BURGERS)))
                 .save(consumer, ResourceLocation.fromNamespaceAndPath(BurgerMod.MOD_ID, "husbandry/craft_golden_burger").toString());
+
+        Advancement.Builder.advancement()
+                .parent(goldenBurger)
+                .display(ModItems.ENCHANTED_GOLDEN_BURGER, Component.translatable("advancements.burgermod.husbandry.obtain_enchanted_golden_burger.title"), Component.translatable("advancements.burgermod.husbandry.obtain_enchanted_golden_burger.description"), null, AdvancementType.CHALLENGE, true, true, false)
+                .rewards(AdvancementRewards.Builder.experience(100))
+                .addCriterion("enchanted_golden_burger", InventoryChangeTrigger.TriggerInstance.hasItems(ItemPredicate.Builder.item().of(ModItems.ENCHANTED_GOLDEN_BURGER)))
+                .save(consumer, ResourceLocation.fromNamespaceAndPath(BurgerMod.MOD_ID, "husbandry/obtain_enchanted_golden_burger").toString());
     }
 
     public static void recipes(RecipeOutput output)

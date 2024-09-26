@@ -1,0 +1,37 @@
+{
+  "parent": "burgermod:husbandry/craft_golden_burger",
+  "criteria": {
+    "enchanted_golden_burger": {
+      "conditions": {
+        "items": [
+          {
+            "items": "burgermod:enchanted_golden_burger"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "description": {
+      "translate": "advancements.burgermod.husbandry.obtain_enchanted_golden_burger.description"
+    },
+    "frame": "challenge",
+    "icon": {
+      "count": 1,
+      "id": "burgermod:enchanted_golden_burger"
+    },
+    "title": {
+      "translate": "advancements.burgermod.husbandry.obtain_enchanted_golden_burger.title"
+    }
+  },
+  "requirements": [
+    [
+      "enchanted_golden_burger"
+    ]
+  ],
+  "rewards": {
+    "experience": 100
+  },
+  "sends_telemetry_event": true
+}
