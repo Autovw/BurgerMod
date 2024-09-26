@@ -56,6 +56,55 @@
       "target": "minecraft:chests/woodland_mansion"
     },
     {
+      "chance": 0.3,
+      "item": "burgermod:fries",
+      "max": 3,
+      "min": 1,
+      "target": "minecraft:chests/trial_chambers/supply"
+    },
+    {
+      "chance": 0.3,
+      "item": "burgermod:cheese",
+      "max": 4,
+      "min": 1,
+      "target": "minecraft:chests/trial_chambers/supply"
+    },
+    {
+      "chance": 0.3,
+      "item": "burgermod:salmon_cheese_burger",
+      "max": 1,
+      "min": 0,
+      "target": "minecraft:chests/trial_chambers/supply"
+    },
+    {
+      "chance": 0.4,
+      "item": "burgermod:fries",
+      "max": 5,
+      "min": 1,
+      "target": "minecraft:chests/trial_chambers/intersection_barrel"
+    },
+    {
+      "chance": 0.4,
+      "item": "burgermod:golden_cod_burger",
+      "max": 1,
+      "min": 0,
+      "target": "minecraft:chests/trial_chambers/intersection_barrel"
+    },
+    {
+      "chance": 0.15,
+      "item": "burgermod:golden_cod_burger",
+      "max": 1,
+      "min": 1,
+      "target": "minecraft:chests/trial_chambers/reward_ominous"
+    },
+    {
+      "chance": 0.2,
+      "item": "burgermod:enchanted_golden_burger",
+      "max": 1,
+      "min": 0,
+      "target": "minecraft:chests/trial_chambers/reward_ominous"
+    },
+    {
       "chance": 0.25,
       "item": "burgermod:golden_beef_burger",
       "max": 1,
