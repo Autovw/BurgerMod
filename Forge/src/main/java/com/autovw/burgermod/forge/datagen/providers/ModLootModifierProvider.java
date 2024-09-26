@@ -1,6 +1,7 @@
 package com.autovw.burgermod.forge.datagen.providers;
 
 import com.autovw.burgermod.common.BurgerMod;
+import com.autovw.burgermod.common.common.loot.LootModifierHelper;
 import com.autovw.burgermod.forge.common.loot.LootAdditionModifier;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.data.PackOutput;
@@ -22,6 +23,9 @@ public class ModLootModifierProvider extends GlobalLootModifierProvider
     @Override
     protected void start(HolderLookup.Provider provider)
     {
-        add("loot_addition_modifier", new LootAdditionModifier(new LootItemCondition[] {}));
+        add("loot_addition_modifier", new LootAdditionModifier(
+                new LootItemCondition[] {},
+                LootModifierHelper.DEFAULT_CHEST_LOOT_ADDITIONS
+        ));
     }
 }

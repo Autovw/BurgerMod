@@ -1,4 +1,116 @@
 {
   "type": "burgermod:loot_addition_modifier",
+  "additions": [
+    {
+      "item": "burgermod:fries",
+      "max": 2,
+      "min": 0,
+      "target": "minecraft:chests/village/village_plains_house"
+    },
+    {
+      "item": "burgermod:hotdog",
+      "max": 3,
+      "min": 0,
+      "target": "minecraft:chests/village/village_snowy_house"
+    },
+    {
+      "item": "burgermod:cooked_chicken_nugget",
+      "max": 5,
+      "min": 2,
+      "target": "minecraft:chests/village/village_butcher"
+    },
+    {
+      "item": "burgermod:cod_burger",
+      "max": 1,
+      "min": 0,
+      "target": "minecraft:chests/village/village_fisher"
+    },
+    {
+      "item": "burgermod:salmon_burger",
+      "max": 1,
+      "min": 0,
+      "target": "minecraft:chests/village/village_fisher"
+    },
+    {
+      "item": "burgermod:pork_cheese_burger",
+      "max": 1,
+      "min": 0,
+      "target": "minecraft:chests/igloo_chest"
+    },
+    {
+      "item": "burgermod:scrambled_egg",
+      "max": 2,
+      "min": 1,
+      "target": "minecraft:chests/simple_dungeon"
+    },
+    {
+      "item": "burgermod:cooked_champignons",
+      "max": 4,
+      "min": 0,
+      "target": "minecraft:chests/woodland_mansion"
+    },
+    {
+      "item": "burgermod:mutton_champignon_burger",
+      "max": 1,
+      "min": 0,
+      "target": "minecraft:chests/woodland_mansion"
+    },
+    {
+      "chance": 0.25,
+      "item": "burgermod:golden_beef_burger",
+      "max": 1,
+      "min": 1,
+      "target": "minecraft:chests/simple_dungeon"
+    },
+    {
+      "chance": 0.1,
+      "item": "burgermod:golden_mutton_burger",
+      "max": 1,
+      "min": 1,
+      "target": "minecraft:chests/desert_pyramid"
+    },
+    {
+      "chance": 0.15,
+      "item": "burgermod:golden_pork_burger",
+      "max": 1,
+      "min": 1,
+      "target": "minecraft:chests/ruined_portal"
+    },
+    {
+      "chance": 0.2,
+      "item": "burgermod:golden_salmon_burger",
+      "max": 1,
+      "min": 0,
+      "target": "minecraft:chests/bastion_other"
+    },
+    {
+      "chance": 0.3,
+      "item": "burgermod:golden_chicken_burger",
+      "max": 1,
+      "min": 0,
+      "target": "minecraft:chests/bastion_hoglin_stable"
+    },
+    {
+      "chance": 0.4,
+      "item": "burgermod:golden_pork_burger",
+      "max": 1,
+      "min": 1,
+      "target": "minecraft:chests/bastion_treasure"
+    },
+    {
+      "chance": 0.2,
+      "item": "burgermod:enchanted_golden_burger",
+      "max": 1,
+      "min": 0,
+      "target": "minecraft:chests/bastion_treasure"
+    },
+    {
+      "chance": 0.25,
+      "item": "burgermod:enchanted_golden_burger",
+      "max": 1,
+      "min": 0,
+      "target": "minecraft:chests/ancient_city"
+    }
+  ],
   "conditions": []
 }
