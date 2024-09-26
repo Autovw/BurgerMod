@@ -1,7 +1,7 @@
 package com.autovw.burgermod.forge.datagen.providers;
 
 import com.autovw.burgermod.common.BurgerMod;
-import com.autovw.burgermod.forge.core.registry.ModItems;
+import com.autovw.burgermod.forge.core.registry.ModItemRegistry;
 import net.minecraft.data.PackOutput;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.item.Item;
@@ -24,50 +24,50 @@ public class ModItemModelProvider extends ItemModelProvider
     protected void registerModels()
     {
         /* Burgers */
-        itemModel(ModItems.BEEF_BURGER.get());
-        itemModel(ModItems.PORK_BURGER.get());
-        itemModel(ModItems.MUTTON_BURGER.get());
-        itemModel(ModItems.CHICKEN_BURGER.get());
-        itemModel(ModItems.SALMON_BURGER.get());
-        itemModel(ModItems.COD_BURGER.get());
+        itemModel(ModItemRegistry.BEEF_BURGER.get());
+        itemModel(ModItemRegistry.PORK_BURGER.get());
+        itemModel(ModItemRegistry.MUTTON_BURGER.get());
+        itemModel(ModItemRegistry.CHICKEN_BURGER.get());
+        itemModel(ModItemRegistry.SALMON_BURGER.get());
+        itemModel(ModItemRegistry.COD_BURGER.get());
 
-        itemModel(ModItems.BEEF_CHEESE_BURGER.get());
-        itemModel(ModItems.PORK_CHEESE_BURGER.get());
-        itemModel(ModItems.MUTTON_CHEESE_BURGER.get());
-        itemModel(ModItems.CHICKEN_CHEESE_BURGER.get());
-        itemModel(ModItems.SALMON_CHEESE_BURGER.get());
-        itemModel(ModItems.COD_CHEESE_BURGER.get());
+        itemModel(ModItemRegistry.BEEF_CHEESE_BURGER.get());
+        itemModel(ModItemRegistry.PORK_CHEESE_BURGER.get());
+        itemModel(ModItemRegistry.MUTTON_CHEESE_BURGER.get());
+        itemModel(ModItemRegistry.CHICKEN_CHEESE_BURGER.get());
+        itemModel(ModItemRegistry.SALMON_CHEESE_BURGER.get());
+        itemModel(ModItemRegistry.COD_CHEESE_BURGER.get());
 
-        itemModel(ModItems.BEEF_CHAMPIGNON_BURGER.get());
-        itemModel(ModItems.PORK_CHAMPIGNON_BURGER.get());
-        itemModel(ModItems.MUTTON_CHAMPIGNON_BURGER.get());
-        itemModel(ModItems.CHICKEN_CHAMPIGNON_BURGER.get());
-        itemModel(ModItems.SALMON_CHAMPIGNON_BURGER.get());
-        itemModel(ModItems.COD_CHAMPIGNON_BURGER.get());
+        itemModel(ModItemRegistry.BEEF_CHAMPIGNON_BURGER.get());
+        itemModel(ModItemRegistry.PORK_CHAMPIGNON_BURGER.get());
+        itemModel(ModItemRegistry.MUTTON_CHAMPIGNON_BURGER.get());
+        itemModel(ModItemRegistry.CHICKEN_CHAMPIGNON_BURGER.get());
+        itemModel(ModItemRegistry.SALMON_CHAMPIGNON_BURGER.get());
+        itemModel(ModItemRegistry.COD_CHAMPIGNON_BURGER.get());
 
         /* Golden Burgers */
-        itemModel(ModItems.GOLDEN_BEEF_BURGER.get());
-        itemModel(ModItems.GOLDEN_PORK_BURGER.get());
-        itemModel(ModItems.GOLDEN_MUTTON_BURGER.get());
-        itemModel(ModItems.GOLDEN_CHICKEN_BURGER.get());
-        itemModel(ModItems.GOLDEN_SALMON_BURGER.get());
-        itemModel(ModItems.GOLDEN_COD_BURGER.get());
+        itemModel(ModItemRegistry.GOLDEN_BEEF_BURGER.get());
+        itemModel(ModItemRegistry.GOLDEN_PORK_BURGER.get());
+        itemModel(ModItemRegistry.GOLDEN_MUTTON_BURGER.get());
+        itemModel(ModItemRegistry.GOLDEN_CHICKEN_BURGER.get());
+        itemModel(ModItemRegistry.GOLDEN_SALMON_BURGER.get());
+        itemModel(ModItemRegistry.GOLDEN_COD_BURGER.get());
 
         /* Enchanted Golden Burger */
-        itemModel(ModItems.ENCHANTED_GOLDEN_BURGER.get(), ResourceLocation.fromNamespaceAndPath(BurgerMod.MOD_ID, "item/golden_beef_burger"));
+        itemModel(ModItemRegistry.ENCHANTED_GOLDEN_BURGER.get(), ResourceLocation.fromNamespaceAndPath(BurgerMod.MOD_ID, "item/golden_beef_burger"));
 
         /* Ingredients */
-        itemModel(ModItems.SCRAMBLED_EGG.get());
-        itemModel(ModItems.FRIED_SCRAMBLED_EGG.get());
-        itemModel(ModItems.RAW_CHAMPIGNONS.get());
-        itemModel(ModItems.COOKED_CHAMPIGNONS.get());
-        itemModel(ModItems.CHEESE.get());
+        itemModel(ModItemRegistry.SCRAMBLED_EGG.get());
+        itemModel(ModItemRegistry.FRIED_SCRAMBLED_EGG.get());
+        itemModel(ModItemRegistry.RAW_CHAMPIGNONS.get());
+        itemModel(ModItemRegistry.COOKED_CHAMPIGNONS.get());
+        itemModel(ModItemRegistry.CHEESE.get());
 
         /* Other foods */
-        itemModel(ModItems.COOKED_CHICKEN_NUGGET.get());
-        itemModel(ModItems.FRIES.get());
-        itemModel(ModItems.HOTDOG.get());
-        itemModel(ModItems.SWEET_BERRY_TART.get());
+        itemModel(ModItemRegistry.COOKED_CHICKEN_NUGGET.get());
+        itemModel(ModItemRegistry.FRIES.get());
+        itemModel(ModItemRegistry.HOTDOG.get());
+        itemModel(ModItemRegistry.SWEET_BERRY_TART.get());
     }
 
     /**
@@ -84,7 +84,7 @@ public class ModItemModelProvider extends ItemModelProvider
 
     private ItemModelBuilder itemModel(Item item)
     {
-        ResourceLocation id =  ForgeRegistries.ITEMS.getKey(item);
+        ResourceLocation id = ForgeRegistries.ITEMS.getKey(item);
         return itemModel(item, ResourceLocation.fromNamespaceAndPath(id.getNamespace(), "item/" + id.getPath()));
     }
 }

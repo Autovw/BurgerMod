@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "#": {
+      "item": "minecraft:cooked_porkchop"
+    },
+    "*": {
+      "tag": "c:foods/cooked_mushroom"
+    },
+    "B": {
+      "tag": "c:foods/bread"
+    }
+  },
+  "pattern": [
+    " B",
+    "*#",
+    " B"
+  ],
+  "result": {
+    "count": 2,
+    "id": "burgermod:pork_champignon_burger"
+  }
+}

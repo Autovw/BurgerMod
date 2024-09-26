@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:smelting",
+  "category": "food",
+  "cookingtime": 200,
+  "experience": 0.25,
+  "ingredient": {
+    "item": "burgermod:raw_champignons"
+  },
+  "result": {
+    "count": 1,
+    "id": "burgermod:cooked_champignons"
+  }
+}

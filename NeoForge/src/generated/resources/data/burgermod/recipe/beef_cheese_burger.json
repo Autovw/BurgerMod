@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "#": {
+      "item": "minecraft:cooked_beef"
+    },
+    "*": {
+      "tag": "c:foods/cheese"
+    },
+    "B": {
+      "tag": "c:foods/bread"
+    }
+  },
+  "pattern": [
+    " B",
+    "*#",
+    " B"
+  ],
+  "result": {
+    "count": 2,
+    "id": "burgermod:beef_cheese_burger"
+  }
+}

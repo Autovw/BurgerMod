@@ -1,0 +1,43 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_TagKey[minecraft:item / burgermod:cod_burgers]": {
+      "conditions": {
+        "items": [
+          {
+            "items": "#burgermod:cod_burgers"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_gold": {
+      "conditions": {
+        "items": [
+          {
+            "items": "#c:ingots/gold"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "burgermod:golden_cod_burger"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_gold",
+      "has_TagKey[minecraft:item / burgermod:cod_burgers]"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "burgermod:golden_cod_burger"
+    ]
+  }
+}

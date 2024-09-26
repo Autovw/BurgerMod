@@ -1,0 +1,33 @@
+{
+  "parent": "minecraft:husbandry/plant_seed",
+  "criteria": {
+    "burgers": {
+      "conditions": {
+        "items": [
+          {
+            "items": "#burgermod:burgers"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "description": {
+      "translate": "advancements.burgermod.husbandry.craft_burger.description"
+    },
+    "icon": {
+      "count": 1,
+      "id": "burgermod:beef_burger"
+    },
+    "title": {
+      "translate": "advancements.burgermod.husbandry.craft_burger.title"
+    }
+  },
+  "requirements": [
+    [
+      "burgers"
+    ]
+  ],
+  "sends_telemetry_event": true
+}

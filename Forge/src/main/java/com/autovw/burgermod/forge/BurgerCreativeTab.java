@@ -1,7 +1,7 @@
 package com.autovw.burgermod.forge;
 
 import com.autovw.burgermod.common.BurgerMod;
-import com.autovw.burgermod.forge.core.registry.ModItems;
+import com.autovw.burgermod.forge.core.registry.ModItemRegistry;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.network.chat.Component;
 import net.minecraft.world.item.CreativeModeTab;
@@ -24,7 +24,7 @@ public final class BurgerCreativeTab
     static final DeferredRegister<CreativeModeTab> TABS = DeferredRegister.create(Registries.CREATIVE_MODE_TAB, BurgerMod.MOD_ID);
     static final RegistryObject<CreativeModeTab> TAB = TABS.register("tab", () -> CreativeModeTab.builder()
             .title(Component.translatable("itemGroup." + BurgerMod.MOD_ID + ".tab"))
-            .icon(() -> ModItems.BEEF_BURGER.get().getDefaultInstance())
+            .icon(() -> ModItemRegistry.BEEF_BURGER.get().getDefaultInstance())
             .build());
 
     @SubscribeEvent
@@ -33,6 +33,6 @@ public final class BurgerCreativeTab
         if (event.getTab() != BurgerCreativeTab.TAB.get())
             return;
 
-        ModItems.ITEMS.getEntries().stream().map(RegistryObject::get).forEach(event::accept);
+        ModItemRegistry.ITEMS.getEntries().stream().map(RegistryObject::get).forEach(event::accept);
     }
 }

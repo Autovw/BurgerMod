@@ -2,7 +2,7 @@ package com.autovw.burgermod.forge;
 
 import com.autovw.burgermod.common.BurgerMod;
 import com.autovw.burgermod.forge.config.Config;
-import com.autovw.burgermod.forge.core.registry.ModItems;
+import com.autovw.burgermod.forge.core.registry.ModItemRegistry;
 import com.autovw.burgermod.forge.core.registry.ModLootModifiers;
 import com.mojang.logging.LogUtils;
 import net.minecraftforge.common.MinecraftForge;
@@ -31,7 +31,7 @@ public class BurgerModForge
         IEventBus bus = context.getModEventBus();
         bus.addListener(this::commonSetup);
 
-        ModItems.ITEMS.register(bus);
+        ModItemRegistry.ITEMS.register(bus);
         ModLootModifiers.LOOT_MODIFIERS.register(bus);
         BurgerCreativeTab.TABS.register(bus);
 

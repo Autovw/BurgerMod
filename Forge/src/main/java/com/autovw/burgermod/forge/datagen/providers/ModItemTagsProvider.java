@@ -1,6 +1,6 @@
 package com.autovw.burgermod.forge.datagen.providers;
 
-import com.autovw.burgermod.forge.core.registry.ModItems;
+import com.autovw.burgermod.forge.core.registry.ModItemRegistry;
 import com.autovw.burgermod.common.core.util.ModTags;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.data.PackOutput;
@@ -29,66 +29,66 @@ public class ModItemTagsProvider extends ItemTagsProvider
     {
         /* Tags added by the mod */
         tag(ModTags.BEEF_BURGERS)
-                .add(ModItems.BEEF_BURGER.get())
-                .add(ModItems.BEEF_CHEESE_BURGER.get())
-                .add(ModItems.BEEF_CHAMPIGNON_BURGER.get());
+                .add(ModItemRegistry.BEEF_BURGER.get())
+                .add(ModItemRegistry.BEEF_CHEESE_BURGER.get())
+                .add(ModItemRegistry.BEEF_CHAMPIGNON_BURGER.get());
 
         tag(ModTags.PORK_BURGERS)
-                .add(ModItems.PORK_BURGER.get())
-                .add(ModItems.PORK_CHEESE_BURGER.get())
-                .add(ModItems.PORK_CHAMPIGNON_BURGER.get());
+                .add(ModItemRegistry.PORK_BURGER.get())
+                .add(ModItemRegistry.PORK_CHEESE_BURGER.get())
+                .add(ModItemRegistry.PORK_CHAMPIGNON_BURGER.get());
 
         tag(ModTags.MUTTON_BURGERS)
-                .add(ModItems.MUTTON_BURGER.get())
-                .add(ModItems.MUTTON_CHEESE_BURGER.get())
-                .add(ModItems.MUTTON_CHAMPIGNON_BURGER.get());
+                .add(ModItemRegistry.MUTTON_BURGER.get())
+                .add(ModItemRegistry.MUTTON_CHEESE_BURGER.get())
+                .add(ModItemRegistry.MUTTON_CHAMPIGNON_BURGER.get());
 
         tag(ModTags.CHICKEN_BURGERS)
-                .add(ModItems.CHICKEN_BURGER.get())
-                .add(ModItems.CHICKEN_CHEESE_BURGER.get())
-                .add(ModItems.CHICKEN_CHAMPIGNON_BURGER.get());
+                .add(ModItemRegistry.CHICKEN_BURGER.get())
+                .add(ModItemRegistry.CHICKEN_CHEESE_BURGER.get())
+                .add(ModItemRegistry.CHICKEN_CHAMPIGNON_BURGER.get());
 
         tag(ModTags.SALMON_BURGERS)
-                .add(ModItems.SALMON_BURGER.get())
-                .add(ModItems.SALMON_CHEESE_BURGER.get())
-                .add(ModItems.SALMON_CHAMPIGNON_BURGER.get());
+                .add(ModItemRegistry.SALMON_BURGER.get())
+                .add(ModItemRegistry.SALMON_CHEESE_BURGER.get())
+                .add(ModItemRegistry.SALMON_CHAMPIGNON_BURGER.get());
 
         tag(ModTags.COD_BURGERS)
-                .add(ModItems.COD_BURGER.get())
-                .add(ModItems.COD_CHEESE_BURGER.get())
-                .add(ModItems.COD_CHAMPIGNON_BURGER.get());
+                .add(ModItemRegistry.COD_BURGER.get())
+                .add(ModItemRegistry.COD_CHEESE_BURGER.get())
+                .add(ModItemRegistry.COD_CHAMPIGNON_BURGER.get());
 
         tag(ModTags.CHEESE_BURGERS)
-                .add(ModItems.BEEF_CHEESE_BURGER.get())
-                .add(ModItems.PORK_CHEESE_BURGER.get())
-                .add(ModItems.MUTTON_CHEESE_BURGER.get())
-                .add(ModItems.CHICKEN_CHEESE_BURGER.get())
-                .add(ModItems.SALMON_CHEESE_BURGER.get())
-                .add(ModItems.COD_CHEESE_BURGER.get());
+                .add(ModItemRegistry.BEEF_CHEESE_BURGER.get())
+                .add(ModItemRegistry.PORK_CHEESE_BURGER.get())
+                .add(ModItemRegistry.MUTTON_CHEESE_BURGER.get())
+                .add(ModItemRegistry.CHICKEN_CHEESE_BURGER.get())
+                .add(ModItemRegistry.SALMON_CHEESE_BURGER.get())
+                .add(ModItemRegistry.COD_CHEESE_BURGER.get());
 
         tag(ModTags.CHAMPIGNON_BURGERS)
-                .add(ModItems.BEEF_CHAMPIGNON_BURGER.get())
-                .add(ModItems.PORK_CHAMPIGNON_BURGER.get())
-                .add(ModItems.MUTTON_CHAMPIGNON_BURGER.get())
-                .add(ModItems.CHICKEN_CHAMPIGNON_BURGER.get())
-                .add(ModItems.SALMON_CHAMPIGNON_BURGER.get())
-                .add(ModItems.COD_CHAMPIGNON_BURGER.get());
+                .add(ModItemRegistry.BEEF_CHAMPIGNON_BURGER.get())
+                .add(ModItemRegistry.PORK_CHAMPIGNON_BURGER.get())
+                .add(ModItemRegistry.MUTTON_CHAMPIGNON_BURGER.get())
+                .add(ModItemRegistry.CHICKEN_CHAMPIGNON_BURGER.get())
+                .add(ModItemRegistry.SALMON_CHAMPIGNON_BURGER.get())
+                .add(ModItemRegistry.COD_CHAMPIGNON_BURGER.get());
 
         tag(ModTags.EGG_BURGERS)
-                .add(ModItems.BEEF_BURGER.get())
-                .add(ModItems.PORK_BURGER.get())
-                .add(ModItems.MUTTON_BURGER.get())
-                .add(ModItems.CHICKEN_BURGER.get())
-                .add(ModItems.SALMON_BURGER.get())
-                .add(ModItems.COD_BURGER.get());
+                .add(ModItemRegistry.BEEF_BURGER.get())
+                .add(ModItemRegistry.PORK_BURGER.get())
+                .add(ModItemRegistry.MUTTON_BURGER.get())
+                .add(ModItemRegistry.CHICKEN_BURGER.get())
+                .add(ModItemRegistry.SALMON_BURGER.get())
+                .add(ModItemRegistry.COD_BURGER.get());
 
         tag(ModTags.GOLDEN_BURGERS)
-                .add(ModItems.GOLDEN_BEEF_BURGER.get())
-                .add(ModItems.GOLDEN_PORK_BURGER.get())
-                .add(ModItems.GOLDEN_MUTTON_BURGER.get())
-                .add(ModItems.GOLDEN_CHICKEN_BURGER.get())
-                .add(ModItems.GOLDEN_SALMON_BURGER.get())
-                .add(ModItems.GOLDEN_COD_BURGER.get());
+                .add(ModItemRegistry.GOLDEN_BEEF_BURGER.get())
+                .add(ModItemRegistry.GOLDEN_PORK_BURGER.get())
+                .add(ModItemRegistry.GOLDEN_MUTTON_BURGER.get())
+                .add(ModItemRegistry.GOLDEN_CHICKEN_BURGER.get())
+                .add(ModItemRegistry.GOLDEN_SALMON_BURGER.get())
+                .add(ModItemRegistry.GOLDEN_COD_BURGER.get());
 
         tag(ModTags.BURGERS)
                 .addTag(ModTags.CHAMPIGNON_BURGERS)
@@ -100,16 +100,16 @@ public class ModItemTagsProvider extends ItemTagsProvider
                 .addTag(ModTags.FORGE_NUGGETS_CHICKEN);
 
         tag(ModTags.FORGE_NUGGETS_CHICKEN)
-                .add(ModItems.COOKED_CHICKEN_NUGGET.get());
+                .add(ModItemRegistry.COOKED_CHICKEN_NUGGET.get());
 
         tag(ModTags.FORGE_CHEESE)
-                .add(ModItems.CHEESE.get());
+                .add(ModItemRegistry.CHEESE.get());
 
         tag(ModTags.FORGE_FRIED_EGG)
-                .add(ModItems.FRIED_SCRAMBLED_EGG.get());
+                .add(ModItemRegistry.FRIED_SCRAMBLED_EGG.get());
 
         tag(ModTags.FORGE_COOKED_MUSHROOM)
-                .add(ModItems.COOKED_CHAMPIGNONS.get());
+                .add(ModItemRegistry.COOKED_CHAMPIGNONS.get());
 
         tag(ModTags.FORGE_BREAD)
                 .add(Items.BREAD);
@@ -117,17 +117,17 @@ public class ModItemTagsProvider extends ItemTagsProvider
         /* Minecraft tags */
         tag(ItemTags.PIGLIN_LOVED)
                 .addTag(ModTags.GOLDEN_BURGERS)
-                .add(ModItems.ENCHANTED_GOLDEN_BURGER.get());
+                .add(ModItemRegistry.ENCHANTED_GOLDEN_BURGER.get());
 
         tag(ItemTags.MEAT)
-                .add(ModItems.COOKED_CHICKEN_NUGGET.get());
+                .add(ModItemRegistry.COOKED_CHICKEN_NUGGET.get());
 
         tag(ItemTags.WOLF_FOOD)
                 .addTag(ModTags.BEEF_BURGERS)
                 .addTag(ModTags.PORK_BURGERS)
                 .addTag(ModTags.MUTTON_BURGERS)
                 .addTag(ModTags.CHICKEN_BURGERS)
-                .add(ModItems.FRIED_SCRAMBLED_EGG.get())
-                .add(ModItems.HOTDOG.get());
+                .add(ModItemRegistry.FRIED_SCRAMBLED_EGG.get())
+                .add(ModItemRegistry.HOTDOG.get());
     }
 }

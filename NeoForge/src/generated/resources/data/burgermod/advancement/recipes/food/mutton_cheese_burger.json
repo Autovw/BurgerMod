@@ -1,0 +1,54 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_TagKey[minecraft:item / c:foods/cheese]": {
+      "conditions": {
+        "items": [
+          {
+            "items": "#c:foods/cheese"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_bread": {
+      "conditions": {
+        "items": [
+          {
+            "items": "#c:foods/bread"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_minecraft:cooked_mutton": {
+      "conditions": {
+        "items": [
+          {
+            "items": "minecraft:cooked_mutton"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "burgermod:mutton_cheese_burger"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_bread",
+      "has_minecraft:cooked_mutton",
+      "has_TagKey[minecraft:item / c:foods/cheese]"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "burgermod:mutton_cheese_burger"
+    ]
+  }
+}

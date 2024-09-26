@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "minecraft:cooked_beef"
+    },
+    {
+      "item": "minecraft:cooked_porkchop"
+    },
+    {
+      "tag": "c:foods/bread"
+    },
+    {
+      "tag": "c:nuggets/chicken"
+    }
+  ],
+  "result": {
+    "count": 4,
+    "id": "burgermod:hotdog"
+  }
+}
