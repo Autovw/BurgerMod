@@ -79,6 +79,6 @@ public final class ModItems
 
     private static EnchantedBurgerItem enchantedBurger(FoodProperties food)
     {
-        return new EnchantedBurgerItem(new Item.Properties().food(food));
+        return new EnchantedBurgerItem(new Item.Properties().food(food).rarity(Rarity.EPIC));
     }
 }
