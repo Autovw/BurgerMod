@@ -1,7 +1,7 @@
 package com.autovw.burgermod.common.core;
 
-import com.autovw.burgermod.common.common.item.EnchantedBurgerItem;
 import com.autovw.burgermod.common.core.util.ModFood;
+import net.minecraft.core.component.DataComponents;
 import net.minecraft.world.food.FoodProperties;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.Rarity;
@@ -50,7 +50,7 @@ public final class ModItems
     public static final Item GOLDEN_COD_BURGER = food(ModFood.GOLDEN_BURGER_TIER_4, Rarity.RARE);
 
     // Enchanted Golden Burger
-    public static final EnchantedBurgerItem ENCHANTED_GOLDEN_BURGER = enchantedBurger(ModFood.ENCHANTED_GOLDEN_BURGER);
+    public static final Item ENCHANTED_GOLDEN_BURGER = enchantedBurger(ModFood.ENCHANTED_GOLDEN_BURGER);
 
     // Eggs
     public static final Item SCRAMBLED_EGG = food(ModFood.RAW_EGG_FOOD);
@@ -77,8 +77,8 @@ public final class ModItems
         return new Item(new Item.Properties().food(food).rarity(rarity));
     }
 
-    private static EnchantedBurgerItem enchantedBurger(FoodProperties food)
+    private static Item enchantedBurger(FoodProperties food)
     {
-        return new EnchantedBurgerItem(new Item.Properties().food(food).rarity(Rarity.EPIC));
+        return new Item(new Item.Properties().food(food).rarity(Rarity.EPIC).component(DataComponents.ENCHANTMENT_GLINT_OVERRIDE, true));
     }
 }
