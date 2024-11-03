@@ -5,7 +5,7 @@
       "conditions": {
         "items": [
           {
-            "items": "#forge:bread"
+            "items": "#c:foods/bread"
           }
         ]
       },
@@ -15,7 +15,7 @@
       "conditions": {
         "items": [
           {
-            "items": "#forge:cooked_mushroom"
+            "items": "#c:foods/cooked_mushroom"
           }
         ]
       },

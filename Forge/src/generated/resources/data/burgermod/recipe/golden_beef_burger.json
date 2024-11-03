@@ -2,12 +2,8 @@
   "type": "minecraft:crafting_shaped",
   "category": "misc",
   "key": {
-    "#": {
-      "tag": "burgermod:beef_burgers"
-    },
-    "G": {
-      "tag": "forge:ingots/gold"
-    }
+    "#": "#burgermod:beef_burgers",
+    "G": "#c:ingots/gold"
   },
   "pattern": [
     "GGG",

@@ -73,7 +73,7 @@ dependencies {
     minecraft "net.minecraftforge:forge:${minecraft_version}-${forge_version}"
     compileOnly project(path: ':Common')
 
-    runtimeOnly "curse.maven:jei-238222:${jei_forge_version}"
+    //runtimeOnly "curse.maven:jei-238222:${jei_forge_version}"
 
     // Hack fix for now, force jopt-simple to be exactly 5.0.4 because Mojang ships that version, but some transtive dependencies request 6.0+
     implementation('net.sf.jopt-simple:jopt-simple:5.0.4') { version { strictly '5.0.4' } }

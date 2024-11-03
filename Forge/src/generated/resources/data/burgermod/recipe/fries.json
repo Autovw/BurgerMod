@@ -2,9 +2,7 @@
   "type": "minecraft:crafting_shaped",
   "category": "misc",
   "key": {
-    "P": {
-      "item": "minecraft:baked_potato"
-    }
+    "P": "minecraft:baked_potato"
   },
   "pattern": [
     "PPP"

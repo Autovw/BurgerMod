@@ -2,15 +2,9 @@
   "type": "minecraft:crafting_shaped",
   "category": "misc",
   "key": {
-    "#": {
-      "item": "minecraft:cooked_mutton"
-    },
-    "*": {
-      "tag": "c:foods/cheese"
-    },
-    "B": {
-      "tag": "c:foods/bread"
-    }
+    "#": "minecraft:cooked_mutton",
+    "*": "#c:foods/cheese",
+    "B": "#c:foods/bread"
   },
   "pattern": [
     " B",

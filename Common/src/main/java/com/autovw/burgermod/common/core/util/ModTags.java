@@ -25,7 +25,7 @@ public final class ModTags
 
     // "official" common tags
     public static final TagKey<Item> COMMON_INGOTS_GOLD = commonItemTag("ingots/gold");
-    public static final TagKey<Item> COMMON_EGGS = forgeItemTag("eggs");
+    public static final TagKey<Item> COMMON_EGGS = commonItemTag("eggs");
     public static final TagKey<Item> COMMON_FOODS = commonItemTag("foods");
     public static final TagKey<Item> COMMON_FOODS_BREAD = commonItemTag("foods/bread");
     public static final TagKey<Item> COMMON_FOODS_GOLDEN = commonItemTag("foods/golden");
@@ -36,15 +36,6 @@ public final class ModTags
     public static final TagKey<Item> COMMON_FOODS_FRIED_EGG = commonItemTag("foods/fried_egg");
     public static final TagKey<Item> COMMON_FOODS_COOKED_MUSHROOM = commonItemTag("foods/cooked_mushroom");
 
-    // Forge tags (unofficial)
-    public static final TagKey<Item> FORGE_INGOTS_GOLD = forgeItemTag("ingots/gold");
-    public static final TagKey<Item> FORGE_EGGS = forgeItemTag("eggs");
-    public static final TagKey<Item> FORGE_NUGGETS_CHICKEN = forgeItemTag("nuggets/chicken");
-    public static final TagKey<Item> FORGE_CHEESE = forgeItemTag("cheese");
-    public static final TagKey<Item> FORGE_FRIED_EGG = forgeItemTag("fried_egg");
-    public static final TagKey<Item> FORGE_COOKED_MUSHROOM = forgeItemTag("cooked_mushroom");
-    public static final TagKey<Item> FORGE_BREAD = forgeItemTag("bread");
-
     private static TagKey<Item> itemTag(String tagName)
     {
         return TagKey.create(Registries.ITEM, ResourceLocation.fromNamespaceAndPath(BurgerMod.MOD_ID, tagName));
@@ -53,10 +44,5 @@ public final class ModTags
     private static TagKey<Item> commonItemTag(String tagLoc)
     {
         return TagKey.create(Registries.ITEM, ResourceLocation.fromNamespaceAndPath("c", tagLoc));
-    }
-
-    private static TagKey<Item> forgeItemTag(String tagLoc)
-    {
-        return TagKey.create(Registries.ITEM, ResourceLocation.fromNamespaceAndPath("forge", tagLoc));
     }
 }

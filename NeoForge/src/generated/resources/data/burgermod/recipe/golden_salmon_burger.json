@@ -2,12 +2,8 @@
   "type": "minecraft:crafting_shaped",
   "category": "misc",
   "key": {
-    "#": {
-      "tag": "burgermod:salmon_burgers"
-    },
-    "G": {
-      "tag": "c:ingots/gold"
-    }
+    "#": "#burgermod:salmon_burgers",
+    "G": "#c:ingots/gold"
   },
   "pattern": [
     "GGG",

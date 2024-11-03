@@ -1,6 +1,5 @@
 package com.autovw.burgermod.common.core.util;
 
-import net.minecraft.world.effect.MobEffectInstance;
 import net.minecraft.world.food.FoodProperties;
 
 /**
@@ -27,15 +26,13 @@ public class ModFood
 
     // Used for: RAW_SCRAMBLED_EGG
     // POISON: duration (ticks), amplifier (0 = lvl 1), probability (1.0f = 100%)
-    public static final FoodProperties RAW_EGG_FOOD = new FoodProperties.Builder().nutrition(1).saturationModifier(0.1f)
-            .effect(new MobEffectInstance(ModEffects.RAW_SCRAMBLED_EGG_EFFECTS), 1.0F).build();
+    public static final FoodProperties RAW_EGG_FOOD = new FoodProperties.Builder().nutrition(1).saturationModifier(0.1f).build();
     // Used for: FRIED_SCRAMBLED_EGG
     public static final FoodProperties FRIED_EGG_FOOD = new FoodProperties.Builder().nutrition(2).saturationModifier(0.6f).build();
 
     // Used for: RAW_CHAMPIGNONS
     // HUNGER: duration (ticks), amplifier (0 = lvl 1), probability (1.0f = 100%)
-    public static final FoodProperties RAW_CHAMPIGNONS_FOOD = new FoodProperties.Builder().nutrition(1).saturationModifier(0.1f)
-            .effect(new MobEffectInstance(ModEffects.RAW_CHAMPIGNONS_EFFECTS), 1.0f).build();
+    public static final FoodProperties RAW_CHAMPIGNONS_FOOD = new FoodProperties.Builder().nutrition(1).saturationModifier(0.1f).build();
     // Used for: CHEESE, COOKED_MUSHROOM
     public static final FoodProperties INGREDIENT_FOOD = new FoodProperties.Builder().nutrition(2).saturationModifier(0.6f).build();
 
@@ -49,26 +46,14 @@ public class ModFood
     public static final FoodProperties NUGGET_FOOD = new FoodProperties.Builder().nutrition(1).saturationModifier(0.6f).build();
 
     // Used for: GOLDEN_BEEF, GOLDEN_PORK
-    public static final FoodProperties GOLDEN_BURGER_TIER_1 = new FoodProperties.Builder().nutrition(10).saturationModifier(1.4f)
-            .effect(new MobEffectInstance(ModEffects.GOLDEN_BURGER_REGENERATION), 1.0f)
-            .effect(new MobEffectInstance(ModEffects.GOLDEN_BURGER_ABSORPTION), 1.0f).alwaysEdible().build();
+    public static final FoodProperties GOLDEN_BURGER_TIER_1 = new FoodProperties.Builder().nutrition(10).saturationModifier(1.4f).alwaysEdible().build();
     // Used for: GOLDEN_MUTTON, GOLDEN_SALMON
-    public static final FoodProperties GOLDEN_BURGER_TIER_2 = new FoodProperties.Builder().nutrition(8).saturationModifier(1.4f)
-            .effect(new MobEffectInstance(ModEffects.GOLDEN_BURGER_REGENERATION), 1.0f)
-            .effect(new MobEffectInstance(ModEffects.GOLDEN_BURGER_ABSORPTION), 1.0f).alwaysEdible().build();
+    public static final FoodProperties GOLDEN_BURGER_TIER_2 = new FoodProperties.Builder().nutrition(8).saturationModifier(1.4f).alwaysEdible().build();
     // Used for: GOLDEN_CHICKEN
-    public static final FoodProperties GOLDEN_BURGER_TIER_3 = new FoodProperties.Builder().nutrition(8).saturationModifier(1.2f)
-            .effect(new MobEffectInstance(ModEffects.GOLDEN_BURGER_REGENERATION), 1.0f)
-            .effect(new MobEffectInstance(ModEffects.GOLDEN_BURGER_ABSORPTION), 1.0f).alwaysEdible().build();
+    public static final FoodProperties GOLDEN_BURGER_TIER_3 = new FoodProperties.Builder().nutrition(8).saturationModifier(1.2f).alwaysEdible().build();
     // Used for: GOLDEN_COD
-    public static final FoodProperties GOLDEN_BURGER_TIER_4 = new FoodProperties.Builder().nutrition(7).saturationModifier(1.2f)
-            .effect(new MobEffectInstance(ModEffects.GOLDEN_BURGER_REGENERATION), 1.0f)
-            .effect(new MobEffectInstance(ModEffects.GOLDEN_BURGER_ABSORPTION), 1.0f).alwaysEdible().build();
+    public static final FoodProperties GOLDEN_BURGER_TIER_4 = new FoodProperties.Builder().nutrition(7).saturationModifier(1.2f).alwaysEdible().build();
 
     // Used for: ENCHANTED_GOLDEN_BURGER
-    public static final FoodProperties ENCHANTED_GOLDEN_BURGER = new FoodProperties.Builder().nutrition(8).saturationModifier(1.6f)
-            .effect(new MobEffectInstance(ModEffects.ENCHANTED_GOLDEN_BURGER_REGENERATION), 1.0f)
-            .effect(new MobEffectInstance(ModEffects.ENCHANTED_GOLDEN_BURGER_DAMAGE_RESISTANCE), 1.0f)
-            .effect(new MobEffectInstance(ModEffects.ENCHANTED_GOLDEN_BURGER_FIRE_RESISTANCE), 1.0f)
-            .effect(new MobEffectInstance(ModEffects.ENCHANTED_GOLDEN_BURGER_ABSORPTION), 1.0f).alwaysEdible().build();
+    public static final FoodProperties ENCHANTED_GOLDEN_BURGER = new FoodProperties.Builder().nutrition(8).saturationModifier(1.6f).alwaysEdible().build();
 }

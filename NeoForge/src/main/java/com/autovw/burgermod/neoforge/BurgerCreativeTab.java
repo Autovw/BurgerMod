@@ -1,7 +1,6 @@
 package com.autovw.burgermod.neoforge;
 
 import com.autovw.burgermod.common.BurgerMod;
-import com.autovw.burgermod.common.core.ModItems;
 import com.autovw.burgermod.neoforge.core.registry.ModItemRegistry;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.network.chat.Component;
@@ -25,7 +24,7 @@ public final class BurgerCreativeTab
     static final DeferredRegister<CreativeModeTab> TABS = DeferredRegister.create(Registries.CREATIVE_MODE_TAB, BurgerMod.MOD_ID);
     static final DeferredHolder<CreativeModeTab, CreativeModeTab> TAB = TABS.register("tab", () -> CreativeModeTab.builder()
             .title(Component.translatable("itemGroup." + BurgerMod.MOD_ID + ".tab"))
-            .icon(ModItems.BEEF_BURGER::getDefaultInstance)
+            .icon(ModItemRegistry.BEEF_BURGER.get()::getDefaultInstance)
             .build());
 
     @SubscribeEvent

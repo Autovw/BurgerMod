@@ -2,15 +2,9 @@
   "type": "minecraft:crafting_shaped",
   "category": "misc",
   "key": {
-    "#": {
-      "item": "minecraft:cooked_salmon"
-    },
-    "*": {
-      "tag": "forge:cooked_mushroom"
-    },
-    "B": {
-      "tag": "forge:bread"
-    }
+    "#": "minecraft:cooked_salmon",
+    "*": "#c:foods/cooked_mushroom",
+    "B": "#c:foods/bread"
   },
   "pattern": [
     " B",

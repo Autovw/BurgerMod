@@ -95,24 +95,39 @@ public class ModItemTagsProvider extends ItemTagsProvider
                 .addTag(ModTags.CHEESE_BURGERS)
                 .addTag(ModTags.EGG_BURGERS);
 
-        /* Forge tags */
+        /* Common tags */
         tag(Tags.Items.NUGGETS)
-                .addTag(ModTags.FORGE_NUGGETS_CHICKEN);
+                .addTag(ModTags.COMMON_NUGGETS_CHICKEN);
 
-        tag(ModTags.FORGE_NUGGETS_CHICKEN)
+        tag(ModTags.COMMON_NUGGETS_CHICKEN)
                 .add(ModItemRegistry.COOKED_CHICKEN_NUGGET.get());
 
-        tag(ModTags.FORGE_CHEESE)
+        tag(ModTags.COMMON_FOODS_CHEESE)
                 .add(ModItemRegistry.CHEESE.get());
 
-        tag(ModTags.FORGE_FRIED_EGG)
+        tag(ModTags.COMMON_FOODS_FRIED_EGG)
                 .add(ModItemRegistry.FRIED_SCRAMBLED_EGG.get());
 
-        tag(ModTags.FORGE_COOKED_MUSHROOM)
+        tag(ModTags.COMMON_FOODS_COOKED_MUSHROOM)
                 .add(ModItemRegistry.COOKED_CHAMPIGNONS.get());
 
-        tag(ModTags.FORGE_BREAD)
-                .add(Items.BREAD);
+        tag(Tags.Items.FOODS_GOLDEN)
+                .addTag(ModTags.GOLDEN_BURGERS)
+                .add(ModItemRegistry.ENCHANTED_GOLDEN_BURGER.get());
+
+        tag(Tags.Items.FOODS_FOOD_POISONING)
+                .add(ModItemRegistry.SCRAMBLED_EGG.get());
+
+        tag(Tags.Items.FOODS)
+                .addTag(ModTags.COMMON_NUGGETS_CHICKEN)
+                .addTag(ModTags.COMMON_FOODS_CHEESE)
+                .addTag(ModTags.COMMON_FOODS_FRIED_EGG)
+                .addTag(ModTags.COMMON_FOODS_COOKED_MUSHROOM)
+                .addTag(ModTags.BURGERS)
+                .add(ModItemRegistry.RAW_CHAMPIGNONS.get())
+                .add(ModItemRegistry.FRIES.get())
+                .add(ModItemRegistry.HOTDOG.get())
+                .add(ModItemRegistry.SWEET_BERRY_TART.get());
 
         /* Minecraft tags */
         tag(ItemTags.PIGLIN_LOVED)

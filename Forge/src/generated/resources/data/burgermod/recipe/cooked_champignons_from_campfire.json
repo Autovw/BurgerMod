@@ -3,9 +3,7 @@
   "category": "food",
   "cookingtime": 600,
   "experience": 0.25,
-  "ingredient": {
-    "item": "burgermod:raw_champignons"
-  },
+  "ingredient": "burgermod:raw_champignons",
   "result": {
     "id": "burgermod:cooked_champignons"
   }

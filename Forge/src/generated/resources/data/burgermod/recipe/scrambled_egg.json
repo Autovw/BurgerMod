@@ -2,9 +2,7 @@
   "type": "minecraft:crafting_shapeless",
   "category": "misc",
   "ingredients": [
-    {
-      "tag": "forge:eggs"
-    }
+    "#c:eggs"
   ],
   "result": {
     "count": 1,

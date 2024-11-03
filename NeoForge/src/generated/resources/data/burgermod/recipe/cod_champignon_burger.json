@@ -2,15 +2,9 @@
   "type": "minecraft:crafting_shaped",
   "category": "misc",
   "key": {
-    "#": {
-      "item": "minecraft:cooked_cod"
-    },
-    "*": {
-      "tag": "c:foods/cooked_mushroom"
-    },
-    "B": {
-      "tag": "c:foods/bread"
-    }
+    "#": "minecraft:cooked_cod",
+    "*": "#c:foods/cooked_mushroom",
+    "B": "#c:foods/bread"
   },
   "pattern": [
     " B",

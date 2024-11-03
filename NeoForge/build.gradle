@@ -64,7 +64,7 @@ dependencies {
     compileOnly project(path: ':Common')
 
     // runtime dependencies
-    runtimeOnly "curse.maven:jei-238222:${jei_neoforge_version}"
+    //runtimeOnly "curse.maven:jei-238222:${jei_neoforge_version}"
 }
 
 // NeoGradle compiles the game, but we don't want to add our common code to the game's code
