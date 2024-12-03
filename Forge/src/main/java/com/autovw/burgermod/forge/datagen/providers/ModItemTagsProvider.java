@@ -129,6 +129,10 @@ public class ModItemTagsProvider extends ItemTagsProvider
                 .add(ModItemRegistry.HOTDOG.get())
                 .add(ModItemRegistry.SWEET_BERRY_TART.get());
 
+        // Forge doesn't add this tag for some reason
+        tag(ModTags.COMMON_EGGS)
+                .add(Items.EGG);
+
         /* Minecraft tags */
         tag(ItemTags.PIGLIN_LOVED)
                 .addTag(ModTags.GOLDEN_BURGERS)
