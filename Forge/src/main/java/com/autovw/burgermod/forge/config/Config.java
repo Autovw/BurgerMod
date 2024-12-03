@@ -25,7 +25,7 @@ public class Config
 
         public Common(ForgeConfigSpec.Builder builder)
         {
-            builder.push("common");
+            builder.translation("config.burgermod.common").push("common");
             {
                 this.lootConfig = new LootConfig(builder);
             }
@@ -43,9 +43,15 @@ public class Config
 
         public LootConfig(ForgeConfigSpec.Builder builder)
         {
-            builder.comment("Loot related config options").push("loot_config");
+            builder
+                    .comment("Loot related config options")
+                    .translation("config.burgermod.common.loot")
+                    .push("loot_config");
             {
-                generateChestLoot = builder.comment("If true, items from this mod are added to vanilla loot tables. True by default.").define("generateChestLoot", true);
+                generateChestLoot = builder
+                        .comment("If true, items from this mod are added to vanilla loot tables. True by default.")
+                        .translation("config.burgermod.common.loot.generate_chest_loot")
+                        .define("generateChestLoot", true);
             }
             builder.pop();
         }

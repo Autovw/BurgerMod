@@ -50,5 +50,9 @@
   "advancements.burgermod.husbandry.craft_golden_burger.title": "더 나은 버거",
   "advancements.burgermod.husbandry.craft_golden_burger.description": "황금 버거를 획득하세요",
   "advancements.burgermod.husbandry.obtain_enchanted_golden_burger.title": "The Ultimate Burger",
-  "advancements.burgermod.husbandry.obtain_enchanted_golden_burger.description": "Obtain an Enchanted Golden Burger"
+  "advancements.burgermod.husbandry.obtain_enchanted_golden_burger.description": "Obtain an Enchanted Golden Burger",
+
+  "config.burgermod.common": "Common config",
+  "config.burgermod.common.loot": "Loot config",
+  "config.burgermod.common.loot.generate_chest_loot": "Generate items from mod in vanilla chest loot"
 }
