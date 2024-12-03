@@ -70,10 +70,10 @@
       "target": "minecraft:chests/trial_chambers/supply"
     },
     {
-      "chance": 0.3,
+      "chance": 0.15,
       "item": "burgermod:salmon_cheese_burger",
       "max": 1,
-      "min": 0,
+      "min": 1,
       "target": "minecraft:chests/trial_chambers/supply"
     },
     {
@@ -84,10 +84,10 @@
       "target": "minecraft:chests/trial_chambers/intersection_barrel"
     },
     {
-      "chance": 0.4,
+      "chance": 0.2,
       "item": "burgermod:golden_cod_burger",
       "max": 1,
-      "min": 0,
+      "min": 1,
       "target": "minecraft:chests/trial_chambers/intersection_barrel"
     },
     {
@@ -98,10 +98,10 @@
       "target": "minecraft:chests/trial_chambers/reward_ominous"
     },
     {
-      "chance": 0.2,
+      "chance": 0.1,
       "item": "burgermod:enchanted_golden_burger",
       "max": 1,
-      "min": 0,
+      "min": 1,
       "target": "minecraft:chests/trial_chambers/reward_ominous"
     },
     {
@@ -126,17 +126,17 @@
       "target": "minecraft:chests/ruined_portal"
     },
     {
-      "chance": 0.2,
+      "chance": 0.1,
       "item": "burgermod:golden_salmon_burger",
       "max": 1,
-      "min": 0,
+      "min": 1,
       "target": "minecraft:chests/bastion_other"
     },
     {
-      "chance": 0.3,
+      "chance": 0.15,
       "item": "burgermod:golden_chicken_burger",
       "max": 1,
-      "min": 0,
+      "min": 1,
       "target": "minecraft:chests/bastion_hoglin_stable"
     },
     {
@@ -147,17 +147,17 @@
       "target": "minecraft:chests/bastion_treasure"
     },
     {
-      "chance": 0.2,
+      "chance": 0.1,
       "item": "burgermod:enchanted_golden_burger",
       "max": 1,
-      "min": 0,
+      "min": 1,
       "target": "minecraft:chests/bastion_treasure"
     },
     {
-      "chance": 0.25,
+      "chance": 0.125,
       "item": "burgermod:enchanted_golden_burger",
       "max": 1,
-      "min": 0,
+      "min": 1,
       "target": "minecraft:chests/ancient_city"
     }
   ],
