@@ -25,20 +25,20 @@ public final class LootModifierHelper
 
             new ChestLootAddition(ResourceLocation.withDefaultNamespace("chests/trial_chambers/supply"), ModItems.FRIES, 1, 3, 0.3f),
             new ChestLootAddition(ResourceLocation.withDefaultNamespace("chests/trial_chambers/supply"), ModItems.CHEESE, 1, 4, 0.3f),
-            new ChestLootAddition(ResourceLocation.withDefaultNamespace("chests/trial_chambers/supply"), ModItems.SALMON_CHEESE_BURGER, 0, 1, 0.3f),
+            new ChestLootAddition(ResourceLocation.withDefaultNamespace("chests/trial_chambers/supply"), ModItems.SALMON_CHEESE_BURGER, 1, 1, 0.15f),
             new ChestLootAddition(ResourceLocation.withDefaultNamespace("chests/trial_chambers/intersection_barrel"), ModItems.FRIES, 1, 5, 0.4f),
-            new ChestLootAddition(ResourceLocation.withDefaultNamespace("chests/trial_chambers/intersection_barrel"), ModItems.GOLDEN_COD_BURGER, 0, 1, 0.4f),
+            new ChestLootAddition(ResourceLocation.withDefaultNamespace("chests/trial_chambers/intersection_barrel"), ModItems.GOLDEN_COD_BURGER, 1, 1, 0.2f),
             new ChestLootAddition(ResourceLocation.withDefaultNamespace("chests/trial_chambers/reward_ominous"), ModItems.GOLDEN_COD_BURGER, 1, 1, 0.15f),
-            new ChestLootAddition(ResourceLocation.withDefaultNamespace("chests/trial_chambers/reward_ominous"), ModItems.ENCHANTED_GOLDEN_BURGER, 0, 1, 0.2f),
+            new ChestLootAddition(ResourceLocation.withDefaultNamespace("chests/trial_chambers/reward_ominous"), ModItems.ENCHANTED_GOLDEN_BURGER, 1, 1, 0.1f),
 
             new ChestLootAddition(ResourceLocation.withDefaultNamespace("chests/simple_dungeon"), ModItems.GOLDEN_BEEF_BURGER, 1, 1, 0.25f),
             new ChestLootAddition(ResourceLocation.withDefaultNamespace("chests/desert_pyramid"), ModItems.GOLDEN_MUTTON_BURGER, 1, 1, 0.1f),
             new ChestLootAddition(ResourceLocation.withDefaultNamespace("chests/ruined_portal"), ModItems.GOLDEN_PORK_BURGER, 1, 1, 0.15f),
-            new ChestLootAddition(ResourceLocation.withDefaultNamespace("chests/bastion_other"), ModItems.GOLDEN_SALMON_BURGER, 0, 1, 0.2f),
-            new ChestLootAddition(ResourceLocation.withDefaultNamespace("chests/bastion_hoglin_stable"), ModItems.GOLDEN_CHICKEN_BURGER, 0, 1, 0.3f),
+            new ChestLootAddition(ResourceLocation.withDefaultNamespace("chests/bastion_other"), ModItems.GOLDEN_SALMON_BURGER, 1, 1, 0.1f),
+            new ChestLootAddition(ResourceLocation.withDefaultNamespace("chests/bastion_hoglin_stable"), ModItems.GOLDEN_CHICKEN_BURGER, 1, 1, 0.15f),
             new ChestLootAddition(ResourceLocation.withDefaultNamespace("chests/bastion_treasure"), ModItems.GOLDEN_PORK_BURGER, 1, 1, 0.4f),
-            new ChestLootAddition(ResourceLocation.withDefaultNamespace("chests/bastion_treasure"), ModItems.ENCHANTED_GOLDEN_BURGER, 0, 1, 0.2f),
-            new ChestLootAddition(ResourceLocation.withDefaultNamespace("chests/ancient_city"), ModItems.ENCHANTED_GOLDEN_BURGER, 0, 1, 0.25f)
+            new ChestLootAddition(ResourceLocation.withDefaultNamespace("chests/bastion_treasure"), ModItems.ENCHANTED_GOLDEN_BURGER, 1, 1, 0.1f),
+            new ChestLootAddition(ResourceLocation.withDefaultNamespace("chests/ancient_city"), ModItems.ENCHANTED_GOLDEN_BURGER, 1, 1, 0.125f)
     };
 
     public static void modifiedGeneratedLoot(ObjectArrayList<ItemStack> generatedLoot, LootContext context, ChestLootAddition[] lootAdditions, ResourceLocation lootTableId)
