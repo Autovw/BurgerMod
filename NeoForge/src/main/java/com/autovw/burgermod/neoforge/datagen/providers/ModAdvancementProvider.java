@@ -4,8 +4,8 @@ import com.autovw.burgermod.common.datagen.ModDataGenHelper;
 import net.minecraft.advancements.AdvancementHolder;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.data.PackOutput;
-import net.neoforged.neoforge.common.data.AdvancementProvider;
-import net.neoforged.neoforge.common.data.ExistingFileHelper;
+import net.minecraft.data.advancements.AdvancementProvider;
+import net.minecraft.data.advancements.AdvancementSubProvider;
 
 import java.util.List;
 import java.util.concurrent.CompletableFuture;
@@ -16,15 +16,15 @@ import java.util.function.Consumer;
  */
 public class ModAdvancementProvider extends AdvancementProvider
 {
-    public ModAdvancementProvider(PackOutput output, CompletableFuture<HolderLookup.Provider> registries, ExistingFileHelper fileHelper)
+    public ModAdvancementProvider(PackOutput output, CompletableFuture<HolderLookup.Provider> registries)
     {
-        super(output, registries, fileHelper, List.of(new ModHusbandryAdvancements()));
+        super(output, registries, List.of(new ModHusbandryAdvancements()));
     }
 
-    public static class ModHusbandryAdvancements implements AdvancementGenerator
+    public static class ModHusbandryAdvancements implements AdvancementSubProvider
     {
         @Override
-        public void generate(HolderLookup.Provider registries, Consumer<AdvancementHolder> consumer, ExistingFileHelper fileHelper)
+        public void generate(HolderLookup.Provider registries, Consumer<AdvancementHolder> consumer)
         {
             ModDataGenHelper.advancements(registries, consumer);
         }

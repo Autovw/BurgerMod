@@ -3,7 +3,6 @@ package com.autovw.burgermod.common.datagen;
 import com.autovw.burgermod.common.BurgerMod;
 import com.autovw.burgermod.common.core.ModItems;
 import com.autovw.burgermod.common.core.util.ModTags;
-import com.autovw.burgermod.common.platform.IPlatformHelper;
 import net.minecraft.advancements.*;
 import net.minecraft.advancements.critereon.InventoryChangeTrigger;
 import net.minecraft.advancements.critereon.ItemPredicate;

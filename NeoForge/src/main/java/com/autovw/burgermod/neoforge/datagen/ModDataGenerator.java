@@ -4,9 +4,9 @@ import com.autovw.burgermod.neoforge.datagen.providers.*;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.data.DataGenerator;
 import net.minecraft.data.PackOutput;
+import net.neoforged.api.distmarker.Dist;
 import net.neoforged.bus.api.SubscribeEvent;
 import net.neoforged.fml.common.EventBusSubscriber;
-import net.neoforged.neoforge.common.data.ExistingFileHelper;
 import net.neoforged.neoforge.data.event.GatherDataEvent;
 
 import java.util.concurrent.CompletableFuture;
@@ -16,7 +16,7 @@ import static com.autovw.burgermod.common.BurgerMod.MOD_ID;
 /**
  * @author Autovw
  */
-@EventBusSubscriber(modid = MOD_ID, bus = EventBusSubscriber.Bus.MOD)
+@EventBusSubscriber(modid = MOD_ID, bus = EventBusSubscriber.Bus.MOD, value = Dist.CLIENT)
 public class ModDataGenerator
 {
     private ModDataGenerator()
@@ -25,22 +25,21 @@ public class ModDataGenerator
 
     @SuppressWarnings("unused")
     @SubscribeEvent
-    public static void onGatherData(final GatherDataEvent event)
+    public static void onGatherData(final GatherDataEvent.Client event)
     {
         DataGenerator generator = event.getGenerator();
         PackOutput packOutput = generator.getPackOutput();
         CompletableFuture<HolderLookup.Provider> lookupProvider = event.getLookupProvider();
-        ExistingFileHelper helper = event.getExistingFileHelper();
-        ModBlockTagsProvider blockTagsProvider = new ModBlockTagsProvider(packOutput, lookupProvider, MOD_ID, helper);
+        ModBlockTagsProvider blockTagsProvider = new ModBlockTagsProvider(packOutput, lookupProvider, MOD_ID);
 
         // server
-        generator.addProvider(event.includeServer(), blockTagsProvider);
-        generator.addProvider(event.includeServer(), new ModItemTagsProvider(packOutput, lookupProvider, blockTagsProvider.contentsGetter(), MOD_ID, helper));
-        generator.addProvider(event.includeServer(), new ModRecipeProvider.Runner(packOutput, lookupProvider));
-        generator.addProvider(event.includeServer(), new ModLootModifierProvider(packOutput, lookupProvider, MOD_ID));
-        generator.addProvider(event.includeServer(), new ModAdvancementProvider(packOutput, lookupProvider, helper));
+        event.addProvider(blockTagsProvider);
+        event.addProvider(new ModItemTagsProvider(packOutput, lookupProvider, blockTagsProvider.contentsGetter(), MOD_ID));
+        event.addProvider(new ModRecipeProvider.Runner(packOutput, lookupProvider));
+        event.addProvider(new ModLootModifierProvider(packOutput, lookupProvider, MOD_ID));
+        event.addProvider(new ModAdvancementProvider(packOutput, lookupProvider));
 
         // client
-        generator.addProvider(event.includeClient(), new ModItemModelProvider(packOutput, MOD_ID, helper));
+        event.addProvider(new ModModelProvider(packOutput, MOD_ID));
     }
 }
