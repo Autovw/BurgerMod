@@ -30,7 +30,7 @@ public class ModEffects
     // Stores the regeneration effects used by Enchanted Golden Burgers.
     public static final MobEffectInstance ENCHANTED_GOLDEN_BURGER_REGENERATION = new MobEffectInstance(MobEffects.REGENERATION, 400, 1);
     // Stores the damage resistance effects used by Enchanted Golden Burgers.
-    public static final MobEffectInstance ENCHANTED_GOLDEN_BURGER_DAMAGE_RESISTANCE = new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 5000, 0);
+    public static final MobEffectInstance ENCHANTED_GOLDEN_BURGER_DAMAGE_RESISTANCE = new MobEffectInstance(MobEffects.RESISTANCE, 5000, 0);
     // Stores the fire resistance effects used by Enchanted Golden Burgers.
     public static final MobEffectInstance ENCHANTED_GOLDEN_BURGER_FIRE_RESISTANCE = new MobEffectInstance(MobEffects.FIRE_RESISTANCE, 5000, 0);
     // Stores the absorption effects used by Enchanted Golden Burgers.

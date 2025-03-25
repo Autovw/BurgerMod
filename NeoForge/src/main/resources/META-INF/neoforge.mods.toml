@@ -21,13 +21,13 @@ Visit the Burger Mod Wiki on GitHub, where you can find everything you need to k
 [[dependencies.burgermod]]
     modId="neoforge"
     type="required"
-    versionRange="[21.4.47-beta,)"
+    versionRange="[21.5.0-beta,)"
     ordering="NONE"
     side="BOTH"
 [[dependencies.burgermod]]
     modId="minecraft"
     type="required"
-    versionRange="[1.21.4]"
+    versionRange="[1.21.5]"
     ordering="NONE"
     side="BOTH"
 
