@@ -115,6 +115,9 @@ public class ModItemTagsProvider extends ItemTagsProvider
                 .addTag(ModTags.GOLDEN_BURGERS)
                 .add(ModItemRegistry.ENCHANTED_GOLDEN_BURGER.get());
 
+        tag(ModTags.COMMON_FOODS_PIE)
+                .add(ModItemRegistry.SWEET_BERRY_TART.get());
+
         tag(Tags.Items.FOODS_FOOD_POISONING)
                 .add(ModItemRegistry.SCRAMBLED_EGG.get());
 

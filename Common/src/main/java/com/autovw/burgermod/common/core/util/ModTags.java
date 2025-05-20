@@ -29,6 +29,7 @@ public final class ModTags
     public static final TagKey<Item> COMMON_FOODS = commonItemTag("foods");
     public static final TagKey<Item> COMMON_FOODS_BREAD = commonItemTag("foods/bread");
     public static final TagKey<Item> COMMON_FOODS_GOLDEN = commonItemTag("foods/golden");
+    public static final TagKey<Item> COMMON_FOODS_PIE = commonItemTag("foods/pie");
     public static final TagKey<Item> COMMON_FOODS_FOOD_POISONING = commonItemTag("foods/food_poisoning");
     // "unofficial" common tags
     public static final TagKey<Item> COMMON_NUGGETS_CHICKEN = commonItemTag("nuggets/chicken");
