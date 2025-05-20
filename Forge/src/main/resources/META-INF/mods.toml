@@ -1,5 +1,5 @@
 modLoader="javafml"
-loaderVersion="[54,)"
+loaderVersion="[55,)"
 license="GNU General Public License v3.0"
 issueTrackerURL="https://github.com/Autovw/BurgerMod/issues"
 
@@ -21,13 +21,13 @@ Visit the Burger Mod Wiki on GitHub, where you can find everything you need to k
 [[dependencies.burgermod]]
     modId="forge"
     mandatory=true
-    versionRange="[54.0,)"
+    versionRange="[55.0,)"
     ordering="NONE"
     side="BOTH"
 [[dependencies.burgermod]]
     modId="minecraft"
     mandatory=true
-    versionRange="[1.21.4]"
+    versionRange="[1.21.5]"
     ordering="NONE"
     side="BOTH"
 
