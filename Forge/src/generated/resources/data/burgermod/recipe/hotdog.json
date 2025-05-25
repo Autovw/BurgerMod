@@ -9,10 +9,10 @@
       "item": "minecraft:cooked_porkchop"
     },
     {
-      "tag": "forge:bread"
+      "tag": "c:foods/bread"
     },
     {
-      "tag": "forge:nuggets/chicken"
+      "tag": "c:nuggets/chicken"
     }
   ],
   "result": {

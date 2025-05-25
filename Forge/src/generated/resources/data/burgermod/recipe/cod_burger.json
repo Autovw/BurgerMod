@@ -6,10 +6,10 @@
       "item": "minecraft:cooked_cod"
     },
     "*": {
-      "tag": "forge:fried_egg"
+      "tag": "c:foods/fried_egg"
     },
     "B": {
-      "tag": "forge:bread"
+      "tag": "c:foods/bread"
     }
   },
   "pattern": [

@@ -113,7 +113,7 @@ public class ModDataGenHelper
      */
     public static void baseBurgerRecipe(RecipeOutput output, ItemLike result, int resultAmount, ItemLike mainIngredient, TagKey<Item> extraIngredient)
     {
-        TagKey<Item> breadTag = getTag(ModTags.FORGE_BREAD, ModTags.COMMON_FOODS_BREAD);
+        TagKey<Item> breadTag = ModTags.COMMON_FOODS_BREAD;
         ShapedRecipeBuilder.shaped(RecipeCategory.FOOD, result, resultAmount)
                 .define('B', breadTag)
                 .define('#', mainIngredient)
@@ -138,7 +138,7 @@ public class ModDataGenHelper
      */
     public static void baseBurgerRecipe(RecipeOutput output, ItemLike result, int resultAmount, TagKey<Item> mainIngredient, TagKey<Item> extraIngredient)
     {
-        TagKey<Item> breadTag = getTag(ModTags.FORGE_BREAD, ModTags.COMMON_FOODS_BREAD);
+        TagKey<Item> breadTag = ModTags.COMMON_FOODS_BREAD;
         ShapedRecipeBuilder.shaped(RecipeCategory.FOOD, result, resultAmount)
                 .define('B', breadTag)
                 .define('#', mainIngredient)
@@ -154,20 +154,17 @@ public class ModDataGenHelper
 
     public static void eggBurgerRecipe(RecipeOutput output, ItemLike result, ItemLike ingredient)
     {
-        TagKey<Item> friedEggTag = getTag(ModTags.FORGE_FRIED_EGG, ModTags.COMMON_FOODS_FRIED_EGG);
-        baseBurgerRecipe(output, result, 2, ingredient, friedEggTag);
+        baseBurgerRecipe(output, result, 2, ingredient, ModTags.COMMON_FOODS_FRIED_EGG);
     }
 
     public static void cheeseBurgerRecipe(RecipeOutput output, ItemLike result, ItemLike ingredient)
     {
-        TagKey<Item> cheeseTag = getTag(ModTags.FORGE_CHEESE, ModTags.COMMON_FOODS_CHEESE);
-        baseBurgerRecipe(output, result, 2, ingredient, cheeseTag);
+        baseBurgerRecipe(output, result, 2, ingredient, ModTags.COMMON_FOODS_CHEESE);
     }
 
     public static void champignonBurgerRecipe(RecipeOutput output, ItemLike result, ItemLike ingredient)
     {
-        TagKey<Item> cookedMushroomTag = getTag(ModTags.FORGE_COOKED_MUSHROOM, ModTags.COMMON_FOODS_COOKED_MUSHROOM);
-        baseBurgerRecipe(output, result, 2, ingredient, cookedMushroomTag);
+        baseBurgerRecipe(output, result, 2, ingredient, ModTags.COMMON_FOODS_COOKED_MUSHROOM);
     }
 
     /**
@@ -179,7 +176,7 @@ public class ModDataGenHelper
      */
     public static void goldenBurgerRecipe(RecipeOutput output, ItemLike result, TagKey<Item> ingredient)
     {
-        TagKey<Item> goldIngotTag = getTag(ModTags.FORGE_INGOTS_GOLD, ModTags.COMMON_INGOTS_GOLD);
+        TagKey<Item> goldIngotTag = ModTags.COMMON_INGOTS_GOLD;
         ShapedRecipeBuilder.shaped(RecipeCategory.FOOD, result)
                 .define('G', goldIngotTag)
                 .define('#', ingredient)
@@ -221,10 +218,9 @@ public class ModDataGenHelper
 
     private static void scrambledEggRecipe(RecipeOutput output, ItemLike result)
     {
-        TagKey<Item> eggsTag = getTag(ModTags.FORGE_EGGS, ModTags.COMMON_EGGS);
         ShapelessRecipeBuilder.shapeless(RecipeCategory.FOOD, result)
-                .requires(eggsTag)
-                .unlockedBy("has_eggs", has(eggsTag))
+                .requires(ModTags.COMMON_EGGS)
+                .unlockedBy("has_eggs", has(ModTags.COMMON_EGGS))
                 .save(output);
     }
 
@@ -272,8 +268,8 @@ public class ModDataGenHelper
 
     private static void hotdogRecipe(RecipeOutput output)
     {
-        TagKey<Item> breadTag = getTag(ModTags.FORGE_BREAD, ModTags.COMMON_FOODS_BREAD);
-        TagKey<Item> chickenNuggetsTag = getTag(ModTags.FORGE_NUGGETS_CHICKEN, ModTags.COMMON_NUGGETS_CHICKEN);
+        TagKey<Item> breadTag = ModTags.COMMON_FOODS_BREAD;
+        TagKey<Item> chickenNuggetsTag = ModTags.COMMON_NUGGETS_CHICKEN;
         ShapelessRecipeBuilder.shapeless(RecipeCategory.FOOD, ModItems.HOTDOG, 4)
                 .requires(Items.COOKED_BEEF)
                 .requires(Items.COOKED_PORKCHOP)
@@ -296,12 +292,6 @@ public class ModDataGenHelper
                 .unlockedBy("has_wheat", has(Items.WHEAT))
                 .unlockedBy("has_sugar", has(Items.SUGAR))
                 .save(output);
-    }
-
-    private static TagKey<Item> getTag(TagKey<Item> forgeTag, TagKey<Item> commonTag)
-    {
-        boolean isForge = BurgerMod.getPlatformHelper().getPlatform().equals(IPlatformHelper.Platform.FORGE);
-        return isForge ? forgeTag : commonTag;
     }
 
     private static Criterion<InventoryChangeTrigger.TriggerInstance> has(ItemLike item)

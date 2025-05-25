@@ -6,10 +6,10 @@
       "item": "minecraft:cooked_porkchop"
     },
     "*": {
-      "tag": "forge:cheese"
+      "tag": "c:foods/cheese"
     },
     "B": {
-      "tag": "forge:bread"
+      "tag": "c:foods/bread"
     }
   },
   "pattern": [

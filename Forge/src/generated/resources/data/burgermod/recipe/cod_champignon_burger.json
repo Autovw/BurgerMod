@@ -6,10 +6,10 @@
       "item": "minecraft:cooked_cod"
     },
     "*": {
-      "tag": "forge:cooked_mushroom"
+      "tag": "c:foods/cooked_mushroom"
     },
     "B": {
-      "tag": "forge:bread"
+      "tag": "c:foods/bread"
     }
   },
   "pattern": [

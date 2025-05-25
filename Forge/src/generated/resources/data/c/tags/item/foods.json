@@ -1,0 +1,13 @@
+{
+  "values": [
+    "#c:nuggets/chicken",
+    "#c:foods/cheese",
+    "#c:foods/fried_egg",
+    "#c:foods/cooked_mushroom",
+    "#burgermod:burgers",
+    "burgermod:raw_champignons",
+    "burgermod:fries",
+    "burgermod:hotdog",
+    "burgermod:sweet_berry_tart"
+  ]
+}

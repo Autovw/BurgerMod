@@ -6,7 +6,7 @@
       "tag": "burgermod:pork_burgers"
     },
     "G": {
-      "tag": "forge:ingots/gold"
+      "tag": "c:ingots/gold"
     }
   },
   "pattern": [

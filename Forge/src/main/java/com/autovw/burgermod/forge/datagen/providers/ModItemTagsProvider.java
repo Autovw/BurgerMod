@@ -95,6 +95,51 @@ public class ModItemTagsProvider extends ItemTagsProvider
                 .addTag(ModTags.CHEESE_BURGERS)
                 .addTag(ModTags.EGG_BURGERS);
 
+        /* Common tags */
+        tag(Tags.Items.NUGGETS)
+                .addTag(ModTags.COMMON_NUGGETS_CHICKEN);
+
+        tag(ModTags.COMMON_NUGGETS_CHICKEN)
+                .addTag(ModTags.FORGE_NUGGETS_CHICKEN) // added for backwards compatibility
+                .add(ModItemRegistry.COOKED_CHICKEN_NUGGET.get());
+
+        tag(ModTags.COMMON_FOODS_CHEESE)
+                .addTag(ModTags.FORGE_CHEESE) // added for backwards compatibility
+                .add(ModItemRegistry.CHEESE.get());
+
+        tag(ModTags.COMMON_FOODS_FRIED_EGG)
+                .addTag(ModTags.FORGE_FRIED_EGG) // added for backwards compatibility
+                .add(ModItemRegistry.FRIED_SCRAMBLED_EGG.get());
+
+        tag(ModTags.COMMON_FOODS_COOKED_MUSHROOM)
+                .addTag(ModTags.FORGE_COOKED_MUSHROOM) // added for backwards compatibility
+                .add(ModItemRegistry.COOKED_CHAMPIGNONS.get());
+
+        tag(ModTags.COMMON_FOODS_BREAD)
+                .addTag(ModTags.FORGE_BREAD); // added for backwards compatibility
+
+        tag(Tags.Items.FOODS_GOLDEN)
+                .addTag(ModTags.GOLDEN_BURGERS)
+                .add(ModItemRegistry.ENCHANTED_GOLDEN_BURGER.get());
+
+        tag(Tags.Items.FOODS_FOOD_POISONING)
+                .add(ModItemRegistry.SCRAMBLED_EGG.get());
+
+        tag(Tags.Items.FOODS)
+                .addTag(ModTags.COMMON_NUGGETS_CHICKEN)
+                .addTag(ModTags.COMMON_FOODS_CHEESE)
+                .addTag(ModTags.COMMON_FOODS_FRIED_EGG)
+                .addTag(ModTags.COMMON_FOODS_COOKED_MUSHROOM)
+                .addTag(ModTags.BURGERS)
+                .add(ModItemRegistry.RAW_CHAMPIGNONS.get())
+                .add(ModItemRegistry.FRIES.get())
+                .add(ModItemRegistry.HOTDOG.get())
+                .add(ModItemRegistry.SWEET_BERRY_TART.get());
+
+        tag(ModTags.COMMON_EGGS)
+                .addTag(ModTags.FORGE_EGGS) // added for backwards compatibility
+                .add(Items.EGG);
+
         /* Forge tags */
         tag(Tags.Items.NUGGETS)
                 .addTag(ModTags.FORGE_NUGGETS_CHICKEN);

@@ -5,7 +5,7 @@
       "conditions": {
         "items": [
           {
-            "items": "#forge:bread"
+            "items": "#c:foods/bread"
           }
         ]
       },
@@ -25,7 +25,7 @@
       "conditions": {
         "items": [
           {
-            "items": "#forge:nuggets/chicken"
+            "items": "#c:nuggets/chicken"
           }
         ]
       },
