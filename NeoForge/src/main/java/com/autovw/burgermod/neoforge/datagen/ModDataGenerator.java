@@ -16,7 +16,7 @@ import static com.autovw.burgermod.common.BurgerMod.MOD_ID;
 /**
  * @author Autovw
  */
-@EventBusSubscriber(modid = MOD_ID, bus = EventBusSubscriber.Bus.MOD, value = Dist.CLIENT)
+@EventBusSubscriber(modid = MOD_ID, value = Dist.CLIENT)
 public class ModDataGenerator
 {
     private ModDataGenerator()
@@ -30,11 +30,9 @@ public class ModDataGenerator
         DataGenerator generator = event.getGenerator();
         PackOutput packOutput = generator.getPackOutput();
         CompletableFuture<HolderLookup.Provider> lookupProvider = event.getLookupProvider();
-        ModBlockTagsProvider blockTagsProvider = new ModBlockTagsProvider(packOutput, lookupProvider, MOD_ID);
 
         // server
-        event.addProvider(blockTagsProvider);
-        event.addProvider(new ModItemTagsProvider(packOutput, lookupProvider, blockTagsProvider.contentsGetter(), MOD_ID));
+        event.addProvider(new ModItemTagsProvider(packOutput, lookupProvider, MOD_ID));
         event.addProvider(new ModRecipeProvider.Runner(packOutput, lookupProvider));
         event.addProvider(new ModLootModifierProvider(packOutput, lookupProvider, MOD_ID));
         event.addProvider(new ModAdvancementProvider(packOutput, lookupProvider));

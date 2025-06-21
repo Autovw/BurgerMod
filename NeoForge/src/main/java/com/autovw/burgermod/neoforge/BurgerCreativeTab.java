@@ -14,7 +14,7 @@ import net.neoforged.neoforge.registries.DeferredRegister;
 /**
  * @author Autovw
  */
-@EventBusSubscriber(modid = BurgerMod.MOD_ID, bus = EventBusSubscriber.Bus.MOD)
+@EventBusSubscriber(modid = BurgerMod.MOD_ID)
 public final class BurgerCreativeTab
 {
     private BurgerCreativeTab()

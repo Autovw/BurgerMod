@@ -3,10 +3,11 @@ package com.autovw.burgermod.neoforge.datagen.providers;
 import com.autovw.burgermod.common.core.util.ModTags;
 import com.autovw.burgermod.neoforge.core.registry.ModItemRegistry;
 import net.minecraft.core.HolderLookup;
+import net.minecraft.core.registries.Registries;
 import net.minecraft.data.PackOutput;
-import net.minecraft.data.tags.ItemTagsProvider;
+import net.minecraft.data.tags.IntrinsicHolderTagsProvider;
 import net.minecraft.tags.ItemTags;
-import net.minecraft.world.level.block.Block;
+import net.minecraft.world.item.Item;
 import net.neoforged.neoforge.common.Tags;
 
 import java.util.concurrent.CompletableFuture;
@@ -14,11 +15,11 @@ import java.util.concurrent.CompletableFuture;
 /**
  * @author Autovw
  */
-public class ModItemTagsProvider extends ItemTagsProvider
+public class ModItemTagsProvider extends IntrinsicHolderTagsProvider<Item>
 {
-    public ModItemTagsProvider(PackOutput packOutput, CompletableFuture<HolderLookup.Provider> lookupProvider, CompletableFuture<TagLookup<Block>> blockTagsProvider, String modId)
+    public ModItemTagsProvider(PackOutput packOutput, CompletableFuture<HolderLookup.Provider> lookupProvider, String modId)
     {
-        super(packOutput, lookupProvider, blockTagsProvider, modId);
+        super(packOutput, Registries.ITEM, lookupProvider, item -> item.builtInRegistryHolder().key(), modId);
     }
 
     @Override
