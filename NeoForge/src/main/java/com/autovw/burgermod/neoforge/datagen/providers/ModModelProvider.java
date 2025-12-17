@@ -12,7 +12,7 @@ import net.minecraft.client.data.models.model.TextureSlot;
 import net.minecraft.client.renderer.item.BlockModelWrapper;
 import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.data.PackOutput;
-import net.minecraft.resources.ResourceLocation;
+import net.minecraft.resources.Identifier;
 import net.minecraft.world.item.Item;
 
 import java.util.Collections;
@@ -77,7 +77,7 @@ public class ModModelProvider extends ModelProvider
         itemModel(itemModels, ModItemRegistry.SWEET_BERRY_TART.get());
     }
 
-    public void itemModel(ItemModelGenerators itemModels, Item item, ResourceLocation texture, ModelTemplate template)
+    public void itemModel(ItemModelGenerators itemModels, Item item, Identifier texture, ModelTemplate template)
     {
         TextureMapping textureMapping = new TextureMapping().put(TextureSlot.LAYER0, texture);
         itemModels.itemModelOutput.accept(item, new BlockModelWrapper.Unbaked(template.create(item, textureMapping, itemModels.modelOutput), Collections.emptyList()));
@@ -85,14 +85,14 @@ public class ModModelProvider extends ModelProvider
 
     public void itemModel(ItemModelGenerators itemModels, Item item)
     {
-        ResourceLocation itemId = BuiltInRegistries.ITEM.getKey(item);
-        ResourceLocation textureLoc = ResourceLocation.fromNamespaceAndPath(itemId.getNamespace(), "item/" + itemId.getPath());
+        Identifier itemId = BuiltInRegistries.ITEM.getKey(item);
+        Identifier textureLoc = Identifier.fromNamespaceAndPath(itemId.getNamespace(), "item/" + itemId.getPath());
         this.itemModel(itemModels, item, textureLoc, ModelTemplates.FLAT_ITEM);
     }
 
     private void enchantedGoldenBurgerModel(ItemModelGenerators itemModels, Item item)
     {
-        ResourceLocation textureLoc = ResourceLocation.fromNamespaceAndPath(BurgerMod.MOD_ID, "item/golden_beef_burger");
+        Identifier textureLoc = Identifier.fromNamespaceAndPath(BurgerMod.MOD_ID, "item/golden_beef_burger");
         this.itemModel(itemModels, item, textureLoc, ModelTemplates.FLAT_ITEM);
     }
 }

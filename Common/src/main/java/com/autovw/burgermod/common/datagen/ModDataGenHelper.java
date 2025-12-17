@@ -4,13 +4,13 @@ import com.autovw.burgermod.common.BurgerMod;
 import com.autovw.burgermod.common.core.ModItems;
 import com.autovw.burgermod.common.core.util.ModTags;
 import net.minecraft.advancements.*;
-import net.minecraft.advancements.critereon.InventoryChangeTrigger;
-import net.minecraft.advancements.critereon.ItemPredicate;
+import net.minecraft.advancements.criterion.InventoryChangeTrigger;
+import net.minecraft.advancements.criterion.ItemPredicate;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.data.recipes.*;
 import net.minecraft.network.chat.Component;
-import net.minecraft.resources.ResourceLocation;
+import net.minecraft.resources.Identifier;
 import net.minecraft.tags.TagKey;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.Items;
@@ -30,30 +30,30 @@ public class ModDataGenHelper
     public static void advancements(HolderLookup.Provider registries, Consumer<AdvancementHolder> consumer)
     {
         Advancement.Builder.advancement()
-                .parent(ResourceLocation.withDefaultNamespace("husbandry/root"))
+                .parent(Identifier.withDefaultNamespace("husbandry/root"))
                 .display(ModItems.FRIES, Component.translatable("advancements.burgermod.husbandry.obtain_fries.title"), Component.translatable("advancements.burgermod.husbandry.obtain_fries.description"), null, AdvancementType.TASK, true, true, false)
                 .addCriterion("fries", InventoryChangeTrigger.TriggerInstance.hasItems(ModItems.FRIES))
-                .save(consumer, ResourceLocation.fromNamespaceAndPath(BurgerMod.MOD_ID, "husbandry/obtain_fries").toString());
+                .save(consumer, Identifier.fromNamespaceAndPath(BurgerMod.MOD_ID, "husbandry/obtain_fries").toString());
 
         AdvancementHolder craftBurger = Advancement.Builder.advancement()
-                .parent(ResourceLocation.withDefaultNamespace("husbandry/plant_seed"))
+                .parent(Identifier.withDefaultNamespace("husbandry/plant_seed"))
                 .display(ModItems.BEEF_BURGER, Component.translatable("advancements.burgermod.husbandry.craft_burger.title"), Component.translatable("advancements.burgermod.husbandry.craft_burger.description"), null, AdvancementType.TASK, true, true, false)
                 .addCriterion("burgers", InventoryChangeTrigger.TriggerInstance.hasItems(ItemPredicate.Builder.item().of(registries.lookupOrThrow(Registries.ITEM), ModTags.BURGERS)))
-                .save(consumer, ResourceLocation.fromNamespaceAndPath(BurgerMod.MOD_ID, "husbandry/craft_burger").toString());
+                .save(consumer, Identifier.fromNamespaceAndPath(BurgerMod.MOD_ID, "husbandry/craft_burger").toString());
 
         AdvancementHolder goldenBurger = Advancement.Builder.advancement()
                 .parent(craftBurger)
                 .display(ModItems.GOLDEN_BEEF_BURGER, Component.translatable("advancements.burgermod.husbandry.craft_golden_burger.title"), Component.translatable("advancements.burgermod.husbandry.craft_golden_burger.description"), null, AdvancementType.CHALLENGE, true, true, false)
                 .rewards(AdvancementRewards.Builder.experience(100))
                 .addCriterion("golden_burgers", InventoryChangeTrigger.TriggerInstance.hasItems(ItemPredicate.Builder.item().of(registries.lookupOrThrow(Registries.ITEM), ModTags.GOLDEN_BURGERS)))
-                .save(consumer, ResourceLocation.fromNamespaceAndPath(BurgerMod.MOD_ID, "husbandry/craft_golden_burger").toString());
+                .save(consumer, Identifier.fromNamespaceAndPath(BurgerMod.MOD_ID, "husbandry/craft_golden_burger").toString());
 
         Advancement.Builder.advancement()
                 .parent(goldenBurger)
                 .display(ModItems.ENCHANTED_GOLDEN_BURGER, Component.translatable("advancements.burgermod.husbandry.obtain_enchanted_golden_burger.title"), Component.translatable("advancements.burgermod.husbandry.obtain_enchanted_golden_burger.description"), null, AdvancementType.CHALLENGE, true, true, false)
                 .rewards(AdvancementRewards.Builder.experience(100))
                 .addCriterion("enchanted_golden_burger", InventoryChangeTrigger.TriggerInstance.hasItems(ItemPredicate.Builder.item().of(registries.lookupOrThrow(Registries.ITEM), ModItems.ENCHANTED_GOLDEN_BURGER)))
-                .save(consumer, ResourceLocation.fromNamespaceAndPath(BurgerMod.MOD_ID, "husbandry/obtain_enchanted_golden_burger").toString());
+                .save(consumer, Identifier.fromNamespaceAndPath(BurgerMod.MOD_ID, "husbandry/obtain_enchanted_golden_burger").toString());
     }
 
     public static void recipes(HolderLookup.Provider registries, RecipeOutput output)
@@ -205,15 +205,15 @@ public class ModDataGenHelper
     {
         SimpleCookingRecipeBuilder.smelting(Ingredient.of(ingredient), RecipeCategory.FOOD, result, experience, 200)
                 .unlockedBy("has_" + ingredient.toString(), has(registryLookup, ingredient))
-                .save(output, ResourceLocation.parse(result + "_from_smelting").toString());
+                .save(output, Identifier.parse(result + "_from_smelting").toString());
 
         SimpleCookingRecipeBuilder.campfireCooking(Ingredient.of(ingredient), RecipeCategory.FOOD, result, experience, 600)
                 .unlockedBy("has_" + ingredient.toString(), has(registryLookup, ingredient))
-                .save(output, ResourceLocation.parse(result + "_from_campfire").toString());
+                .save(output, Identifier.parse(result + "_from_campfire").toString());
 
         SimpleCookingRecipeBuilder.smoking(Ingredient.of(ingredient), RecipeCategory.FOOD, result, experience, 100)
                 .unlockedBy("has_" + ingredient.toString(), has(registryLookup, ingredient))
-                .save(output, ResourceLocation.parse(result + "_from_smoker").toString());
+                .save(output, Identifier.parse(result + "_from_smoker").toString());
     }
 
     private static void cookingRecipe(RecipeOutput output, HolderLookup.RegistryLookup<Item> registryLookup, ItemLike result, ItemLike ingredient)
@@ -243,7 +243,7 @@ public class ModDataGenHelper
                     .requires(ingredient1)
                     .requires(ingredient2, amount)
                     .unlockedBy("has_" + ingredient1.toString(), has(registryLookup, ingredient1)).unlockedBy("has_" + ingredient2.toString(), has(registryLookup, ingredient2))
-                    .save(output, ResourceLocation.parse(result.toString() + "_" + amount).toString());
+                    .save(output, Identifier.parse(result.toString() + "_" + amount).toString());
         }
     }
 
@@ -302,12 +302,12 @@ public class ModDataGenHelper
 
     private static Criterion<InventoryChangeTrigger.TriggerInstance> has(HolderLookup.RegistryLookup<Item> registryLookup, ItemLike item)
     {
-        return inventoryTrigger(net.minecraft.advancements.critereon.ItemPredicate.Builder.item().of(registryLookup, item));
+        return inventoryTrigger(ItemPredicate.Builder.item().of(registryLookup, item));
     }
 
     private static Criterion<InventoryChangeTrigger.TriggerInstance> has(HolderLookup.RegistryLookup<Item> registryLookup, TagKey<Item> itemTag)
     {
-        return inventoryTrigger(net.minecraft.advancements.critereon.ItemPredicate.Builder.item().of(registryLookup, itemTag));
+        return inventoryTrigger(ItemPredicate.Builder.item().of(registryLookup, itemTag));
     }
 
     private static Criterion<InventoryChangeTrigger.TriggerInstance> inventoryTrigger(ItemPredicate.Builder... builder)

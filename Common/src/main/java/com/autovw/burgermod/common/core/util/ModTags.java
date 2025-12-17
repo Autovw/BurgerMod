@@ -2,7 +2,7 @@ package com.autovw.burgermod.common.core.util;
 
 import com.autovw.burgermod.common.BurgerMod;
 import net.minecraft.core.registries.Registries;
-import net.minecraft.resources.ResourceLocation;
+import net.minecraft.resources.Identifier;
 import net.minecraft.tags.TagKey;
 import net.minecraft.world.item.Item;
 
@@ -39,11 +39,11 @@ public final class ModTags
 
     private static TagKey<Item> itemTag(String tagName)
     {
-        return TagKey.create(Registries.ITEM, ResourceLocation.fromNamespaceAndPath(BurgerMod.MOD_ID, tagName));
+        return TagKey.create(Registries.ITEM, Identifier.fromNamespaceAndPath(BurgerMod.MOD_ID, tagName));
     }
 
     private static TagKey<Item> commonItemTag(String tagLoc)
     {
-        return TagKey.create(Registries.ITEM, ResourceLocation.fromNamespaceAndPath("c", tagLoc));
+        return TagKey.create(Registries.ITEM, Identifier.fromNamespaceAndPath("c", tagLoc));
     }
 }

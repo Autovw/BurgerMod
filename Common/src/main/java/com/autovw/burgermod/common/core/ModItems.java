@@ -6,7 +6,7 @@ import com.autovw.burgermod.common.core.util.ModFood;
 import net.minecraft.core.component.DataComponents;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.resources.ResourceKey;
-import net.minecraft.resources.ResourceLocation;
+import net.minecraft.resources.Identifier;
 import net.minecraft.world.food.FoodProperties;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.Rarity;
@@ -75,25 +75,25 @@ public final class ModItems
 
     private static Item food(String id, FoodProperties food)
     {
-        ResourceKey<Item> key = ResourceKey.create(Registries.ITEM, ResourceLocation.fromNamespaceAndPath(BurgerMod.MOD_ID, id));
+        ResourceKey<Item> key = ResourceKey.create(Registries.ITEM, Identifier.fromNamespaceAndPath(BurgerMod.MOD_ID, id));
         return new Item(new Item.Properties().food(food).setId(key));
     }
 
     private static Item food(String id, FoodProperties food, Consumable consumable)
     {
-        ResourceKey<Item> key = ResourceKey.create(Registries.ITEM, ResourceLocation.fromNamespaceAndPath(BurgerMod.MOD_ID, id));
+        ResourceKey<Item> key = ResourceKey.create(Registries.ITEM, Identifier.fromNamespaceAndPath(BurgerMod.MOD_ID, id));
         return new Item(new Item.Properties().food(food, consumable).setId(key));
     }
 
     private static Item food(String id, FoodProperties food, Consumable consumable, Rarity rarity)
     {
-        ResourceKey<Item> key = ResourceKey.create(Registries.ITEM, ResourceLocation.fromNamespaceAndPath(BurgerMod.MOD_ID, id));
+        ResourceKey<Item> key = ResourceKey.create(Registries.ITEM, Identifier.fromNamespaceAndPath(BurgerMod.MOD_ID, id));
         return new Item(new Item.Properties().food(food, consumable).rarity(rarity).setId(key));
     }
 
     private static Item enchantedBurger(String id, FoodProperties food)
     {
-        ResourceKey<Item> key = ResourceKey.create(Registries.ITEM, ResourceLocation.fromNamespaceAndPath(BurgerMod.MOD_ID, id));
+        ResourceKey<Item> key = ResourceKey.create(Registries.ITEM, Identifier.fromNamespaceAndPath(BurgerMod.MOD_ID, id));
         return new Item(new Item.Properties().food(food, ModConsumables.ENCHANTED_GOLDEN_BURGER).rarity(Rarity.EPIC).component(DataComponents.ENCHANTMENT_GLINT_OVERRIDE, true).setId(key));
     }
 }

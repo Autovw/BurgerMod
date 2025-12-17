@@ -6,7 +6,7 @@ import com.autovw.burgermod.neoforge.config.Config;
 import com.mojang.serialization.MapCodec;
 import com.mojang.serialization.codecs.RecordCodecBuilder;
 import it.unimi.dsi.fastutil.objects.ObjectArrayList;
-import net.minecraft.resources.ResourceLocation;
+import net.minecraft.resources.Identifier;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.level.storage.loot.LootContext;
 import net.minecraft.world.level.storage.loot.predicates.LootItemCondition;
@@ -42,7 +42,7 @@ public class LootAdditionModifier extends LootModifier
     @Override
     protected ObjectArrayList<ItemStack> doApply(ObjectArrayList<ItemStack> generatedLoot, LootContext context)
     {
-        ResourceLocation queriedTableId = context.getQueriedLootTableId();
+        Identifier queriedTableId = context.getQueriedLootTableId();
 
         // only add loot if generateChestLoot is turned on in the config
         if (Config.LootConfig.generateChestLoot.get())
