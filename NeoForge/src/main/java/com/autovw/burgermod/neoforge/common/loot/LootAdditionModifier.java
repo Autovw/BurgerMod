@@ -24,7 +24,7 @@ public class LootAdditionModifier extends LootModifier
             .and(
                     ChestLootAddition.CODEC.listOf().xmap(list -> list.toArray(ChestLootAddition[]::new), List::of).fieldOf("additions").forGetter(la -> la.lootAdditions)
             )
-            .apply(instance, LootAdditionModifier::new));
+            .apply(instance, (conditions, priority, additions) -> new LootAdditionModifier(conditions, additions, priority)));
 
     private final ChestLootAddition[] lootAdditions;
 
@@ -33,9 +33,9 @@ public class LootAdditionModifier extends LootModifier
      *
      * @param conditionsIn the ILootConditions that need to be matched before the loot is modified.
      */
-    public LootAdditionModifier(LootItemCondition[] conditionsIn, ChestLootAddition[] additions)
+    public LootAdditionModifier(LootItemCondition[] conditionsIn, ChestLootAddition[] additions, int priority)
     {
-        super(conditionsIn);
+        super(conditionsIn, priority);
         this.lootAdditions = additions;
     }
 

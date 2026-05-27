@@ -6,6 +6,7 @@ import net.minecraft.core.HolderLookup;
 import net.minecraft.data.PackOutput;
 import net.minecraft.world.level.storage.loot.predicates.LootItemCondition;
 import net.neoforged.neoforge.common.data.GlobalLootModifierProvider;
+import net.neoforged.neoforge.common.loot.IGlobalLootModifier;
 
 import java.util.concurrent.CompletableFuture;
 
@@ -24,7 +25,8 @@ public class ModLootModifierProvider extends GlobalLootModifierProvider
     {
         add("loot_addition_modifier", new LootAdditionModifier(
                 new LootItemCondition[] {},
-                LootModifierHelper.DEFAULT_CHEST_LOOT_ADDITIONS
+                LootModifierHelper.DEFAULT_CHEST_LOOT_ADDITIONS,
+                IGlobalLootModifier.DEFAULT_PRIORITY
         ));
     }
 }

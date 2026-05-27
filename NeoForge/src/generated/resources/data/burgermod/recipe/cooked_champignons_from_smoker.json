@@ -5,7 +5,6 @@
   "experience": 0.25,
   "ingredient": "burgermod:raw_champignons",
   "result": {
-    "count": 1,
     "id": "burgermod:cooked_champignons"
   }
 }

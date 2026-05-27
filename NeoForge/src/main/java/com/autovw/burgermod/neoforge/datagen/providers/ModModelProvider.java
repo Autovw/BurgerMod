@@ -9,13 +9,15 @@ import net.minecraft.client.data.models.model.ModelTemplate;
 import net.minecraft.client.data.models.model.ModelTemplates;
 import net.minecraft.client.data.models.model.TextureMapping;
 import net.minecraft.client.data.models.model.TextureSlot;
-import net.minecraft.client.renderer.item.BlockModelWrapper;
+import net.minecraft.client.renderer.item.CuboidItemModelWrapper;
+import net.minecraft.client.resources.model.sprite.Material;
 import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.data.PackOutput;
 import net.minecraft.resources.Identifier;
 import net.minecraft.world.item.Item;
 
-import java.util.Collections;
+import java.util.List;
+import java.util.Optional;
 
 /**
  * @author Autovw
@@ -79,8 +81,8 @@ public class ModModelProvider extends ModelProvider
 
     public void itemModel(ItemModelGenerators itemModels, Item item, Identifier texture, ModelTemplate template)
     {
-        TextureMapping textureMapping = new TextureMapping().put(TextureSlot.LAYER0, texture);
-        itemModels.itemModelOutput.accept(item, new BlockModelWrapper.Unbaked(template.create(item, textureMapping, itemModels.modelOutput), Collections.emptyList()));
+        TextureMapping textureMapping = new TextureMapping().put(TextureSlot.LAYER0, new Material(texture));
+        itemModels.itemModelOutput.accept(item, new CuboidItemModelWrapper.Unbaked(template.create(item, textureMapping, itemModels.modelOutput), Optional.empty(), List.of()));
     }
 
     public void itemModel(ItemModelGenerators itemModels, Item item)

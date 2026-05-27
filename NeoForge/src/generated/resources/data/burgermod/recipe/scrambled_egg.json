@@ -5,7 +5,6 @@
     "#c:eggs"
   ],
   "result": {
-    "count": 1,
     "id": "burgermod:scrambled_egg"
   }
 }

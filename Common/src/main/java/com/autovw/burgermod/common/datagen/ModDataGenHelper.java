@@ -14,6 +14,7 @@ import net.minecraft.resources.Identifier;
 import net.minecraft.tags.TagKey;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.Items;
+import net.minecraft.world.item.crafting.CookingBookCategory;
 import net.minecraft.world.item.crafting.Ingredient;
 import net.minecraft.world.level.ItemLike;
 
@@ -203,7 +204,7 @@ public class ModDataGenHelper
      */
     public static void baseFoodCookingRecipe(RecipeOutput output, HolderLookup.RegistryLookup<Item> registryLookup, ItemLike result, ItemLike ingredient, float experience)
     {
-        SimpleCookingRecipeBuilder.smelting(Ingredient.of(ingredient), RecipeCategory.FOOD, result, experience, 200)
+        SimpleCookingRecipeBuilder.smelting(Ingredient.of(ingredient), RecipeCategory.FOOD, CookingBookCategory.FOOD, result, experience, 200)
                 .unlockedBy("has_" + ingredient.toString(), has(registryLookup, ingredient))
                 .save(output, Identifier.parse(result + "_from_smelting").toString());
 
