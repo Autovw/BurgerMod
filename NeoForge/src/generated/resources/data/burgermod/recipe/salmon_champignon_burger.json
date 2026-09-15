@@ -1,6 +1,5 @@
 {
   "type": "minecraft:crafting_shaped",
-  "category": "misc",
   "key": {
     "#": "minecraft:cooked_salmon",
     "*": "#c:foods/cooked_mushroom",

@@ -1,6 +1,5 @@
 {
   "type": "minecraft:crafting_shaped",
-  "category": "misc",
   "key": {
     "#": "#burgermod:mutton_burgers",
     "G": "#c:ingots/gold"

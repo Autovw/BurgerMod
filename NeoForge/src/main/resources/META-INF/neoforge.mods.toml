@@ -9,7 +9,7 @@ version="${mod_version}"
 displayName="Burger Mod"
 updateJSONURL="https://raw.githubusercontent.com/Autovw/ModUpdates/master/burgermod/update.json"
 displayURL="https://github.com/Autovw/BurgerMod/wiki"
-logoFile="burgermod_banner.png"
+bannerFile="burgermod_banner.png"
 #credits=""
 authors="Autovw"
 description='''
@@ -21,13 +21,13 @@ Visit the Burger Mod Wiki on GitHub, where you can find everything you need to k
 [[dependencies.burgermod]]
     modId="neoforge"
     type="required"
-    versionRange="[26.1.2.20-beta,)"
+    versionRange="[26.2.0.0-beta,)"
     ordering="NONE"
     side="BOTH"
 [[dependencies.burgermod]]
     modId="minecraft"
     type="required"
-    versionRange="[26.1.2]"
+    versionRange="[26.2]"
     ordering="NONE"
     side="BOTH"
 
