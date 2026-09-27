@@ -1,32 +1,40 @@
 package com.autovw.burgermod.neoforge.datagen.providers;
 
 import com.autovw.burgermod.common.datagen.ModDataGenHelper;
-import net.minecraft.advancements.AdvancementHolder;
-import net.minecraft.core.HolderLookup;
-import net.minecraft.data.PackOutput;
+import net.minecraft.advancements.Advancement;
+import net.minecraft.core.registries.SingleRegistryBootstrap;
 import net.minecraft.data.advancements.AdvancementProvider;
 import net.minecraft.data.advancements.AdvancementSubProvider;
+import net.minecraft.data.worldgen.BootstrapContext;
 
 import java.util.List;
-import java.util.concurrent.CompletableFuture;
-import java.util.function.Consumer;
 
 /**
  * @author Autovw
  */
 public class ModAdvancementProvider extends AdvancementProvider
 {
-    public ModAdvancementProvider(PackOutput output, CompletableFuture<HolderLookup.Provider> registries)
+    public ModAdvancementProvider(List<AdvancementSubProvider.Factory> subProviders)
     {
-        super(output, registries, List.of(new ModHusbandryAdvancements()));
+        super(subProviders);
     }
 
-    public static class ModHusbandryAdvancements implements AdvancementSubProvider
+    public static SingleRegistryBootstrap<Advancement> create()
     {
-        @Override
-        public void generate(HolderLookup.Provider registries, Consumer<AdvancementHolder> consumer)
+        return new AdvancementProvider(List.of(ModHusbandryAdvancements::new));
+    }
+
+    public static class ModHusbandryAdvancements extends AdvancementSubProvider
+    {
+        public ModHusbandryAdvancements(BootstrapContext<Advancement> output)
         {
-            ModDataGenHelper.advancements(registries, consumer);
+            super(output);
+        }
+
+        @Override
+        public void generate()
+        {
+            ModDataGenHelper.advancements(this.output);
         }
     }
 }

@@ -23,7 +23,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "burgermod:golden_mutton_burger"
+        "recipes": "burgermod:golden_mutton_burger"
       },
       "trigger": "minecraft:recipe_unlocked"
     }

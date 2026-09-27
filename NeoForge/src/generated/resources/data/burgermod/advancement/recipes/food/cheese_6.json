@@ -23,7 +23,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "burgermod:cheese_6"
+        "recipes": "burgermod:cheese_6"
       },
       "trigger": "minecraft:recipe_unlocked"
     }

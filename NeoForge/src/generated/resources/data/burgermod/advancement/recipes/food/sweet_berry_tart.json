@@ -23,7 +23,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "burgermod:sweet_berry_tart"
+        "recipes": "burgermod:sweet_berry_tart"
       },
       "trigger": "minecraft:recipe_unlocked"
     },

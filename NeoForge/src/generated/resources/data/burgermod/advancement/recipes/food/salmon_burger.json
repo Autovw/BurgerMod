@@ -33,7 +33,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "burgermod:salmon_burger"
+        "recipes": "burgermod:salmon_burger"
       },
       "trigger": "minecraft:recipe_unlocked"
     }

@@ -13,7 +13,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "burgermod:cooked_champignons_from_campfire"
+        "recipes": "burgermod:cooked_champignons_from_campfire"
       },
       "trigger": "minecraft:recipe_unlocked"
     }

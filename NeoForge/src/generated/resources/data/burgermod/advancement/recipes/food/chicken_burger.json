@@ -33,7 +33,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "burgermod:chicken_burger"
+        "recipes": "burgermod:chicken_burger"
       },
       "trigger": "minecraft:recipe_unlocked"
     }

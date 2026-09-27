@@ -23,7 +23,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "burgermod:golden_beef_burger"
+        "recipes": "burgermod:golden_beef_burger"
       },
       "trigger": "minecraft:recipe_unlocked"
     }

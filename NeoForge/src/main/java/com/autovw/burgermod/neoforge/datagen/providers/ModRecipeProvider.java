@@ -1,46 +1,54 @@
 package com.autovw.burgermod.neoforge.datagen.providers;
 
 import com.autovw.burgermod.common.datagen.ModDataGenHelper;
-import net.minecraft.core.HolderLookup;
-import net.minecraft.data.PackOutput;
-import net.minecraft.data.recipes.RecipeOutput;
+import net.minecraft.advancements.Advancement;
+import net.minecraft.core.HolderGetter;
+import net.minecraft.core.Registry;
+import net.minecraft.core.registries.MultiRegistryBootstrap;
+import net.minecraft.core.registries.Registries;
 import net.minecraft.data.recipes.RecipeProvider;
+import net.minecraft.data.worldgen.BootstrapContext;
+import net.minecraft.resources.ResourceKey;
+import net.minecraft.world.item.Item;
+import net.minecraft.world.item.crafting.Recipe;
+import org.jspecify.annotations.NonNull;
 
-import java.util.concurrent.CompletableFuture;
+import java.util.Set;
 
 /**
  * @author Autovw
  */
 public class ModRecipeProvider extends RecipeProvider
 {
-    public ModRecipeProvider(HolderLookup.Provider registries, RecipeOutput recipeOutput)
+    private final HolderGetter<Item> items;
+
+    public ModRecipeProvider(BootstrapContext<Recipe<?>> recipeOutput, BootstrapContext<Advancement> advancementOutput)
     {
-        super(registries, recipeOutput);
+        super(recipeOutput, advancementOutput);
+        this.items = recipeOutput.lookup(Registries.ITEM);
     }
 
     @Override
     protected void buildRecipes()
     {
-        ModDataGenHelper.recipes(this.registries, this.output);
+        ModDataGenHelper.recipes(this.items, this.output);
     }
 
-    public static class Runner extends RecipeProvider.Runner
+    public static MultiRegistryBootstrap create()
     {
-        public Runner(PackOutput output, CompletableFuture<HolderLookup.Provider> registries)
+        return new MultiRegistryBootstrap()
         {
-            super(output, registries);
-        }
+            @Override
+            public @NonNull Set<ResourceKey<? extends Registry<?>>> requestedRegistries()
+            {
+                return Set.of(Registries.RECIPE, Registries.ADVANCEMENT);
+            }
 
-        @Override
-        protected RecipeProvider createRecipeProvider(HolderLookup.Provider lookupProvider, RecipeOutput recipeOutput)
-        {
-            return new ModRecipeProvider(lookupProvider, recipeOutput);
-        }
-
-        @Override
-        public String getName()
-        {
-            return "Burger Mod Recipe Provider";
-        }
+            @Override
+            public void run(MultiRegistryBootstrap.BootstrapGetter bootstrap)
+            {
+                new ModRecipeProvider(bootstrap.get(Registries.RECIPE), bootstrap.get(Registries.ADVANCEMENT)).buildRecipes();
+            }
+        };
     }
 }

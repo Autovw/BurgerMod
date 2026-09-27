@@ -13,7 +13,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "burgermod:scrambled_egg"
+        "recipes": "burgermod:scrambled_egg"
       },
       "trigger": "minecraft:recipe_unlocked"
     }

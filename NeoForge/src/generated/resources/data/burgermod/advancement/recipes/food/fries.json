@@ -13,7 +13,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "burgermod:fries"
+        "recipes": "burgermod:fries"
       },
       "trigger": "minecraft:recipe_unlocked"
     }

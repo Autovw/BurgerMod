@@ -6,6 +6,7 @@ import com.autovw.burgermod.neoforge.config.Config;
 import com.mojang.serialization.MapCodec;
 import com.mojang.serialization.codecs.RecordCodecBuilder;
 import it.unimi.dsi.fastutil.objects.ObjectArrayList;
+import net.minecraft.core.Holder;
 import net.minecraft.resources.Identifier;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.level.storage.loot.LootContext;
@@ -14,6 +15,7 @@ import net.neoforged.neoforge.common.loot.IGlobalLootModifier;
 import net.neoforged.neoforge.common.loot.LootModifier;
 
 import java.util.List;
+import java.util.Optional;
 
 /**
  * @author Autovw
@@ -28,14 +30,9 @@ public class LootAdditionModifier extends LootModifier
 
     private final ChestLootAddition[] lootAdditions;
 
-    /**
-     * Constructs a LootModifier.
-     *
-     * @param conditionsIn the ILootConditions that need to be matched before the loot is modified.
-     */
-    public LootAdditionModifier(LootItemCondition[] conditionsIn, ChestLootAddition[] additions, int priority)
+    public LootAdditionModifier(Optional<Holder<LootItemCondition>> condition, ChestLootAddition[] additions, int priority)
     {
-        super(conditionsIn, priority);
+        super(condition, priority);
         this.lootAdditions = additions;
     }
 

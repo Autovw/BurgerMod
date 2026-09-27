@@ -13,7 +13,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "burgermod:raw_champignons"
+        "recipes": "burgermod:raw_champignons"
       },
       "trigger": "minecraft:recipe_unlocked"
     }

@@ -13,7 +13,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "burgermod:cooked_chicken_nugget"
+        "recipes": "burgermod:cooked_chicken_nugget"
       },
       "trigger": "minecraft:recipe_unlocked"
     }

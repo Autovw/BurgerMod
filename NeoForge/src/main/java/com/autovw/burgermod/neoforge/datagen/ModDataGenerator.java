@@ -2,6 +2,8 @@ package com.autovw.burgermod.neoforge.datagen;
 
 import com.autovw.burgermod.neoforge.datagen.providers.*;
 import net.minecraft.core.HolderLookup;
+import net.minecraft.core.RegistrySetBuilder;
+import net.minecraft.core.registries.Registries;
 import net.minecraft.data.DataGenerator;
 import net.minecraft.data.PackOutput;
 import net.neoforged.api.distmarker.Dist;
@@ -29,13 +31,17 @@ public class ModDataGenerator
     {
         DataGenerator generator = event.getGenerator();
         PackOutput packOutput = generator.getPackOutput();
-        CompletableFuture<HolderLookup.Provider> lookupProvider = event.getLookupProvider();
+        CompletableFuture<HolderLookup.Provider> lookupProvider = event.getReloadableLookupProvider();
 
         // server
         event.addProvider(new ModItemTagsProvider(packOutput, lookupProvider, MOD_ID));
-        event.addProvider(new ModRecipeProvider.Runner(packOutput, lookupProvider));
         event.addProvider(new ModLootModifierProvider(packOutput, lookupProvider, MOD_ID));
-        event.addProvider(new ModAdvancementProvider(packOutput, lookupProvider));
+
+        event.createReloadableRegistryObjects(
+                new RegistrySetBuilder()
+                        .add(ModRecipeProvider.create())
+                        .add(Registries.ADVANCEMENT, ModAdvancementProvider.create())
+        );
 
         // client
         event.addProvider(new ModModelProvider(packOutput, MOD_ID));

@@ -160,6 +160,5 @@
       "min": 1,
       "target": "minecraft:chests/ancient_city"
     }
-  ],
-  "conditions": []
+  ]
 }
