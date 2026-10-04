@@ -7,9 +7,9 @@ import net.neoforged.neoforge.common.ModConfigSpec;
  */
 public class Config
 {
-    private static final ModConfigSpec.Builder COMMON_BUILDER = new ModConfigSpec.Builder();
-    public static final Config.Common COMMON = new Common(COMMON_BUILDER);
-    public static final ModConfigSpec COMMON_SPEC = COMMON_BUILDER.build();
+    private static final ModConfigSpec.Builder LOCAL_BUILDER = new ModConfigSpec.Builder();
+    public static final Config.Common LOCAL = new Common(LOCAL_BUILDER);
+    public static final ModConfigSpec LOCAL_SPEC = LOCAL_BUILDER.build();
 
     public static class Common
     {
@@ -17,7 +17,7 @@ public class Config
 
         public Common(ModConfigSpec.Builder builder)
         {
-            builder.translation("config.burgermod.common").push("common");
+            builder.translation("config.burgermod.common").push("local");
             {
                 this.lootConfig = new LootConfig(builder);
             }

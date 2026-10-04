@@ -26,7 +26,7 @@ public class BurgerModNeoForge
     {
         BurgerMod.init(NeoForgePlatformHelper.getInstance());
 
-        container.registerConfig(ModConfig.Type.COMMON, Config.COMMON_SPEC);
+        container.registerConfig(ModConfig.Type.LOCAL, Config.LOCAL_SPEC);
 
         bus.addListener(this::commonSetup);
         bus.addListener(this::clientSetup);
